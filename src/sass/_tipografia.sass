@@ -1,0 +1,51 @@
+//Declaración de tipografías
+
+@font-face
+  font-family: 'Code_Pro_Demo'
+  src: url('../fonts/Code_Pro_Demo-webfont.woff2') format('woff2')
+  font-weight: normal
+  font-style: normal
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700')
+
+
+//Tipografía general
+
+body
+  font-family: 'Roboto', sans-serif
+  color: $color-texto
+  font-size: 14px
+  line-height: 1.8em
+
+a
+  text-decoration: none
+  color: $color-texto
+
+//Tipografías por sección
+
+footer
+  color: $color-texto-inv
+
+
+
+
+//Tipografías por clase de texto
+
+.textoLogo
+  font-family: 'Code_Pro_Demo'
+  font-weight: bold
+  text-transform: uppercase
+  color: $color-texto-inv
+  font-size: 1.4rem
+
+
+//Helpers
+
+.txt-left
+  text-align: left
+
+.txt-center
+  text-align: center
+
+.txt-right
+  text-align: right

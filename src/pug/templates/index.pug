@@ -1,0 +1,27 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Plataforma Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris.color-texto-inv
+      .container
+        include _headerSitio.pug
+    
+    .principal
+      .container
+        include _menuLateral.pug
+
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug

@@ -1,0 +1,27 @@
+{
+  "name": "hormiguero_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-html": "pug -P -w src/pug/templates/index.pug -o .",
+    "watch-css": "sass --watch src/sass:css",
+    "watch-all": "run-p watch-html watch-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcortes214/hormiguero_web.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcortes214/hormiguero_web/issues"
+  },
+  "homepage": "https://github.com/mcortes214/hormiguero_web#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.17.2"
+  }
+}
