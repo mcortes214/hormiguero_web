@@ -1,3 +1,9 @@
+//--------- 1- Flujo normal de documento
+
+// HACK: empujar el body para que no se solape con el header
+body
+  margin-top: 50px
+
 .container
   width: 95%
   max-width: 1400px
@@ -14,3 +20,11 @@
     content: ''
     display: table
     clear: both
+
+//--------- 2- Elementos fuera de flujo
+
+.fixedNav
+  position: fixed
+  top: 0
+  left: 0
+  width: 100vw

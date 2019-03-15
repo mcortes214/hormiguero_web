@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+body {
+  margin-top: 50px;
+}
+
 .container {
   width: 95%;
   max-width: 1400px;
@@ -16,8 +20,19 @@
   clear: both;
 }
 
+.fixedNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
 .color-bg-gris {
   background-color: #323232;
+}
+
+.color-bg-gris-tr {
+  background-color: rgba(50, 50, 50, 0.9);
 }
 
 .color-texto-inv {
@@ -110,19 +125,26 @@ footer {
   height: 100%;
   float: left;
 }
+@media screen and (max-width: 1000px) {
+  .footer_apoyo {
+    margin-bottom: 50px;
+  }
+}
 .footer_apoyo img {
-  height: 100px;
+  height: 80px;
   width: auto;
   margin: auto;
-  margin-bottom: 50px;
 }
 @media screen and (max-width: 1000px) {
   .footer_apoyo {
     width: 100%;
   }
-  .footer_apoyo:not(:last-of-type) {
-    margin-bottom: 50px;
-  }
+}
+.footer_apoyo a {
+  display: block;
+}
+.footer_apoyo a:not(:last-of-type) {
+  margin-bottom: 90px;
 }
 
 .footer_contacto {

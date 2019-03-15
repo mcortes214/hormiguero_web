@@ -1,3 +1,5 @@
+//general
+
 .footerSitio
   width: 100%
   height: 100%
@@ -6,6 +8,8 @@
     content: ''
     display: table
     clear: both
+
+//columna logo
 
 .footer_logo
   width: 20%
@@ -22,19 +26,26 @@
       margin-left: auto
       margin-right: auto
 
+//columna apoyo
+
 .footer_apoyo
   width: 40%
   height: 100%
   float: left
+  @media screen and (max-width: $bp-mobile)
+    margin-bottom: 50px
   img
-    height: 100px
+    height: 80px
     width: auto
     margin: auto
-    margin-bottom: 50px
   @media screen and (max-width: $bp-mobile)
     width: 100%
+  a
+    display: block
     &:not(:last-of-type)
-      margin-bottom: 50px
+      margin-bottom: 90px
+
+//columna contacto
 
 .footer_contacto
   width: 40%
