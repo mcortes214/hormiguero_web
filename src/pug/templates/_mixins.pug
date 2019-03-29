@@ -1,4 +1,11 @@
 mixin revista (nombre, año, link)
   a(href=link).boxRevista.color-bg-gris.color-texto-inv
     h2=nombre
-    p=año    
+    p=año
+    
+mixin widgetNota(titulo, meta, urlImg, link)
+  .widgetRevista
+    a(href=link)
+      h2=titulo
+    p.meta=meta
+    img(src=urlImg, alt=titulo)

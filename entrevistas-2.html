@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <meta charset="utf-8">
+    <title>Entrevistas - Revista Hormiguero</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <meta name="keywords" value="Artes Electrónicas">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  </head>
+  <body class="color-bg-oscuro">
+    <header class="color-bg-gris-tr color-texto-inv txt-uppercase fixedNav">
+      <div class="container">
+        <div class="headerSitio txt-codepro"><a href="/">
+            <h1 class="headerSitio_logo textoLogo">Hormiguero</h1></a>
+          <nav class="headerSitio_navegacion txt-sm">
+            <ul><a href="/equipo.html">
+                <li>Equipo</li></a><a href="">
+                <li>Proyecto</li></a><a href="http://arteyciencia.untref.edu.ar/projects">
+                <li>1. Sobre nuestra práctica</li></a><a href="/editorial-2.html">
+                <li>2. Futuro Antiguo</li></a></ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="principal color-bg-claro">
+      <div class="contenido">
+        <script type="text/javascript" src="/js/data.js"></script>
+        <script type="text/javascript" src="/js/appVideos.js"></script>
+        <style>
+        .entry-content {
+            margin: 0;
+        }
+        p{
+        display:none;
+        }
+        .site-info p{
+        display:block;
+        }
+        .botonVolver {
+            font-size: 0.8em;
+            vertical-align: middle;
+            background-color: #eee;
+        }
+        .botonVolver span {
+            padding: 5px 0 5px 15px;
+            display: inline-block;
+            width: auto;
+            cursor: pointer;
+        }
+        .botonVolver span:hover {
+            font-weight: bold;
+        }
+        .botonVolver a {
+            box-shadow: none;
+        }
+        .botonVolver a:visited, .botonVolver a:hover, .botonVolver a:active{
+            box-shadow: none;
+        }
+        .aplicacion{
+            position: relative;
+            overflow: auto;
+        }
+        .overlayVersion {
+            display:none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: white;
+            z-index: 2;
+        }
+        .overlayVersion p {
+            width: 60%;
+            text-align: center;
+            position: absolute;
+            margin-left: 20%;
+            top: 70px;
+            font-size: 1.3em;
+            color: #bbb;
+            display:block;
+        }
+        .overlayPrecarga {
+            opacity: 1;
+            background: white;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        .barraCarga {
+            height: 5px;
+            width: 80%;
+            margin-left: 10%;
+            background: #ddd;
+            margin-top: 50vh;
+            transform: translate(0,-100%);
+        }
+        .rellenoCarga {
+            background: #aaa;
+            width: 0;
+            height: 100%;
+        }
+        .item{
+        position:relative;
+        display:block;
+        float: left;
+        }
+        .item.tercio{
+        width:33.33%;
+        }
+        .item.mitad{
+        width:50%;
+        }
+        .contenedor_16-9{
+        position:relative;
+        height:0;
+        width:100%;
+        padding-bottom:56.25%;
+        overflow:hidden;
+        }
+        .contenedor_16-9 iframe{
+            position: absolute;
+            height: 300%;
+            top: -100%;
+            width: 100%;
+        }
+        .contenedor_16-9 .H_poster{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: inset 0 0 0 1px #eee;
+        }
+        .contenedor_16-9 .contenidoTexto{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            padding:5%;
+            box-shadow: inset 0 0 0 1px #aaa;
+        }
+        #itemTexto .pregunta {
+            font-size: 1em;
+            line-height: 1.3em;
+            height: 65%;
+            display: table;
+            text-align: center;
+            width: 100%;
+        }
+        .pregunta .chico {
+            font-size: 0.8em;
+        }
+        #itemTexto .pregunta p {
+            display: table-cell;
+            vertical-align: middle;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        #itemTexto .controles{
+            font-size: 0.8em;
+            height: 35%;
+            line-height: 1.5em;
+            text-align:center;
+        }
+        #itemTexto .controles span{
+        cursor:pointer;
+        }
+        span.iniciarRespuestas {
+            line-height: 2em;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        .footerPagina{
+            display: block;
+            margin: 25px;
+        }
+        .nubeTags{
+            text-align: center;
+            margin: 40px;
+        }
+        span.tagTema {
+            margin: 5px 15px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        span.tagTema:hover{
+            font-weight:bold;
+        }
+        .footerPagina p{
+        display:initial
+        }
+        @media(max-width:800px){
+        .item.mitad, .item.tercio{
+        width:100%;
+        }
+        H_player{
+        }
+        </style>
+        <div class="botonVolver">
+        <span><a href="/index.php/h02_editorial/">&lt; Volver a la revista</a></span>
+        </div>
+        <div class="aplicacion">
+        <div class="overlayDesktopCargado overlayVersion"><p>La página está cargada para visualizarla en computadoras. Recargá la página para verla desde el celular</p></div>
+        <div class="overlayMobileCargado overlayVersion"><p>La página está cargada para visualizarla en dispositivos móviles. Recargá la página para verla desde la computadora</p></div>
+        <div class="overlayPrecarga">
+            <div class="barraCarga">
+                <div class="rellenoCarga"></div>
+            </div>
+        </div>
+        <div id="posicionTextoMobile"></div>
+        <div class="item tercio"><div class="contenedor_16-9">
+        <div class="H_player" id="player0" data-index="0"></div>
+        <div class="H_poster"></div>
+        </div></div>
+        <div class="item tercio"><div class="contenedor_16-9">
+        <div class="H_player" id="player1" data-index="1"></div>
+        <div class="H_poster"></div>
+        </div></div>
+        <div class="item tercio"><div class="contenedor_16-9">
+        <div class="H_player" id="player2" data-index="2"></div>
+        <div class="H_poster"></div>
+        </div></div>
+        <div class="item tercio"><div class="contenedor_16-9">
+        <div class="H_player" id="player3" data-index="3"></div>
+        <div class="H_poster"></div>
+        </div></div>
+        <div id="posicionTextoDesktop">
+            <div class="item tercio" id="itemTexto"><div class="contenedor_16-9">
+            <div class="contenidoTexto">
+                <div class="pregunta"></div>
+                <div class="controles"><span class="iniciarRespuestas">Ver respuestas</span><br><span class="detenerRespuestas">Detener respuestas </span><span class="cargarNuevoTema">| Cargar otra pregunta</span></div>
+            </div>
+            </div></div>
+        </div>
+        <div class="item tercio"><div class="contenedor_16-9">
+        <div class="H_player" id="player4" data-index="4"></div>
+        <div class="H_poster"></div>
+        </div></div>
+        <div class="item mitad"><div class="contenedor_16-9">
+        <div class="H_player" id="player5" data-index="5"></div>
+        <div class="H_poster"></div>
+        </div></div>
+        <div class="item mitad"><div class="contenedor_16-9">
+        <div class="H_player" id="player6" data-index="6"></div>
+        <div class="H_poster"></div>
+        </div></div>
+        <div class="footerPagina">
+        <p>Cargar una pregunta:</p>
+        <div class="nubeTags"></div>
+        </div>
+        </div>
+              
+        
+      </div>
+    </div>
+    <footer class="color-bg-gris color-texto-inv">
+      <div class="container">
+        <div class="footerSitio">
+          <div class="footer_logo footer_col"><img src="img/logo-H-100px.png" alt="Hormiguero"></div>
+          <div class="footer_apoyo footer_col"><a href="https://www.buenosaires.gob.ar/cultura/impulsocultural/fondo-metropolitano-de-la-cultura-las-artes-y-las-ciencias" target="_blank"><img src="img/Logo-fdo-metro-1.jpg" alt="Fondo Metropolitano de la Cultura, las Artes y las Ciencias"></a><a href="http://untref.edu.ar/" target="_blank"><img src="img/logo-untref.png" alt="Universidad Nacional de Tres de Febrero"></a></div>
+          <div class="footer_contacto footer_col">
+            <div class="footer_itemContacto">
+              <p>hormiguero@untref.edu.ar</p>
+            </div>
+            <div class="footer_itemContacto">
+              <p>Caseros, Provincia de Buenos Aires, Argentina. <br> Copyleft 2018.</p>
+            </div>
+            <div class="footer_itemContacto">
+              <div class="footer_redes"><a href="https://www.facebook.com/plataformahormiguero/" target="_blank"><img class="footer_iconoRedes" src="img/rs-facebook.png" alt="Facebook"></a><a href="https://twitter.com/hormiguerolee" target="_blank"><img class="footer_iconoRedes" src="img/rs-twitter.png" alt="Twitter"></a><a href="https://www.instagram.com/plataformahormiguero/" target="_blank"><img class="footer_iconoRedes" src="img/rs-instagram.png" alt="Instagram"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

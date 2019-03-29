@@ -1,0 +1,34 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Pensar a través de los otros - Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro.espaciadoVertical
+      .container
+        .row
+          .col-20
+            include _menuLateral2.pug
+          .col-80 
+            .containerContenido
+              .contenido.
+
+
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug

@@ -1,0 +1,47 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Nota Editorial - Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro.espaciadoVertical
+      .container
+        .row
+          .col-20
+            include _menuLateral2.pug
+          .col-80 
+            .containerContenido
+              .contenido.
+                <p>Agradecemos la colaboración de:</p>
+                </br>
+                Juan Pablo Pérez</br>
+                Marcelo Terreni</br>
+                Mariano Sardón</br>
+                Sebastián Tedesco</br>
+                Alicia Murcchio</br>
+                Paula Hrycyk</br>
+                Pablo Guardia</br>
+                MAR Museo</br>
+                MAP Museo de Arte Popular José Hernández</br>
+                Museo Argentino de Ciencias Naturales Bernardino Rivadavia</br>
+                Fondo Metropolitano de la Cultura, las Artes y las Ciencias</br>
+                Universidad Nacional de Tres de Febrero
+
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug

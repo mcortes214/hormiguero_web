@@ -21,11 +21,12 @@ html(lang="es-AR")
     
     .principal.color-bg-claro
       img(src="img/portada-revista.jpg", alt="Revista Hormiguero")
-      .row
-        .col-50
-          +revista("Sobre nuestra práctica","2017","#")
-        .col-50
-          +revista("Futuro Antiguo", "2018","/editorial-2.html")
+      .container
+        .row.row-espaciadoVertical
+          .col-50
+            +revista("Sobre nuestra práctica","2017","#")
+          .col-50
+            +revista("Futuro Antiguo", "2018","/editorial-2.html")
         
       
     footer.color-bg-gris.color-texto-inv
