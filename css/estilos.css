@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 body {
-  margin-top: 50px;
+  margin-top: 65px;
+}
+
+.espaciadoVertical {
+  padding: 100px 0;
 }
 
 .container {
@@ -14,10 +18,30 @@ body {
   clear: both;
 }
 
+.containerContenido {
+  width: 90%;
+  margin: auto;
+}
+
 .row::after {
   content: "";
   display: table;
   clear: both;
+}
+
+.col-50 {
+  width: 50%;
+  float: left;
+}
+
+.col-20 {
+  width: 20%;
+  float: left;
+}
+
+.col-80 {
+  width: 80%;
+  float: left;
 }
 
 .fixedNav {
@@ -33,6 +57,14 @@ body {
 
 .color-bg-gris-tr {
   background-color: rgba(50, 50, 50, 0.9);
+}
+
+.color-bg-claro {
+  background-color: white;
+}
+
+.color-bg-oscuro {
+  background-color: black;
 }
 
 .color-texto-inv {
@@ -54,11 +86,21 @@ body {
 
 a {
   text-decoration: none;
-  color: #404040;
+  color: inherit;
 }
 
-footer {
-  color: #ffffff;
+p {
+  display: inline-block;
+  font-size: 1.15em;
+  line-height: 1.8em;
+  margin-bottom: 1.5em;
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-weight: bold;
 }
 
 .textoLogo {
@@ -81,9 +123,43 @@ footer {
   text-align: right;
 }
 
+.txt-uppercase {
+  text-transform: uppercase;
+}
+
+.txt-codepro {
+  font-family: "Code_Pro_Demo";
+}
+
+.txt-sm {
+  font-size: 0.85em;
+}
+
 .headerSitio_logo {
   padding: 20px 0;
   display: inline-block;
+}
+
+.headerSitio_navegacion {
+  width: 50%;
+  float: right;
+  padding: 20px 0;
+}
+.headerSitio_navegacion::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.headerSitio_navegacion nav {
+  display: block;
+}
+.headerSitio_navegacion ul {
+  display: block;
+  float: right;
+}
+.headerSitio_navegacion a {
+  display: inline-block;
+  margin-right: 40px;
 }
 
 .footerSitio {
@@ -182,19 +258,13 @@ footer {
 }
 
 .menuLateral {
-  padding: 30px 0;
-  width: 200px;
-  float: left;
-}
-@media screen and (max-width: 1000px) {
-  .menuLateral {
-    width: 100%;
-  }
+  width: 100%;
 }
 .menuLateral img {
+  margin: auto;
   width: 200px;
   height: 200px;
-  margin: 0 auto 40px auto;
+  margin-bottom: 50px;
 }
 @media screen and (max-width: 1000px) {
   .menuLateral img {
@@ -210,6 +280,18 @@ footer {
 }
 .menuLateral li:not(:last-of-type) {
   margin-bottom: 10px;
+}
+
+.boxRevista {
+  display: block;
+  height: 250px;
+  margin: 50px;
+  padding: 50px;
+  transition: 0.4s;
+}
+.boxRevista:hover {
+  opacity: 0.8;
+  transition: 0.4s;
 }
 
 /*# sourceMappingURL=estilos.css.map */

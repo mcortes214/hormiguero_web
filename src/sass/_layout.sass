@@ -2,7 +2,10 @@
 
 // HACK: empujar el body para que no se solape con el header
 body
-  margin-top: 50px
+  margin-top: 65px
+
+.espaciadoVertical
+  padding: 100px 0
 
 .container
   width: 95%
@@ -14,12 +17,29 @@ body
     display: table
     clear: both
 
+.containerContenido
+  width: 90%
+  margin: auto
+
 //Encolumnado con Floats
 .row
   &::after
     content: ''
     display: table
     clear: both
+
+  //columnas
+.col-50
+  width: 50%
+  float: left
+
+.col-20
+  width: 20%
+  float: left
+
+.col-80
+  width: 80%
+  float: left
 
 //--------- 2- Elementos fuera de flujo
 

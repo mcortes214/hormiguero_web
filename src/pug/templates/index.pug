@@ -2,7 +2,7 @@ doctype html
 html(lang="es-AR")
   head
     meta(charset="utf-8")
-    title Plataforma Hormiguero
+    title Revista Hormiguero
     meta(name="description" content="")
     meta(name="viewport" content="width=device-width, initial-scale=1")
     meta(name="author" content="")
@@ -12,16 +12,22 @@ html(lang="es-AR")
     link(rel="stylesheet" href="css/estilos.css")
     //- script(src="js/scripts.js")
 
-  body
+  body.color-bg-oscuro
+    include _mixins.pug
     //- Estructura de layout y componentes separados; no intercalados sino anidados
-    header.color-bg-gris-tr.color-texto-inv.fixedNav
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
       .container
         include _headerSitio.pug
     
-    .principal
-      .container
-        include _menuLateral.pug
-
+    .principal.color-bg-claro
+      img(src="img/portada-revista.jpg", alt="Revista Hormiguero")
+      .row
+        .col-50
+          +revista("Sobre nuestra práctica","2017","#")
+        .col-50
+          +revista("Futuro Antiguo", "2018","/editorial-2.html")
+        
+      
     footer.color-bg-gris.color-texto-inv
       .container
         include _footerSitio.pug

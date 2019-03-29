@@ -1,0 +1,93 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Nota Editorial - Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro.espaciadoVertical
+      .container
+        .row
+          .col-20
+            include _menuLateral2.pug
+          .col-80 
+            .containerContenido
+              .contenido.
+                <style>
+                 .editorial2_contenedorColumnas{
+                   font-size: 0.8em;
+                   font-style: italic;
+                   display: table;
+                   margin-bottom:50px;
+                 }
+                 .editorial2_columna{
+                   display:table-cell;
+                   border-bottom: 1px solid #ccc;
+                   width:33%;
+                   padding:4%;
+                 }
+                 @media(max-width:1016px){
+                 .editorial2_contenedorColumnas{
+                   display:block;
+                 }
+                 .editorial2_columna{
+                   display:block;
+                   width:100%;
+                 }
+                 }
+                </style>
+                <h2>Nota editorial</h2>
+                <div class="editorial2">
+                 <div class="editorial2_contenedorColumnas">
+                   <div class="editorial2_columna">
+                   “Trabajo 45 horas semanales en mi trabajo fijo y algunas más de manera freelance. Mi tiempo se divide entre ser content manager en una discográfica y fotógrafa o editora de videos los fines de semana. Dicho de otro modo, produzco, edito o administro información digital a veces en blanco y otras en negro. Recibo entre 100 y 200 mensajes de WhatsApp diarios que pueden variar entre la asignación de nuevas tareas o el seguimiento de las que tengo asignadas.”
+
+                   “Trabajo, aproximadamente, 50 horas semanales. Tengo dos trabajos y a veces tomo en paralelo otros de manera freelance. En blanco, en negro o de manera independiente, mis trabajos se relacionan con valorar el labor en grupo. A lo largo del día doy clases en una escuela primaria, en otros realizo tareas de producción para un evento cultural o toco música en aquellos en los que soy invitada a participar. De 9:00 de la mañana a 00:00 hs. recibo un promedio de 8 mails y 20 mensajes de WhatsApp dependiendo el día y la época del año.”
+                   </div>
+                   <div class="editorial2_columna">
+                   “Trabajo entre 40 y 45 horas semanales en dos trabajos y eventualmente tres. Tengo una relación de dependencia part-time a la que le sumo trabajos independientes como monotributista. Recibo mensajes de trabajo por mail y por WhatsApp con una cantidad muy variable en cualquier momento del día entre las 7.30 y las 22.30 horas en general (incluyendo los fines de semana).”
+
+                   “Trabajo entre 25 y 35 horas semanales y, en algunos momentos del año, 45 horas por un período de 4 meses. Una parte del tiempo soy becaria y la otra trabajo en 4 cosas distintas de manera independiente. Valoro mucho la libertad de administrar mi tiempo de trabajo aunque, muchas veces, esa libertad es virtual y trabajo en horarios y días indeseados. Recibo alrededor de 50 mensajes de WhatsApp diarios.”
+
+                   “Trabajo 40 horas semanales en un solo trabajo, soy técnica en sonido. Tengo una relación laboral “gris” ya que no es ni blanca, ni negra, soy contratada como proveedora de un servicio técnico. Recibo, aproximadamente,  40 mensajes de WhatsApp diarios desde la mañana hasta la noche.”
+                   </div>
+                   <div class="editorial2_columna">
+                   “Trabajo, dependiendo de la semana, entre 50 y 70 horas totales y dentro de ese tiempo incluyo: el pago de impuestos, el mantenimiento de la computadora y el espacio de trabajo, las reuniones, los llamados, los traslados, la participación en eventos y la organización diaria. Tengo al menos dos tipos de trabajos: los que responden a una idea tradicional de trabajo por estar relacionados con una remuneración económica y los proyectos de investigación que también considero trabajos por ser parte de mis responsabilidades. Trabajo de modo independiente, no estoy en relación de dependencia con nadie. Recibo mensajes/llamadas de trabajo entre las 8:00 y las 00:00 horas de forma irregular: puede pasar más de un día sin tener un solo mensaje o recibirlos a lo largo de todo el día. Trato de acumular la comunicación en bloques de tiempo específicos y separarla del tiempo de trabajo concreto.”
+
+                   </div>
+                 </div>
+                 <div class="editorial2_contenedorTexto">
+                 <p>Si la pregunta “¿se puede vivir del arte?” es difícil de resolver, cuando hablamos de artes electrónicas la respuesta se complejiza aún más. En nuestra práctica particular la opacidad del binomio ofrece una posible ventaja: frente a una oportunidad laboral uno podría adecuar el discurso para que encaje, más o menos bien, con lo que se busca. Los artistas electrónicos nos convertimos así en artesanos del engaño; estrategas de la utilización de nuestros conocimientos diversos.</p> 
+
+                 <p>Sin embargo, las artes electrónicas no están por fuera de la negación que sufre el arte en tanto práctica laboral. Esto desencadena por lo menos dos situaciones: por un lado, al estar ampliamente disociada de las necesidades y lógicas del mercado laboral, el artista tiende a idear estrategias creativas para subvertir -siempre desde una posición de desventaja- las estructuras ya consolidadas que gobiernan el mundo del trabajo y hacerlas jugar a su favor; por otro lado, se desempeña en algún trabajo más tradicional para poder financiar de forma paralela su actividad artística. Dichas situaciones convierten al artista en un <em>trabajador de guerrilla</em> que puede sobrevivir en varios terrenos y sabe dar escaramuzas en puntos estratégicos para ganar territorio en el mercado disputado por las formas de trabajo ya estructuradas y consolidadas.</p>
+
+                 <p>Sin embargo, ¿cuál es el precio de este desdoblamiento? ¿de qué manera ejercer una práctica flexibilizada y no reconocida como trabajo afecta a nuestra vida cotidiana? ¿qué estrategias adoptamos para posicionarnos en un panorama laboral desfavorable para las iniciativas artísticas en general? ¿cuántas de nuestras problemáticas se comparten con otras disciplinas? ¿sería un ideal que el arte sea reconocido como trabajo? ¿qué modos de hacer arrastramos desde nuestra praxis hacia los espacios de trabajo? y, a la inversa, ¿qué puede aportar el mundo del trabajo a nuestra práctica creativa?</p>
+
+                 <p>Si consideramos el trabajo como aquel dispositivo que nos permite transformar los fragmentos de realidad de los cuales somos partícipes, podemos dar lugar a la preservación de los vínculos y a otros modos de acción. Desde esta perspectiva es posible convertir la quietud de lo ordinario en potencia para el encuentro.</p>
+
+                 <p>Así, una vez más, volvimos a lo colectivo como espacio de pensamiento y de acción. A lo largo del año, desarrollamos la misma acción performática en diferentes museos: leer en voz alta grupalmente una serie de textos que funcionaron como disparadores para abrir la discusión sobre las condiciones actuales de trabajo.</p>
+
+                 <p>En el segundo número de <em>Hormiguero</em> ponemos en relación estos textos y las voces de quienes se sumaron a nuestros encuentros y nos contaron sus situaciones laborales. Lo disímil de sus condiciones ya da por sentado que el trabajo que realizamos es tan solo una pequeña muestra de un proceso de investigación cuyas “respuestas” son, a nuestros ojos, nuevos interrogantes. Si el arte es negado como práctica remunerada funcionará en este número como una excusa para señalar las múltiples formas en las que se dispersan las lógicas de explotación contemporáneas.</p>
+
+                 <p>Lo que sigue es una <a href="/index.php/videos/">colección de relatos anónimos</a> en primera persona de las diversas condiciones de trabajo en la argentina que estamos viviendo y <a href="/index.php/h02_notas/">concepciones del trabajo desde distintas referencias</a>. <em>Futuro antiguo</em> es una compilación de respuestas al dinero, al tiempo, al espacio y a las relaciones humanas generadas por y a través del ámbito laboral. Dichas respuestas son, obviamente, fragmentos, piezas sueltas de un rompecabezas que no estamos seguros de que se pueda completar. Así, por medio de fracciones de lo que sucede y llenos de dudas de qué es finalmente “el trabajo”, este número es el acercamiento a la relación entre trabajo, arte y tecnología que ensayamos a lo largo del 2018.</p>
+
+                 <p>El ensayo requirió mucho esfuerzo pero sobre todo mucho trabajo de hormiga en la oscuridad subterránea del hormiguero. Ahora, a la luz del día, con ánimos de modificar el presente de un modo casi imperceptible pero muy eficaz, esperamos, en palabras de Bifo, que puedas robarle tiempo al capitalismo y sentarte a leer/mirar <em>Futuro antiguo</em> en horario de oficina.</p>
+                 </div>
+
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug

@@ -5,7 +5,15 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch-html": "pug -P -w src/pug/templates/index.pug -o .",
+    "watch-html": "run-p watch-index watch-equipo watch-editor2 watch-colab2 watch-entr2 watch-notas2 watch-patdlo watch-rdt",
+    "watch-index": "pug -P -w src/pug/templates/index.pug -o .",
+    "watch-equipo": "pug -P -w src/pug/templates/equipo.pug -o .",
+    "watch-editor2": "pug -P -w src/pug/templates/editorial-2.pug -o .",
+    "watch-colab2": "pug -P -w src/pug/templates/colaboradores-2.pug -o .",
+    "watch-entr2": "pug -P -w src/pug/templates/entrevistas-2.pug -o .",
+    "watch-notas2": "pug -P -w src/pug/templates/notas-2.pug -o .",
+    "watch-patdlo": "pug -P -w src/pug/templates/pensar-a-traves-de-los-otros.pug -o .",
+    "watch-rdt": "pug -P -w src/pug/templates/representacion-del-trabajo.pug -o .",
     "watch-css": "sass --watch src/sass:css",
     "watch-all": "run-p watch-html watch-css"
   },
