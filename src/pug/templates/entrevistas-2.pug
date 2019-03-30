@@ -11,7 +11,6 @@ html(lang="es-AR")
     link(rel="stylesheet" href="css/reset.css")
     link(rel="stylesheet" href="css/estilos.css")
     //- script(src="js/scripts.js")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js")
 
   body.color-bg-oscuro
     include _mixins.pug
@@ -22,8 +21,9 @@ html(lang="es-AR")
     
     .principal.color-bg-claro
         .contenido.
-          <script type="text/javascript" src="/js/data.js"></script>
-          <script type="text/javascript" src="/js/appVideos.js"></script>
+          <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+          <script type="text/javascript" src="/appVideos/data.js"></script>
+          <script type="text/javascript" src="/appVideos/appVideos.js"></script>
           <style>
           .entry-content {
               margin: 0;
@@ -193,7 +193,7 @@ html(lang="es-AR")
           }
           </style>
           <div class="botonVolver">
-          <span><a href="/index.php/h02_editorial/">&lt; Volver a la revista</a></span>
+          <span><a href="/editorial-2.html">&lt; Volver a la revista</a></span>
           </div>
           <div class="aplicacion">
           <div class="overlayDesktopCargado overlayVersion"><p>La página está cargada para visualizarla en computadoras. Recargá la página para verla desde el celular</p></div>

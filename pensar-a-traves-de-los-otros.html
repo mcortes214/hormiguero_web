@@ -11,41 +11,495 @@
     <link rel="stylesheet" href="css/estilos.css">
   </head>
   <body class="color-bg-oscuro">
+    <!--generales-->
+    <!--header-->
     <header class="color-bg-gris-tr color-texto-inv txt-uppercase fixedNav">
       <div class="container">
         <div class="headerSitio txt-codepro"><a href="/">
             <h1 class="headerSitio_logo textoLogo">Hormiguero</h1></a>
           <nav class="headerSitio_navegacion txt-sm">
             <ul><a href="/equipo.html">
-                <li>Equipo</li></a><a href="">
-                <li>Proyecto</li></a><a href="http://arteyciencia.untref.edu.ar/projects">
+                <li>Equipo</li></a><a href="http://arteyciencia.untref.edu.ar/projects">
+                <li>Proyecto</li></a><a href="#">
                 <li>1. Sobre nuestra práctica</li></a><a href="/editorial-2.html">
                 <li>2. Futuro Antiguo</li></a></ul>
           </nav>
         </div>
       </div>
     </header>
-    <div class="principal color-bg-claro espaciadoVertical">
-      <div class="container">
-        <div class="row">
-          <div class="col-20">
-            <div class="menuLateral txt-center"><img class="logoRevista" src="img/logo-revista-300px.png" alt="Plataforma Hormiguero">
-              <h2>Navegación</h2>
-              <ul>
-                <li><a href="/entrevistas-2.html">Entrevistas</a></li>
-                <li><a href="/notas-2.html">Notas</a></li>
-                <li><a href="/editorial-2.html">Editorial</a></li>
-                <li><a href="/colaboradores-2.html">Colaboradores</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-80"> 
-            <div class="containerContenido">
-              <div class="contenido"></div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="principal color-bg-claro">
+      <div class="contenido">
+        <style>
+          .botonVolver {
+              font-size: 0.8em;
+              vertical-align: middle;
+              background-color: #eee;
+          }
+          
+          .botonVolver span {
+              padding: 5px 0 5px 15px;
+              display: inline-block;
+              width: auto;
+              cursor: pointer;
+          }
+          
+          .botonVolver a:visited,
+          .botonVolver span:hover,
+          .botonVolver a:active {
+              font-weight: bold;
+          }
+          
+          .botonVolver a {
+              box-shadow: none;
+          }
+          
+          .botonVolver a:hover {
+              box-shadow: none;
+          }
+          
+          .overlayCita {
+              display: none;
+          }
+          
+          .seccion {
+              width: 100%;
+              overflow: auto;
+              /*clearfix*/
+              border-bottom: 1px solid black;
+              padding: 50px 2% 50px 2%;
+              column-count: 3;
+              column-gap: 1em;
+          }
+          
+          .seccion:last-child {
+              border: none;
+          }
+          
+          .seccion__oscuro {
+              color: #000;
+          }
+          
+          .seccion__medio {
+              color: #555;
+          }
+          
+          .seccion__claro {
+              color: #999;
+          }
+          
+          .item {
+              display: inline-block;
+              width: 100%;
+              float: left;
+              padding: 5%;
+              -webkit-column-break-inside: avoid;
+              page-break-inside: avoid;
+              break-inside: avoid;
+              margin-top: 1em;
+          }
+          
+          .seccion__oscuro .item {
+              border: 1px solid #bbb;
+          }
+          
+          .seccion__medio .item {
+              border: 1px solid #ddd;
+          }
+          
+          .seccion__claro .item {
+              border: 1px solid #eee;
+          }
+          
+          .item__infoLibro,
+          .item__contenido {
+              width: 100%;
+          }
+          
+          .item__contenido {
+              height: 75%;
+              overflow: hidden;
+          }
+          
+          .item__contenido p {
+              vertical-align: middle;
+          }
+          
+          .item__preguntas {
+              font-size: 1.2em;
+              line-height: 1.1em;
+              margin-bottom: 60px;
+          }
+          
+          .item__textoCita {
+              font-size: 0.8em;
+              font-style: italic;
+          }
+          
+          .item__infoLibro {
+              height: 25%;
+              overflow: hidden;
+              font-size: 0.8em;
+              border-top: 1px solid #bbb;
+              padding-top: 5px;
+          }
+          
+          .item__infoLibro .titulo {
+              font-weight: bold;
+          }
+          
+          @media(max-width:800px) {
+              .seccion {
+                  column-count: 1;
+              }
+              .itemCentrado {
+                  margin-left: 0;
+              }
+              .overlayCita {
+                  display: none;
+              }
+          }
+      </div></style>
+<div class="botonVolver">
+<span><a href="/notas-2.html">&lt; Volver a Notas</a></span>
+</div>
+<div class="overlayCita">
+<div class="contenedorTexto">
+<blockquote class="citaNota">Quizá la tarea de un editor contemporáneo, digo quizá porque no estoy seguro, sea esta misma: que en su afán de hacer llegar al público un texto privado, consiga agrupar a un determinado número de lectores alrededor de esa misma propuesta literaria porque considera que otorga al grupo una identidad compartida. Y en última instancia, transportar las palabras más allá en el tiempo del momento en que son publicada y más allá del espacio donde se producen para seguir interpelando a comunidades de lectores futuros.</blockquote>
+<p class="autor">Carlos Rod</p>
+<div class="botonContinuar">Ingresar a la nota</div>
+</div>
+</div>
+<div class="seccion seccion__oscuro">
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Cómo es el trabajo del escritor en la actualidad?</p>
+<p>¿Cómo es el trabajo del del artista?</p>
+<p>¿El producto que generamos es trabajar con lo que ya existe?</p>
+<p>¿Qué es “original” en el arte hoy?</p>
+</div>
+<div class="item__textoCita">
+<p>"Durante los últimos años ha habido una explosión de escritores que emplean estrategia de copiado y apropiación, alentados por la idea de imitar el funcionamiento de la computadora. Ya incorporadas las funciones de cortar y pegar al proceso de escritura, sería una locura imaginar que los escritores no explotaran estas funciones de maneras extremas, más allá de las intenciones de sus creadores."</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p><span class="titulo">Escritura no creativa</span>
+<br>Kenneth Goldsmith
+<br>Editorial Caja Negra</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Qué otros modos de producción podemos pensar?</p>
+<p>¿Hay otros modos de pensar la autoría fuera de Occidente?</p>
+</div>
+<div class="item__textoCita">
+<p>“Este modo de producción modular plantea una nueva concepción de la creatividad. La combinación y la variación ganan peso. En este sentido, la técnica cultural china se comporta como la naturaleza: los artistas chinos (...) nunca pierden de vista el hecho de que producir obras en grandes cantidades también implica creatividad. Ellos confían en que, como en la naturaleza, siempre habrá algo entre diez mil cosas que cambiará.”</p>
+<p>“En la antigua práctica artística china, el aprendizaje se lleva a cabo copiando. La copia también funciona como una señal de respeto para con el maestro.”</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p><span class="titulo">Shanzhai</span>
+<br>Byung-Chul Han
+<br>Editorial Caja Negra</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Existe posibilidad de revolución desde la ecología?</p>
+</div>
+<div class="item__textoCita">
+<p>“Lo que me interesa y me inquieta al mismo tiempo, es el desarrollo de una ecología enteramente centrada sobre la naturaleza, sobre la defensa de las especies: por tanto una suerte de visión identitaria que puede desembocar en un conservadurismo, en un autoritarismo completamente inquietante. Para mí, la defensa de las especies materiales, de las especies naturales, de las especies vegetales y animales, es inseparable de la de las especies incorporales. Tomo siempre el ejemplo del cine de autor, de los valores de solidaridad, de los universos de fraternidad, de socialidad y de vecindad, de calor humano, de inventividad. Esas son también especies en vías de extinción, que deben ser defendidas.”</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p><span class="titulo">¿Qué es la ecosofía?</span>
+<br>Felix Guattari
+<br>Editorial Cactus</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Qué es un freelancer?</p>
+<p>¿Cómo vemos nuestra actual mutación entre la precarización laboral y el predominio de la imagen en la sociedad?</p>
+</div>
+<div class="item__textoCita">
+<p>“Estamos acostumbrados a entender la libertad como esencialmente positiva: la libertad de hacer o de tener algo; existe así la libertad de expresión, la libertad de culto. Pero ahora la situación está cambiando. Especialmente en la actual crisis económica y política, la otra cara de las ideas liberales de libertad -a saber, la libertad de las corporaciones frente a toda forma de regulación, así como la libertad de perseguir implacablemente el interés propio a costa del resto- se ha convertido en la única forma de libertad universal que existe: libres de los vínculos sociales, libres de la solidaridad, libres de la certidumbre o la previsibilidad, libres del empleo o el trabajo, libres de la cultura, el transporte público, la educación o de absolutamente todo lo público”</p>
+<p>“La palabra “freelance” deriva del término medieval que servía para nombrar a un soldado mercenario, un “lanza libre” (free lance), es decir, un soldado que no está atado a ningún amo o gobierno en particular y que puede ser contratado para tareas específicas.”</p>
+<p>“Mientras que la lanza-en-alquiler adopta actualmente muchas formas distintas (de trituradoras de piedra, palas, mamaderas y pistolas a cualquier tipo de hardware digital), las condiciones de empleo no parecen haber cambiado tan drásticamente como la lanza. Hoy en día, lo más seguro es que esa lanza -al menos en el caso de los escritores- haya sido diseñada por Steve Jobs. Pero quizá las condiciones de trabajo hayan cambiado también: la fábrica parece estar disolviéndose ahora en microunidades autónomas y subcontratadas que producen bajo condiciones que no están lejos de la servidumbre por contrato o el jornal. Y este regreso extendido -aunque de ninguna manera universal- a las formas históricas de trabajo feudal podría significar que, de hecho, estamos viviendo en tiempos neofeudales.”</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p><span class="titulo">Los condenados de la pantalla</span>
+<br>Hito Steyerl
+<br>Editorial Caja Negra</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿El artista es un trabajador?</p>
+<p>¿Existe una frontera asible entre arte y artesanía?</p>
+</div>
+<div class="item__textoCita">
+<p>“Deseoso de dar una visión exhaustiva del sector productivo de la sociedad de su tiempo, Jed Martin, en un momento u otro de su carrera, debía necesariamente representar a un artista.”</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p><span class="titulo">El mapa y el territorio</span>
+<br>Michel Houellebecq
+<br>Editorial Anagrama</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Qué es la riqueza?</p>
+<p>¿Qué significa trabajar hoy?</p>
+<p>¿Cómo censar los millones de trabajadores cognitivos en pos de una posible revolución desde las bases del capitalismo actual?</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p><span class="titulo">La fábrica de la infelicidad</span>
+<br>Franco "Bifo" Berardi
+<br>Tinta Limón Ediciones</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Qué sabemos de las hormigas?</p>
+<p>¿Podríamos copiar otras formas de organización para el trabajo colectivo?</p>
+<p>¿Cómo ordenar un equipo de trabajo?</p>
+<p>¿Es necesario pensar en jerarquías o en roles en el trabajo colectivo?</p>
+</div>
+<div class="item__textoCita">
+<p>“Para realizar tareas complejas de forma coordinada las hormigas tienen que comunicarse entre sí. Pese a que pueden verse con sus ojos y tocarse con sus antenas, la principal forma de comunicación entre ellas es mediante mensajes químicos.”</p>
+<p>“El apelativo de 'reina' y el papel de ésta como ponedora de huevos, y por lo tanto, responsable del tamaño de la colonia nos hace pensar que la colonia está bajo su control. De hecho, muchos mirmecólogos se han formado bajo este concepto. Sin embargo, la idea del 'poder' de la reina sobre las actividades de la colonia fue desafiada en 1999 cuando se propuso que el control está en las obreras, quienes garantizan el funcionamiento de la colonia a partir de sus interacciones con otras obreras.”</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p>
+<span class="titulo">Un mundo de hormigas</span>
+<br>Alejandro G. Farji Brener y Patricia J. Folgarait
+<br>Editorial Siglo XXI editores</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Cuál es la potencia del encuentro con el otro?</p>
+</div>
+<div class="item__textoCita">
+<p></p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p>
+<span class="titulo">En medio de Spinoza</span>
+<br>Gilles Deleuze
+<br>Editorial Cactus</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Qué otros trabajos hacemos los artistas?</p>
+<p>¿El arte es un trabajo?</p>
+<p>¿Por qué trabajamos tan solos?</p>
+<p>¿cómo pensamos el futuro laboral? ¿qué es el futuro?</p>
+<p>¿Qué rol tienen el proceso y el proyecto en el arte actual?</p>
+</div>
+<div class="item__textoCita">
+<p>“Se escriben evaluaciones, se calcula meticulosamente el presupuesto, se forman comisiones, se designa a sus miembros y se dictan resoluciones. Y un pequeño número de nuestros contemporáneos pasa su tiempo sin leer otra cosa que no sean propuestas, evaluaciones y presupuestos; todo para proyectos que en su mayoría permanecerán para siempre sin ser llevados a cabo.”</p>
+<p>“El tema de este ensayo es el trabajo artístico. Ahora bien, por supuesto yo no soy un artista. Aunque el trabajo artístico es bastante específico en ciertos aspectos, a la vez no es completamente autónomo. Depende de condiciones -sociales, económicas, técnicas y políticas- de producción, distribución y presentación estéticas más generales. Durante las últimas décadas estas condiciones cambiaron drásticamente debido a la emergencia, sobre todo, de Internet.”</p>
+<p>“¿Por qué el proyecto da como resultado el aislamiento? (...) Cada proyecto es, sobre todo, la declaración de un nuevo futuro que se cree que va a venir una vez que el proyecto haya sido llevado a cabo.”</p>
+<p>“Si uno está involucrado en un proyecto -o, más precisamente, vive de acuerdo a un proyecto- siempre está ya en el futuro.”</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p><span class="titulo">Volverse público</span>
+<br>Boris Groys
+<br>Editorial Caja Negra</p>
+</div>
+</div>
+</div>
+<div class="seccion seccion__medio">
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Seremos capaces de reconstruir nuestra sensibilidad?</p>
+</div>
+<div class="item__textoCita">
+<p></p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p>
+<span class="titulo">Fenomenología del fin</span>
+<br>Franco "Bifo" Berardi
+<br>Editorial Caja Negra</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Elegir ser un artista significa aspirar a servir a los ricos?</p>
+</div>
+<div class="item__textoCita">
+<p>“Es la brecha entre la producción de la obra y su absorción y neutralización la que deja un margen para su lectura adecuada y su capacidad para hablar de las condiciones presentes. No es el mercado solo, después de todo, con sus hordas de charlatanes, consejeros y crítiicos amargos, el que determina el sentido y las resonancias: también está la comunidad de los artistas y el potencial contrapúblico que todos ellos suponen.”</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p>
+<span class="titulo">Clase cultural, arte y gentrificación</span>
+<br>Martha Rosler
+<br>Editorial Caja Negra</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿De qué maneras imaginamos a la clase obrera de hoy?</p>
+</div>
+<div class="item__textoCita">
+<p>“Para María, ganar lo mismo que Rosa era un hecho perturbador, porque consideraba que hacía un esfuerzo mucho mayor al que hacía ella. Esto era cierto en cuanto a empleo de fuerza física, pero no a ocupación del tiempo. En ese sentido Rosa trabajaba el doble. Pero el tiempo no contaba en la mentalidad puramente muscular de María, que no tenía plata ni para cortarse el pelo. De hecho, usaba el pelo muy corto sobre las orejas y bastante más largo sobre la nuca, y no porque ese corte estuviera de moda, sino porque podía cortárselo él mismo frente al espejo.”</p>
+<p>“Después de meses de desnudez, sin la fricción permanente de las telas ásperas y de mala calidad que había usado toda su vida, tenía la piel más suave que nunca. La sensibilidad de los dedos no podía ser mayor. ¿Cuántos millones de golpes y pequeños cortes en las manos se había hecho a diario en las distintas obras en las que había trabajado? ¿Cuántos kilos de polvo de cal y tierra había aspirado? Mientras usó botas o zapatillas tenía en los talones una dureza que era como otra suela; desde que andaba descalzo, pisando siempre pisos de cerámica, maderas enceradas y alfombras, la dureza se había angostado hasta casi desaparecer.”</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p>
+<span class="titulo">Rabia</span>
+<br>Sergio Bizzio
+<br>Editorial Interzona</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Las máquinas nos imaginan?</p>
+</div>
+<div class="item__textoCita">
+<p>“Pyonyang nos enseñó a decantar energía mental de los hombres, su información, y a transmutarla en combustible que viaja para alimentar a La Fuente”</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p>
+<span class="titulo">Pyongyang</span>
+<br>Hernán Vanoli
+<br>Editorial Literatura Random House</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Cuál es el límite de “lo humano”?</p>
+</div>
+<div class="item__textoCita">
+<p>"(...) - ¿no tienen ustedes una sección donde sólo se emplee mano de obra robot?
+<br>¡Oh, sí; sí, desde luego! -dijo sonriendo a la señora Weston-. Un círculo vicioso en cierto modo; robots creando más robots. Desde luego no hacemos una práctica general de ello. En primer lugar porque los sindicatos no nos lo permitirían. (...)”</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p>
+<span class="titulo">Yo, Robot</span>
+<br>Isaac Asimov
+<br>Editorial Sudamericana</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Es la aceleración una posible salida hacia el fin del capitalismo?</p>
+</div>
+<div class="item__textoCita">
+<p>“¿Es la aceleración una condición para el colapso final del poder capitalista? Dificil creerlo: la aceleración es la forma esencial del crecimiento capitalista: el incremento en la productividad implica una intensificación del ritmo de producción y de explotación.”</p>
+<p>“La tendencia implícita en la organización tecnológica del capitalismo conduce a una nueva concatenación del conocimiento y las máquinas. Esta concepción inmanente del comunismo tiene algo que ver con la hipótesis aceleracionista, pero ocurre que un peligro teórico se evidencia: el riesgo de confundir esta potencialidad de desarrollo presente en la actual composición de trabajo y tecnología con una necesidad.”</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p>
+<span class="titulo">Aceleracionismo</span>
+<br>Armen Avanessian
+<br>Editorial Caja Negra</p>
+</div>
+</div>
+</div>
+<div class="seccion seccion__claro">
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Cómo te conforma un trabajo?</p>
+<p>¿Qué sucede cuando no hay trabajo?</p>
+<p>¿Saben la historia del pueblo de Las Heras, Provincia de Santa Cruz?</p>
+</div>
+<div class="item__textoCita">
+<p>“Las Heras atravesó los años ochenta y los primeros años noventa en esa prosperidad de petroleras, bares, burdeles, y hombres con dinero para gastar. Pero en 1991 comenzó el proceso de privatización de YPF en manos de Repsol y el paraíso empezó a tener algunas fallas.</p>
+<p>Desde ese año gobernaba la ciudad un hombre del peronismo -Francisco Vázquez- que permaneció en la intendencia hasta 1999. Durante su mandato, YPF redujo personal, tercerizó procesos y de tener aproximadamente 50.000 empleados en todo el país, pasó a tener 5000. No hubo cómo evitar el impacto.</p>
+<p>De a poco, con más ímpetu desde 1993, la crisis hizo furor en la ciudad. En 1995 el desempleo trepó al 20% y 7000 personas se fueron de Las Heras. Quedaron los que estaban cuando fui. No todos, pero sí muchos, eran los solos, los dolientes, los rotos en pedazos. De algunos -no de todos- habla esta historia.”</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p>
+<span class="titulo">Los suicidas del fin del mundo</span>
+<br>Leila Guerrero
+<br>Editorial Tusquets</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Cómo pasar a la acción?</p>
+<p>¿Qué es un CV?</p>
+<p>¿Existe alguna grieta visible en la esfera de lo digital, que nos permita vernos y cambiar?</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p><span class="titulo">Quédate este día y esta noche conmigo</span>
+<br>Belén Gopegui
+<br>Editorial Literatura Random House</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Cómo afecta el trabajo en el cuerpo?</p>
+<p>¿Por qué investigar es un trabajo?</p>
+</div>
+<div class="item__textoCita">
+<p>“Cassio se encargó de organizar un grupo de investigación. La idea de concentrarse en una nueva pasión infundía en su cuerpo una tensión de bienestar: los desafíos eran lo suficientemente complejos y grandes para estar a la altura de su ambición neural.”</p>
+<p>“Cuando no trabajaba, su cerebro entraba en letargo, como las serpientes después de grandes ingestas”</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p><span class="titulo">Las constelaciones oscuras</span>
+<br>Pola Oloixarac
+<br>Editorial Literatura Random House</p>
+</div>
+</div>
+<div class="item">
+<div class="item__contenido">
+<div class="item__preguntas">
+<p>¿Qué sistemas económicos conocemos y cuáles son posibles?</p>
+<p>¿Qué es el éxito?</p>
+</div>
+<div class="item__textoCita">
+<p>“El capitalismo no es solo el único sistema económico viable sino que es imposible imaginarle una alternativa.”</p>
+<p>“El capitalismo ocupa sin fisuras el horizonte de lo pensable.”</p>
+<p>“El éxito es una forma del fracaso desde el momento en que tener éxito significa convertiste en la nueva presa que el sistema quiere devorar.”</p>
+</div>
+</div>
+<div class="item__infoLibro">
+<p>
+<span class="titulo">Realismo Capitalista. ¿No hay alternativa?</span>
+<br>Mark Fisher
+<br>Editorial Caja Negra</p>
+</div>
+</div>
+</div>
     </div>
     <footer class="color-bg-gris color-texto-inv">
       <div class="container">

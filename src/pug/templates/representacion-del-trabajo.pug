@@ -19,16 +19,203 @@ html(lang="es-AR")
       .container
         include _headerSitio.pug
     
-    .principal.color-bg-claro.espaciadoVertical
+    .principal.color-bg-claro
       .container
-        .row
-          .col-20
-            include _menuLateral2.pug
-          .col-80 
-            .containerContenido
               .contenido.
-
-
+                <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+                <script type="text/javascript" src="/appTrabajo/featherlight.min.js"></script>
+                <script>
+                $('document').ready(function(){
+                  $('.titulos li').click(function(){
+                    $('.item--activo').removeClass('item--activo');
+                    $(this).addClass('item--activo');
+                    $('.app-contenido').empty();
+                    $('.placeholder').remove();
+                    $('.app-contenido').load($(this).data('url'));
+                  });
+                });
+                </script>
+                <link rel="stylesheet" type="text/css" href="/appTrabajo/featherlight.min.trabajo.css"/>
+                <style>
+                .botonVolver {
+                    display: inline-block;
+                    margin:50px 0 25px 0;
+                    font-size: 0.8em;
+                    vertical-align: middle;
+                }
+                
+                .botonVolver span {
+                    padding: 5px 0 5px 15px;
+                    display: inline-block;
+                    width: auto;
+                    cursor: pointer;
+                }
+                
+                .botonVolver span:hover {
+                    font-weight: bold;
+                }
+                
+                .botonVolver a {
+                    box-shadow: none;
+                }
+                
+                .botonVolver a:visited,
+                .botonVolver a:hover,
+                .botonVolver a:active {
+                    box-shadow: none;
+                }
+                
+                .placeholder {
+                    font-size: 1.5em;
+                    color: #aaa;
+                    height: 200px;
+                    width: 100%;
+                    display: table;
+                }
+                
+                .placeholder p {
+                    margin-top: 0;
+                    margin-bottom: 1.75em;
+                    display: table-cell;
+                    vertical-align: middle;
+                    text-align: center;
+                }
+                
+                .app-contenido .item a,
+                .featherlight .featherlight-content button {
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    box-shadow: none;
+                }
+                
+                .entry-content {
+                    margin: 2em;
+                }
+                
+                h2 {
+                    margin-bottom: 20px;
+                }
+                
+                ul.titulos {
+                    padding: 0;
+                    margin: 0 0 60px 0;
+                }
+                
+                .titulos li:hover {
+                    font-weight: bold;
+                }
+                
+                .titulos li {
+                    list-style-type: none;
+                    display: inline-block;
+                    margin-right: 10px;
+                    cursor: pointer;
+                    background: #eee;
+                    padding: 5px 20px;
+                    margin: 3px 0 3px 0;
+                }
+                
+                .titulos li.item--activo {
+                    font-weight: bold;
+                }
+                
+                .app-contenido {
+                    column-count: 2;
+                    margin-bottom: 50px;
+                }
+                
+                .item {
+                    width: 100%;
+                    position: relative;
+                    margin-bottom: 1em;
+                }
+                
+                .item__img {
+                    width: 100%;
+                }
+                
+                .item__info {
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: white;
+                    box-sizing: border-box;
+                    cursor: pointer;
+                    transition: 0.4s;
+                }
+                
+                .item__info:hover {
+                    opacity: 0.9;
+                    transition: 0.4s;
+                }
+                
+                .contenedorTexto {
+                    position: absolute;
+                    margin: 5%;
+                    top: 15%;
+                }
+                
+                p.tipo {
+                    font-weight: bold;
+                }
+                
+                .contenedorVideo {
+                    width: 80vw;
+                    position: relative;
+                }
+                
+                .contenedor16-9 {
+                    width: 100%;
+                    height: 0;
+                    padding-bottom: 56.45%;
+                    position: relative;
+                }
+                
+                .contenedor16-9 iframe {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                }
+                
+                @media(max-width:800px) {
+                    h2 {
+                        margin-bottom: 40px;
+                    }
+                    .descripcionNota {
+                        margin-bottom: 40px;
+                    }
+                    .app-contenido {
+                        column-count: 1;
+                    }
+                    .item__info:hover {
+                        opacity: 0.9;
+                    }
+                    .item__info {
+                        opacity: 0.9;
+                    }
+                }
+                </style>
+                <div class="botonVolver">
+                  <span>
+                    <a href="/index.php/h02_notas/"><< Volver a Notas</a>
+                  </span>
+                </div>
+                <h2>Representación del trabajo</h2>
+                <p class="descripcionNota">Referencias extraídas de la charla sobre representación del trabajo del profesor Marcelo Terreni el 2 de Octubre de 2018 en Muntref Tecnópolis.</p>
+                <ul class="titulos">
+                    <li data-url="/appTrabajo/titulos/oficiosygestos.html">Oficios y gestos</li>
+                    <li data-url="/appTrabajo/titulos/estudios.html">Estudios sobre trabajo</li>
+                    <li data-url="/appTrabajo/titulos/tiempo.html">Tiempo y trabajo</li>
+                    <li data-url="/appTrabajo/titulos/lugardelexplotado.html">Ocupar el lugar del explotado</li>
+                </ul>
+                <div class="placeholder">
+                    <p>Clickeá en una de las categorías para explorar el contenido</p>
+                </div>
+                <div class="app-contenido"> </div>
+                
     footer.color-bg-gris.color-texto-inv
       .container
         include _footerSitio.pug
