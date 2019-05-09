@@ -1,0 +1,87 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro
+      .container.espaciadoVertical
+        .row
+          .col-20
+            include _menuLateral1.pug
+          .col-80
+            .containerContenido
+              //- Posts: NO son un widget; son un "semicomponente" entremezclado con layout (no debería evitar eso?)
+              //- tienen su hoja de estilo propia.
+              .contenido.post
+                .row.encabezadoPost
+                  h1.txt-mgb-25 OBSERVAR, EXPERIMENTAR Y CONOCERSE A UNO MISMO
+                  p.meta.txt-space.txt-lg Escrito por Julieta Feresín
+                .row.row-espaciadoVertical
+                  .col-66.
+                    <p>Mi primer acercamiento a la fotografía fue de muy chica, sacando fotos con la cámara de rollo compacta que tenían mis viejos. Sin embargo, hubo momentos en los que miraba mucho más de lo que sacaba -pintaba, hacías collages y coleccionaba imágenes de distintas cosas que me gustaban ya sea por color, forma, composición, encuadre o temática-; era como llenar un album de figuritas. Hoy, con Internet es muy fácil sumergirse en un mundo de <strong>referentes</strong> en donde circulan imágenes todo el tiempo y es imposible no vernos atravesados e influenciados por eso.</p>
+                    
+                    <img src="/img/01_Serie-Territorios-2012.jpg"/>
+
+                    <p>Empecé a estudiar Diseño Gráfico y ésto me llevó a ver mucho el trabajo de otros artistas y fotógrafos. Así, encontré que me interesaban más que nada los que trabajaban en formato analógico: me gustaba que, en general, los colores eran más cálidos, las luces y sombras bien marcadas, siempre había algo fuera de foco, algo “natural” en lo que capturaban que llamaba mi atención. Eso no lo veía en otros fotógrafos que trabajaban en formato digital; así que empecé, de alguna forma, a <strong>imitarlos</strong>. Pero como siempre fui muy mala con la fotografía analógica -se me velaban los rollos y no tenía la paciencia que se requería- entonces preferí trabajar en digital. Este formato me gustaba porque me permitía manejar todos los <strong>procesos</strong> sin depender de un otro y tener el resultado en ese mismo momento.</p>
+
+                    <p><strong>Observando</strong> las fotos que sacaba, empecé a darme cuenta que tenía una preferencia por los colores desaturados, así que empecé a virar los colores a esa paleta y a usar un lente manual muy luminoso de una cámara analógica en una cámara digital; lo que me permitía trabajar con la luz natural y crear planos desenfocados -a la vez era una focal fija, entonces me obligaba acercarme o alejarme dependiendo de lo que quería retratar-. La <strong>limitación</strong> de no poder hacer planos demasiado abiertos, me llevó a concentrarme más en el detalle. No había estudiado fotografía formalmente y por momentos pensaba que cómo fotógrafa tenía que tener todo perfectamente iluminado, que me faltaban conocimientos desde la técnica; hasta que entendí que las sombras cumplian un papel muy importante en mis <strong>composiciones</strong>, y que su presencia era clave en mi trabajo. Creo que ser conscientes de estas <strong>pequeñas decisiones</strong> que tomamos -que claramente no son arbitrarias- nos lleva a darnos cuenta de cómo estamos encaminados y a ir en <strong>búsqueda</strong> de un estilo más propio.</p>
+                    
+                    <img src="/img/02_Serie-Territorios-2012.jpg"/>
+
+                    <p>También empecé a notar que a la hora de sacar una foto, ya sea un proyecto personal o un encargo, elegía <strong>no armar</strong> demasiado la escena, ni dirigir mucho a las personas retratadas; para que sea lo más natural posible y permitir que salga a la luz su propia <strong>esencia</strong>. Me interesaba captar los objetos que estaban en la locación -me llamaban mucho la atención los materiales de descarte, los residuos y cómo estos se relacionaban entre sí y convivían-. La improvisación también era muy importante en mi proceso de trabajo: tener que tomar una decisión rápida en el mismo momento tiene algo de <strong>mágico e inesperado</strong>, que siempre resulta en algo nuevo y a la vez <strong>personal</strong>.</p>
+
+                    <p>Al principio estaba pendiente de que todos los momentos que captara fueran <strong>encontrados</strong>, más que nada en mis series personales. Después me di cuenta -por no estar con la cámara todo el tiempo encima- que esos momentos los podía generar yo. Entonces, empecé a armar los sets en mi casa, <strong>seleccionando</strong> elementos que me interesaba fotografiar de distintos universos: flores, piedras y material de descarte, con papeles de diferentes texturas como fondo, generando mis propias naturalezas muertas. Al usar solo la luz natural, me veía limitada al rayo de sol que entraba por la ventana, que sucedía en cierto momento en el día; entonces empecé a incluir materiales para reflejar esa luz y aprovecharla mucho más. Eso me llevó sin darme cuenta por un nuevo camino de reflejos y luces, que ya no tanto tenía que ver con esa escena natural, pero que dibujaba algo misterioso, que no se terminaba de entender y que también me interesaba. Empecé a verlo de forma compositiva; casi virando a la <strong>abstracción</strong>.</p>
+
+                    <p>Mientras trabajaba este tema surgió la posibilidad de exponer; entonces las fotos no terminaban en la toma y en la edición, sino que quedaba por pensar en el tamaño, el papel, la forma del montaje y en cómo se iban a exhibir. Dejándome llevar por esta idea de abstracción, me permití jugar con la escala y llevé fotos de elementos que eran super pequeños a fotografías impresas en papeles de 1.50m x 1m, donde se potenciaba todos los detalles; a colgarlas de forma no tradicional, sin enmarcar, donde se viera cómo el papel se encorvaba y generaba también sombras sobre la pared,. También decidí incluir el material que usaba para generar los reflejos en contacto con la luz, generando uno de esos efectos sobre la pared en el momento de la exhibición, lo que evidenciaba el secreto que había detrás del set.</p>
+                    
+                    <img src="/img/03_Sesión-para-la-banda-Mansibal-2014-1024x683.jpg"/>
+
+                    <p>Creo que el estilo propio tiene que ver mucho con <strong>conocerse</strong> a uno mismo, respetar nuestras propias decisiones, procesos, elecciones, colores, materialidades, y formas de hacer las cosas. Siempre existen las <strong>tendencias</strong>, pero está en nosotros saber qué es lo que va con nuestro trabajo y qué es lo que no tiene nada que ver y ser sinceros en lo que nos interesa desarrollar. Pienso que el estilo no es una <strong>fórmula</strong>: se puede correr el riesgo de que se agote el <strong>recurso</strong> y nos empecemos a repetir a nosotros mismos. Por eso, creo que es importante explorar también otros campos e incluir nuevas variables, apropiarnos de nuevas herramientas, traer elementos cotidianos; inclusive explorar otros ámbitos, sin miedo a probar otras disciplinas.</p>
+
+                    <p>A veces, ante lo nuevo hay una especie de <strong>miedo</strong> y es más <strong>cómodo</strong> quedarse en lo ya conocido, en lo seguro; puede ser un tipo de papel o de pincel, o en mi caso, en el tipo de edición, encuadre, o tema a retratar. Incluso puede ayudar cambiar el punto de partida: por ejemplo, ahora me gustaría ya no partir de encontrar una escena para fotografiar, sino de armarla a partir de algo muy abstracto como es un aroma y crear la foto en base a lo que me despierta desde ese sentido. También me interesa empezar a <strong>intervenir</strong> fotografías ya impresas con distintas técnicas, para empezar a romper el límite de la fotografía como imagen encerrada en la toma.</p>
+
+                    <p><span class="txt-italic">En lo personal, reflexionar acerca de estos temas, conocer el trabajo y los procesos de otros artistas, me lleva a seguir cuestionando sobre mi quehacer artístico: me despierta nuevas inquietudes y me alienta a romper mis propios límites, que muchas veces tienen que ver con prejuicios o desconocimiento.</span><span class="endMark">⬛</span></p>
+                    
+                    <div class="row">
+                      <div class="col-50">
+                        <img src="/img/04_Serie-Restos-2014-682x1024.jpg"/>
+                      </div>
+                      <div class="col-50">
+                        <img src="/img/05_Serie-Restos-2014-683x1024.jpg"/>
+                      </div>
+                    </div>
+                    <p class="txt-italic">Serie Restos (2014)</p>
+                    
+                    <img src="/img/06_Feria-BADA-Seleccionada-en-la-Convocatoria-BA-joven-768x512.jpg"/>
+                    
+                    <p class="txt-italic">Feria BADA – Seleccionada en la convocatoria BA Joven</p>
+                    
+                    <img src="/img/07_De-la-serie-expuesta-en-BADA-2017.jpg"/>
+                    
+                    <p>De la serie expuesta en BADA 2017.</p>
+                    
+                  .col-33.txt-sm.columnaBio.txt-tight.color-texto-claro
+                    .boxBio
+                      p #[strong JULIETA FERESÍN] es fotógrafa y artista visual. Estudió Diseño Gráfico en la UBA. Desde muy pequeña realizó distintos talleres de pintura y cerámica. Después de un viaje por Europa decidió dedicarse de lleno a la fotografía como medio de expresión privilegiado. Se formó en talleres a cargo de Ximena Roux, Sofia Ungar y Guadalupe Gaona. Trabaja en distintos proyectos personales y por encargo. En 2017 resultó ganadora de la Maratón Fotográfica organizada en el marco del Festival Fuji Film de Viseu, Portugal, donde se expondrá su obra en la edición 2018.
+                      p #[span.txt-strong Web:] #[a.txt-italic(href="http://www.julietaferesin.com/", target="_blank") www.julietaferesin.com]
+        
+      
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug

@@ -1,0 +1,84 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro
+      .container.espaciadoVertical
+        .row
+          .col-20
+            include _menuLateral1.pug
+          .col-80
+            .containerContenido
+              //- Posts: NO son un widget; son un "semicomponente" entremezclado con layout (no debería evitar eso?)
+              //- tienen su hoja de estilo propia.
+              .contenido.post
+                .row.encabezadoPost
+                  h1.txt-mgb-25 “ES CLICHÉ UTILIZAR LA TECNOLOGIA PARA DARLE ESPECTACULARIDAD A ALGO QUE CAPAZ NO LA TIENE.”
+                  p.meta.txt-space.txt-lg Entrevista a Nahuel Galván - Por Franccesca Carrodegoas
+                  +widgetSoundcloud('586517856')
+                .row.row-espaciadoVertical
+                  .col-66.
+                    <p class="meta">Septiembre 2016<p>
+                    <p class="txt-strong">F.C.: ¿Qué diferencia existe entre copia, plagio e interpretación?</p>
+
+                    <p>N.G.: Una interpretación es tomar la obra de otro artista y tomar ciertas decisiones acerca de cómo reinterpretarla, o sea que es una visión propia sobre la obra de otro. Un plagio es tomar los recursos, ya sean de producción o de otra cosa, y apropiarse de ellos ocultando de dónde viene la materia prima de la obra. Son dos formas de copia la interpretación y el plagio.</p>
+
+                    <p class="txt-strong">F.C.: ¿Cuál es el límite entre mantener un estilo propio (identidad del artista) y copiarse de uno mismo?</p>
+
+                    <p>N.G.: Tener un estilo propio es ser consciente de tus influencias, de qué es lo que vos generás, y ser consciente de eso al llevar a cabo tu obra partiendo de todo el bagaje que tenés atrás. Con todo lo que uno percibe del mundo en general tiende a hacer obra de un tipo. Copiarse de uno mismo sería tomar los recursos que uno ya sabe que son fáciles para vos y repetirlos como si fuera una máquina que hace siempre lo mismo. Como una cuestión de facilismo.</p>
+
+                    <p class="txt-strong">F.C.: ¿Quiénes son tus referentes para producir obra? O ¿De quién te copiás para producir obra?</p>
+
+                    <p>N.G.: Muchos referentes musicales. Me gusta mucho un tipo que hace videos de Youtube que se llama Jack Conte1, un proyecto de acá de Argentina que se llama Proyecto Gómez Casa, los del sello discográfico Rater Noton. Y algunos músicos como Philip Glass, música de ese estilo hecha más con sintetizadores. Tengo también influencias desde la música clásica, me gusta mucho también todo lo que es del período romántico como Chopin, Beethoven; también tengo referentes del folclore argentino. Tengo mucho referentes musicales aunque Jack Conte y Proyecto Gómez Casa trabajan también con sets audiovisuales.</p>
+
+                    <p class="txt-strong">F.C.: ¿Cuáles serían los estereotipos y clichés de las artes que utilizan tecnología?</p>
+
+                    <p>N.G.: A grandes rasgos creo que habría dos cliches. Uno es la utilización de la tecnología básicamente como una herramienta que sólo sirve como un recurso para darle más espectacularidad a algo que capaz no lo tiene. El otro extremo es la obra de arte puramente tecnológica que la tecnología llama más la atención sobre lo que puede ser un concepto o la estética de una obra; que el dispositivo que se haya creado tecnológicamente llame mucho más la atención que el concepto de la obra.</p>
+
+                    <p class="txt-strong">F.C.: ¿Considerás que existe un nombre para definir todos los tipos de arte que utilizan tecnología? ¿Cuál? (Arte electrónico, Arte Tecnológico, Nuevos Medios, Arte Digital, etc.)</p>
+
+                    <p>N.G.: Yo creo que varias disciplinas artísticas pueden emplear tecnología pero no creo que entren en el marco de lo que nosotros entendemos como artes electrónicas. Por ejemplo, un grupo de tango que hace videos y hace discos no creo que sea un proyecto que use la tecnología en ese proyecto sino que es un medio para difundirlo; un medio de producción. En cambio un grupo de tango que use la electrónica para hacer las composiciones o para generar timbres diferentes o para hacer otro tipo de experimentación sonora usando la tecnología ahí sí creo que entraría en lo que nosotros entendemos como artes electrónicas. No creo que exista un nombre para definirlo porque creo que todas las artes pueden usar la tecnología y es depende cómo se usa.</p>
+
+                    <p class="txt-strong">F.C.: ¿Qué significa hacer arte con ciencia o tecnología sin tener una formación específica en una de esas disciplinas?</p>
+
+                    <p>N.G.: Los artistas que no están formados desde lo tecnológico o lo científico significa que usan la tecnología desde una formación distinta que puede ser prueba y error o experimentar con la tecnología sin tener una formación técnica. Una persona que tenga una formación técnica en esas disciplinas puede que no tenga recursos estéticos, conocimientos del arte para poder llevar a cabo un proyecto o una obra. Me parece que los artistas que no tienen una formación técnica o científica la tienen pero de otra forma que es más de prueba y error, no de estudiar ingeniería cinco años en la facultad.</p>
+
+                    <p class="txt-strong">F.C.: ¿Creés que existe una disciplina propia de las artes que utilizan tecnología?</p>
+
+                    <p>N.G.: No, básicamente porque sino ya la hubieran inventado [risas]. Creo que todas las artes en general pueden utilizar la tecnología como una herramienta, como un modo de registro, como la obra en sí. Me parece que no existe una disciplina… creo que todas las disciplinas artísticas usan de un modo u otro la tecnología, y esto no quiere decir que estén en el ámbito de las artes electrónicas.</p>
+
+                    <p class="txt-strong">F.C.: ¿De qué modo pensás que debería usar la tecnología un artista? (Ayuda: herramienta, en sí, etc)</p>
+
+                    <p>N.G.: Yo la uso y la veo como una herramienta. No quiere decir que así deba ser usada. La creación de un dispositivo tecnológico no lo veo como arte.</p>
+
+                    <p class="txt-strong">F.C.: ¿Qué marco, como modo de entender el mundo, proponen las artes que utilizan tecnología?</p>
+
+                    <p>N.G.: Creo que ese modo de ver el mundo que proponen es depende de cada artista. Creo que no podría catalogarlos a todos. Cayendo un poco en los clichés creo que las artes que usan tecnología o las artes electrónicas construyen una visión del mundo y de la tecnología un poco crítica. Usan la tecnología para criticarla a ella misma, como los dispositivos que no sirven para nada, o mostrar cómo ésta misma nos aliena usando dispositivos como los celulares. Esa puede ser una visión del mundo de ciertos artistas que usan tecnología en sus obras, pero no podría catalogar a todos los artistas electrónicos como que tiene la misma visión del mundo.<span class="endMark">⬛</span></p>
+                    
+                  .col-33.txt-sm.columnaBio.txt-tight.color-texto-claro
+                    .boxBio
+                      p #[strong NAHUEL GALVÁN] es un estudiante de 23 años de la carrera licenciatura en Artes Electrónicas desde el año 2012 hasta la actualidad, estudió en el Conservatorio de Música Juan José Castro de San Isidro desde el año 2003 al 2011, es músico de géneros populares y académicos, tanto clásicos como contemporáneos y experimentales. Participó como becario en las sedes MUNTREF arte y ciencia en Tecnópolis, como diseñador sonoro en proyectos audiovisuales y proyectos independientes en la producción musical.
+                    .boxBio
+                      img(src="img/Fran-H-1.jpg", alt="Franccesca Degoas")
+                      p #[strong FRANCCESCA DEGOAS] cursa la Licenciatura en Artes Electrónicas orientación Sonido – U.N.T.R.E.F desde el año 2011 y, previamente, estudió Diseño de Imagen y Sonido en la U.B.A. Participó en obras de teatro y comedia musical. Le interesa la música, toca la guitarra y compone canciones. Fue parte del equipo de montaje de la muestra del artista francés Christian Boltanski y en el equipo de promoción y organización del evento de “Latin Grammys” junto con la U.N.T.R.E.F. Trabajó en el Museo de Arte y Ciencia de M.U.N.T.R.E.F como guía y como diseñadora gráfica y multimedia. Actualmente, lleva a acabo un proyecto personal publicitario de realización de avisos y jingles.
+      
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug

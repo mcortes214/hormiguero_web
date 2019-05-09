@@ -1,0 +1,130 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro
+      .container.espaciadoVertical
+        .row
+          .col-20
+            include _menuLateral1.pug
+          .col-80
+            .containerContenido
+              //- Posts: NO son un widget; son un "semicomponente" entremezclado con layout (no debería evitar eso?)
+              //- tienen su hoja de estilo propia.
+              .contenido.post
+                .row.encabezadoPost
+                  h1.txt-mgb-25 “ESTAMOS ENTRANDO EN UNA ETAPA DE ARTE POST-ELECTRÓNICO”
+                  p.meta.txt-space.txt-lg Entrevista a Mene Savasta Alsina - Por Franccesca Carrodegoas
+                  +widgetSoundcloud('586358607')
+                .row.row-espaciadoVertical
+                  .col-66.
+                    <p class="meta">Septiembre 2016<p>
+                    <p class="txt-strong">F.C.: ¿Qué diferencia existe entre copia, plagio e interpretación?</p>
+
+                    <p>M.S.: Oh, bueno, se me vienen muchos textos a la cabeza. Creo que el plagio es la figura más legal de las expresiones. La copia, y plagio son lo mismo si fuera una copia literal. A diferencia del plagio que presupone que el autor no revela el hecho de que esté copiando sino que lo hace de mala fe. La copia es un procedimiento de las artes, y en el arte contemporáneo. También se lo llama apropiación, en el que hay un gesto a recurrir a la desconexión de aquello a lo que ese significante o ese texto tenía antes, se lo desconecta para reconectar con algo actual.</p>
+
+                    <p>Creo que todo empieza en Duchamp, como una especie de ejercicio no de copia porque es en la descontextualización pero es un poco eso como el objeto es el mismo pero solo se lo presenta para significar algo nuevo. Y la interpretación imagino que se refería en este sentido a un procedimiento relacional en términos estético también la idea de interpretación, la construcción de sentido por parte de cualquier lector espectador todos interpretamos el mundo todo el tiempo. Pero en términos estéticos la interpretación tiene que ver con las obras que no poseen un original único, que requieren de la interpretación para existir. Ahí se diferencia la figura del autor con la figura del intérprete que es aquel que actualiza ese texto potencial que puede ser por ejemplo una partitura o un texto dramático.</p>
+
+                    <p class="txt-strong">F.C.: ¿Cuál es el límite entre mantener un estilo propio (identidad del artista) y copiarse de uno mismo?</p>
+
+                    <p>M.S.: Copiarse de uno mismo, ¡muy bueno!</p>
+
+                    <p>Cuando el artista se aburre, cuando ya se ve que no es sincero, ahí es cuando uno dice: “ya se esta copiando de sí mismo”. Y si lo pongo en términos personales como artista creo que es esa sensación de estar recurriendo a procedimientos mecánicamente y ya no como el verdadero resultado de una búsqueda, que es ahí donde yo creo que se configura el estilo personal. Uno recurre a cierta forma de trabajar porque son las motivaciones personales y así se construye el estilo. Pero la copia de sí mismo tiene que ver con algo mecánico. Cuando ya no le creés más al que está haciendo lo que está haciendo. Lo hace tan, tan de taquito que ya no le creés que lo esté sintiendo.</p>
+
+                    <p class="txt-strong">F.C.:¿Quiénes son tus referentes para producir obra? O ¿De quién te copiás para producir obra?<p>
+
+                    <p>M.S.: ¡Es lo que les hacemos hacer en las clases!! Jaja.</p>
+
+                    <p>Yo creo que David Lynch, Kate Bush, John Cage que existe en todo, también Laurie Anderson.</p>
+
+                    <p>¿Tengo que decirte en qué aspecto? Bueno, David Lynch me aparece un cosa de poder cruzar algo de la cultura popular con un efecto de extrañamiento que concretamente es como una construcción de atmósferas oníricas. Yo lo asocio con esto, quizás otro lo asocia con otra cosa, que a mi se me escapa. Después, Kate Bush, compositora inglesa de mediados de la década del 70 hasta hoy. Lo que caracteriza su laburo y lo conecto con lo que yo hago es cierto estado de subjetividad. Cierto estado de construcción de un universo personal utilizando, por ejemplo, la armonía y el sistema tonal está al servicio de una cosa más caprichosa y desde el punto de la orquestación, también, desde la organización siempre fue una mina innovadora y yo aspiro a algo así. Justamente cuando ves la carrera, no agotar el recurso, no copiarme de mi misma si no proponer esa proceso de cambio siempre.</p>
+
+                    <p>Bueno, después está el Mono Fontana. El otro día me preguntaron ¿Qué es lo que hacés? ¿Tenés una banda? No, toco sola, hago canciones experimentales, utilizo grabaciones de campo para orquestarme y mucho lenguaje del sinte y procesamiento del sonido electroacústico. ¿y pero cómo suena? ¡Y no sé! Porque no tengo una referencia única. Ahí se me apareció el Mono Fontana que tiene un disco que se llama Ciruelo, para mi es un pilar. De ahí saqué la operación que uso siempre cuando escuché el disco me estaba haciendo la pregunta ¿Dónde estoy cuando sueno? El Mono tiene todas composiciones que son para teclado, con grabaciones de campo. Siempre recuerdo la primera vez que la escuché en Buenos Aires. Yo vivia en La Plata para entonces. La escuché en la casa de mis amigos en San Telmo. Fue un flash porque no podía distinguir qué era el disco y que venía de las ventanas, se fundía. Un día dije: ¡esto es musical, vamos por acá!.</p>
+
+                    <p>Después otra cosa medio pictórica, Debussy. Y el Cuchi Leguizamon, pianista, folclorista que me conecta con algo más terrícola.</p>
+
+                    <p class="txt-strong">F.C.: ¿Cuáles serían los estereotipos y clichés de las artes que utilizan tecnología?</p>
+
+                    <p>M.S.: Creo que el cliché más grande tiene que ver con poner el eje romántico en el mecanismo como si fuera la tecnología que se muestra a sí misma por ser tecnología. Eso incurre en muchísimas obras del arte electrónico. En dejar un poco de lado la metáfora y poner en primer plano el uso de la tecnología. Que en tal punto puede ser interesante pero creo que justamente la nueva generación de artistas electrónicos está laburando sobre eso, está volviendo. Pero te digo algo, para mí estamos entrando en una etapa de arte post electrónico, post arte electrónico. Que incorpora las operaciones que hicieron la generación que incorporan las nuevas tecnologías para hacer obra, esa fue una jugada importante. Darle carácter de obra a algo que circulaba con otra función en el mundo de la ingeniería o la informática. Ponerlas al servicio del arte, pero mucho en el goce de la última tecnología. Yo creo que ahora está siendo más poetizado eso. Siempre hubo artistas como Jim Campbell, su obra es bastante poética, o Carten Nicolau, o Alva Noto, del sound-art. Pero, esa es una cosa que yo veo mucho en FASE, donde tenés un cúmulo de producciones y hay obras que son Disney, que están ahí, no tienen un juego metafórico. Y después hay algo que también es epocal, es una operación muy “dosmilera” o de la segunda década de los 2000, tiene que ver con la ampliación de las interfaces. No se si es un cliché, no lo diría como tal. Investigación en cuanto a que son sistemas abiertos las obras pero no necesariamente haces clics, o no laburás con los periféricos comunes sino que justamente en los Inputs se está innovando un montón. Tiene que ver con los sensores y cómo se plantea el espacio.</p>
+
+                    <p>F.C.: ¿Con lo interactivo?</p>
+
+                    <p>M.S.: La interactividad pero no innovando en el aspecto de Inputs. Aunque, no es un cliché, creo que es algo positivo, que está en evolución.</p>
+
+                    <p>Y un cliché en el que me pongo militante que me parece que igual hay casos que lo van rompiendo. Creo que ya fue la pantalla. Si tenés un proyector iluminá, no sé, utilizalo para más espacio, espacio. No es tan analítico como apasionado lo que te digo.</p>
+
+                    <p class="txt-strong">F.C.: ¿Considerás que existe un nombre para definir todos los tipos de arte que utilizan tecnología? ¿Cuál? (Arte electrónico, Arte Tecnológico, Nuevos Medios, Arte Digital, etc.)</p>
+
+                    <p>M.S.: Creo que todos funcionan, por ejemplo Arte y Tecnología es un término de los finales de los 90, principios de los 2000. Tuvo una vida, en un momento era furor esa categoría, sobre todo Argentina, como lo viví yo, como lo percibí. Después, del 2010 para acá la categoría Arte Electrónico resultó innovar un poco más. También porque habla de segunda generación que tiene que ver con la incorporación de lo Electrónico propiamente, no es solamente arte y nuevas tecnologías como era al principio, que incorporaba la tecnología de punta. Si no como la incorporación de lo low-tech, que eso amplía.</p>
+
+                    <p>Después la categorías digital, me resulta muy extraña. Porque por ejemplo ahora se hizo una carrera en la UNQUI, Licenciatura en Arte Digital y es raro porque la la verdad que con lo digital dejas a fuera lo analógico, lo que no es 0 y 1. Osea, si hacés una video-instalación y usas VHS, no es digital. Es mucho más acotada. Esa sería la categoría que menos satisfacción me produce para englobar todo el arte con tecnología.</p>
+
+                    <p>Igual, me estás haciendo preguntas que son re de mi tema. Así que disculpame que me explaye. Me emociona.</p>
+
+                    <p>F.C.: Buenisimo que te explayes. Son preguntas muy subjetivas.</p>
+
+                    <p>M.S.: Sí son subjetivas, pero también son muy culturales, creo que todo aquello que queda asociado a la categoría genérica de Arte y Tecnología o Arte Electrónico habla también de una circulación de obra, también una separación de la obra. Porque si mirás el arte contemporáneo, tenés un montón de artistas que utilizan tecnología desde los Minimalistas, que utilizaban la luz, hasta por ejemplo una artista que labura con DMX, que es un protocolo de control de la luz, que hace barquitos, pantallitas y no circula en la bienal de Arte y Tecnología; circula en la bienal de Arte Contemporáneo. Lo mismo con Jim Murray que labura con la luz, no lo encontrás en el libros de Arte y Tecnología necesariamente, lo encontrás en el capítulo de minimalismo o de Arte Contemporáneo. Hay mucha obra que utiliza tecnología que no circula bajo ese nombre, por una cuestión de circulación, pero que técnicamente utiliza tecnología.</p>
+
+                    <p class="txt-strong">F.C.: ¿Qué significa hacer arte con ciencia o tecnología sin tener una formación específica en una de esas disciplinas?</p>
+
+                    <p>M.S.: ¡Experimentar! Es eso, experimentar para aprender y sacar alguna conclusión. Aprender de otro modo. Implica a nivel de la figura del artista, que incursiona temas que no son su formación sistemática, como con el tutorial o aprender por el error. Todo eso es fascinante.</p>
+
+                    <p class="txt-strong">F.C.: ¿Creés que existe una disciplina propia de las artes que utilizan tecnología?</p>
+
+                    <p>M.S.: ¿Disciplina? ¿Tipo acostarse temprano y levantarse a la mañana? Jajaja. Yo me acuesto a las 5 de la mañana y me siento una persona disciplinada, solo que vivo de noche.</p>
+
+                    <p>Creo que la cuestión disciplinar nunca alcanza, la disciplina tiene que ver con la consigna que cada artista se proponga. Cierto es que la idea de la disciplina en un momento era muy clara la diferencia entre lo disciplinario y lo transdisciplinario.</p>
+
+                    <p>En un momento los artistas visuales eran o pintor o escultor y hacían toda su carrera comprometida con un lenguaje particular y suponía la adquisición de técnicas específicas. Creo que más que nunca, no define al género Arte Electrónico una única disciplina porque justamente se trata de los caminos particulares por los que se reúnan distintos saberes solapados, interrelacionados.</p>
+
+                    <p class="txt-strong">F.C.: ¿De qué modo pensás que debería usar la tecnología un artista?</p>
+                    
+                    <p>M.S.: La tecnología es un cuchillo, es el pincel, la tecnología es todo. Creo que hasta ahora cuando dimos por supuesto, tecnologías que se enchufan, tecnologías que tienen energía, que son nuestra acción humana, creo que no lo explicitamos pero hasta ahora venimos hablando de eso. Ahora no lo puedo evitar, tengo que decir que todo es tecnología, el lápiz, el papel.</p>
+
+                    <p>Tampoco me quiero ir por la tangente, pero creo que un artista debe utilizar la tecnología para decir algo. Debe decir algo, porque hacer arte, o sea lo que lo va a definir como artista, no implica una forma de hacer necesariamente, pero sí una función discursiva que tiene que ver con un enunciado particular que es diferente al de la ciencia. Ya que el discurso de la ciencia va en busca de lo general, saca la conclusión a partir de los casos puntuales. La cuestión experimental va sacando muestras hasta enunciar algo que pueda explicar un fenómeno, que pueda explicar algo generalmente. En el caso del arte hay un compromiso con el aquí y ahora. Que quizás no hay en otros tipos discursivos tanto, entonces al producir arte, yo creo que la misión es decir algo, y si vas a usar la tecnología, que sea para decir algo, no por el solo hecho de usar la tecnología.</p>
+
+                    <p class="txt-strong">F.C.: ¿Qué marco, como modo de entender el mundo, proponen las artes que utilizan tecnología?</p>
+
+                    <p>M.S.: ¿Qué marco? Qué fuerte esa pregunta, como un marco de madera dorado. ¿Como si fuera una cosmovisión? Medio estilística la pregunta. Sería, qué une a los artistas digitales, que nos permite establecer un tejido entre las distintas obras.</p>
+
+                    <p>Siempre hay ideología, siempre hay cosmovisión. Me pregunto yo si es algo que supera lo que hay, personas que viven cada una en su contexto. No creo que hay una única. Creo que hay rasgos de personas, que se han dedicado a observar la contemporaneidad, su historia, y rasgos. Que con respecto al arte, creo que si hay algo que define mucho al arte y tecnología es la idea de aceptación absoluta de la idea de la obra abierta, de que el autor puede correrse para que los espectadores la terminen a la obra. Que lo traen de otros movimientos estilísticos, y otros géneros como el happening, o las obras procesuales y el arte participativo. Ahora creo que eso lo utiliza mucho el Arte y tecnología, pero también hay obras que son cerradas.</p>
+
+                    <p>También hay algo con la figura del artista, que el artista tecnológico, es un artista que su subjetividad está expandida a la tecnología, a un punto en el cual el imaginario es un poco más subjetivo, no siempre tan romántico o expresionista, como puede ser un poeta con su tecnología de las palabras. Como que la figura del artista tiene que ver con la personalidad. Y en el mundo del arte electrónico hay en algunos una predilección por temas globales o globalizantes. Tipo yo sufriendo contra el mundo, para mi seria interesantísimo, me encantan esas obras que tienen ese grado de romanticismo, utilizando el hardware y software. Creo que ahí hay algún rasgo, como un artista un poco más distanciado de lo que hace.</p>
+
+                    <p>F.C.: Muchos plantean también la idea de criticar el uso de la tecnología.</p>
+
+                    <p>M.S.: Hubo una muestra en Fundación Telefónica en el 2007, se llamaba Negatec, obras que utilizaban tecnología pero para negar una visión tecnofílica, negando la idea de que el mundo va a ser mejor utilizando la tecnología. Y el curador era un tipo que venía del arte contemporáneo. Ahí en Fundación Telefónica, que la idea de arte y tecnología estaba en la puerta prácticamente. Sin embargo en esa curaduría, con ese enfoque, los mismos artistas no eran los que llevan la bandera de lo tecnológico.</p>
+
+                    <p>Cualquier artista puede usar la tecnología, pero hay algo de estos últimos años de tematizar el error. Y lo veo porque Fluxus apareció en el escenario como influencia y una reconexión de esas prácticas que a principios de los 2000 yo no lo veía.<span class="endMark">⬛</span></p>
+                    
+                  .col-33.txt-sm.columnaBio.txt-tight.color-texto-claro
+                    .boxBio
+                      p #[strong MENE SAVASTA ALSINA] es artista sonora, música e historiadora del arte. Investiga y produce en el campo del arte sonoro, realizando instalaciones y performances colectivas e individuales. Realiza sus estudios universitarios en la Facultad de Bellas Artes, UNLP, obteniendo el título de Prof. en Historia de las Artes Visuales (2005). Es docente en la UNLP, en UNTREF y en el IUNA. Actualmente está cursando el Doctorado en Artes en la UNLP. Su trabajo de investigación reflexiona sobre la condición interdisciplinar del arte sonoro en Argentina y Latinoamérica en la contemporaneidad. De esa investigación se desprendió la exhibición Umbrales, espacios del sonido (CC Recoleta, 2015) que la tuvo como curadora.
+                      p Como artista sonora ha exhibido en en Teatro Colón (Bs. As., 2016), CC Recoleta (2015), MACBA (2014), Espacio Fundación Telefónica (2013) Ars Electronica 2013 (Linz, Austria), CCEBA (2005), entre otros.
+                      p Compone y produce música utilizando su voz, sintetizadores y medios electrónicos. En 2015 editó su primer disco solista: “Campo Cercano”. Colaboró en discos y presentaciones en vivo de Fernando Kabusacki, Tomas Jensen (CAN), Gastón Massenzio, Marina Fages y Shaman, entre otros. Forma parte de diversos proyectos musicales, en los que la experimentación e improvisación sonora son esenciales, como Operadora, El Tronador y r353. Es miembro fundador del colectivo artístico MARDER.
+                      p Debido a su experiencia en el diseño de riders técnicos para eventos e instalaciones de arte, en ocasiones trabaja para otros artistas e instituciones.
+                    .boxBio
+                      img(src="img/Fran-H-1.jpg", alt="Franccesca Degoas")
+                      p #[strong FRANCCESCA DEGOAS] cursa la Licenciatura en Artes Electrónicas orientación Sonido – U.N.T.R.E.F desde el año 2011 y, previamente, estudió Diseño de Imagen y Sonido en la U.B.A. Participó en obras de teatro y comedia musical. Le interesa la música, toca la guitarra y compone canciones. Fue parte del equipo de montaje de la muestra del artista francés Christian Boltanski y en el equipo de promoción y organización del evento de “Latin Grammys” junto con la U.N.T.R.E.F. Trabajó en el Museo de Arte y Ciencia de M.U.N.T.R.E.F como guía y como diseñadora gráfica y multimedia. Actualmente, lleva a acabo un proyecto personal publicitario de realización de avisos y jingles.
+        
+      
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug

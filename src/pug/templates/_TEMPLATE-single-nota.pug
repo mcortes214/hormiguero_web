@@ -1,0 +1,49 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro
+      .container.espaciadoVertical
+        .row
+          .col-20
+            include _menuLateral1.pug
+          .col-80
+            .containerContenido
+              //- Posts: NO son un widget; son un "semicomponente" entremezclado con layout (no debería evitar eso?)
+              //- tienen su hoja de estilo propia.
+              .contenido.post
+                .row.encabezadoPost
+                  h1.txt-mgb-25 UN ENCUENTRO CON GABRIEL RUD
+                  p.meta.txt-space.txt-lg Por Micaela Paz
+                .row.row-espaciadoVertical
+                  .col-66.
+
+                    
+                    <span class="endMark">⬛</span>
+                    
+                  .col-33.txt-sm.columnaBio.txt-tight.color-texto-claro
+                    .boxBio
+                      p #[strong NOMBRE] Resto de la bio.
+                      p #[span.txt-strong Web:] #[a.txt-italic(href="http://www.julietaferesin.com/", target="_blank") www.julietaferesin.com]
+        
+      
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug

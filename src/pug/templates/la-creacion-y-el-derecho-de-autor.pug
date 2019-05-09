@@ -1,0 +1,79 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro
+      .container.espaciadoVertical
+        .row
+          .col-20
+            include _menuLateral1.pug
+          .col-80
+            .containerContenido
+              //- Posts: NO son un widget; son un "semicomponente" entremezclado con layout (no debería evitar eso?)
+              //- tienen su hoja de estilo propia.
+              .contenido.post
+                .row.encabezadoPost
+                  h1.txt-mgb-25 UN ENCUENTRO CON GABRIEL RUD
+                  p.meta.txt-space.txt-lg Por Micaela Paz
+                .row.row-espaciadoVertical
+                  .col-66
+                    p Para abordar las diferencias entre los conceptos de #[strong copia], #[strong plagio] e #[strong interpretación] desde una mirada jurídica debemos comenzar por tener presentes los derechos que protege la Constitución Nacional en su art. 17 y la Ley 11.723 de Propiedad Intelectual, como así también los distintos convenios y tratados internacionales firmados por la Argentina y que forman parte de nuestro orden normativo#[sup 1].
+
+                    p Dichas normas protegen la propiedad intelectual de una obra creada por una persona, lo que se conoce como #[strong derecho de autor], por lo cual su creador/a podrá autorizar o impedir determinados usos de la misma.
+
+                    p En nuestro sistema jurídico, al igual que en aquellos países que se organizaron bajo la influencia del Derecho Romano#[sup 2], la protección que ofrece el derecho de autor incluye tanto su aspecto patrimonial como moral. Mientras que el primero le permite a su titular obtener los beneficios económicos que su obra genere, en el segundo la protección se encuentra dirigida a su honor y prestigio.
+
+                    p Esta característica nos permite observar la diferencia con los países organizados jurídicamente bajo el Derecho Anglosajón#[sup 3], en donde el derecho de autor es conocido como copyright, literalmente traducido como derecho de copia. En estos países la protección se centra solamente en los derechos patrimoniales.
+
+                    p Para ejemplificar lo dicho anteriormente, podríamos afirmar que mientras en Argentina el sistema jurídico defiende los intereses del creador (del artista, en definitiva del trabajador), en EEUU la protección se dirige al dueño de la obra (quien representaría en este escenario al actor empresarial).
+
+                    p La principal acción que atentaría contra el derecho de autor es el #[strong plagio]. La misma ocurriría cuando una persona decide copiar obras artísticas, literarias, científicas, culturales, o invenciones, que no le son de su autoría y hacerlas conocer como propias, afectando de esta manera los derechos patrimoniales y morales del autor.
+
+                    p Dicha acción en nuestro sistema legal es identificada como un delito.
+
+                    p La mencionada Ley de Propiedad Intelectual, en su apartado sobre las penas, dice en su art. 71 que #[em “será reprimido con la pena establecida por el artículo 172 del Código Penal, el que de cualquier manera y en cualquier forma defraude los derechos de propiedad intelectual que reconoce esta Ley”. Y el art. 72 agrega “sin perjuicio de la disposición general del artículo precedente, se consideran casos especiales de defraudación y sufrirán la pena que él establece, además del secuestro de la edición ilícita: a) El que edite, venda o reproduzca por cualquier medio o instrumento, una obra inédita o publicada sin autorización de su autor o derechohabientes; b) El que falsifique obras intelectuales, entendiéndose como tal la edición de una obra ya editada, ostentando falsamente el nombre del editor autorizado al efecto; c) El que edite, venda o reproduzca una obra suprimiendo o cambiando el nombre del autor, el título de la misma o alterando dolosamente su texto; d) El que edite o reproduzca mayor número de los ejemplares debidamente autorizados”].
+
+                    p El Código Penal en su libro segundo menciona los delitos contra la propiedad, y allí en el capítulo IV sobre las estafas y otras defraudaciones dice entonces en su art. 172 citado por la ley que #[em “será reprimido con prisión de un mes a seis años, el que defraudare a otro con nombre supuesto, calidad simulada, falsos títulos, influencia mentida, abuso de confianza o aparentando bienes, crédito, comisión, empresa o negociación o valiéndose de cualquier otro ardid o engaño”].
+
+                    p No es requisito que la reproducción de la obra sea exacta, será suficiente para configurar el delito mencionado que ambas obras sean esencialmente idénticas. Es importante tener en cuenta para la instancia creativa de una obra que las temáticas elegidas pueden ser las mismas de otras ya existentes, pero el tratamiento de la nueva debe ser original.
+
+                    p Con respecto a las #[strong interpretaciones] o ejecuciones de actores, cantantes, músicos o bailarines, las mismas forman parte integrante del proceso creativo de las presentaciones que se ofrecen al público. Desde las primeras grabaciones de interpretaciones o ejecuciones, de sonido e imágenes, se ha reconocido siempre que los artistas intérpretes o ejecutantes gozan de una serie de derechos sobre esas grabaciones y tienen entonces la posibilidad de reclamar una participación en los beneficios de la explotación comercial de la obra.
+
+                    p En Argentina, por ejemplo, dentro de la actividad musical se reconoce la existencia del intérprete cuando un músico ejecuta un instrumento o canta en alguna de las canciones que se incluyen en un disco replicado (fabricado profesionalmente). Toda persona que cumpla con este requisito tendrá entonces derecho a percibir una remuneración si ese tema se difunde. Será la sociedad de gestión colectiva que representa los intereses de los intérpretes (AADI, la Asociación Argentina de Intérpretes) quien se encargue de recaudar y distribuir los ingresos generados por la difusión de las obras musicales.
+
+                    p Un cuarto concepto que genera una discusión que atraviesa los conceptos analizados hasta ahora es el #[strong remix]. Este procedimiento creativo se basa en la recombinación de obras preexistentes, usando fragmentos de las mismas para crear una nueva obra: una obra derivada.
+
+                    p En este caso debemos marcar la diferencia con la “inspiración” en la obra de otros artistas, o con las diversas formas de la copia no técnica que se dieron especialmente en la historia de las artes plásticas antes de la aparición de la fotografía, como la copia de los clásicos para estudio u “homenaje” que solían hacer muchos artistas en formación.
+
+                    p Esta nueva obra, denominada #[strong obra derivada], ¿afectaría los derechos de autor de las obras que fueron recombinadas? ¿Sería esta obra original y diferente a las obras que la componen? ¿O podríamos observar una forma encubierta de plagio?
+
+                    p Estos y otros interrogantes que el remix genera cotidianamente producen una tensión sobre los conceptos vinculados con los derechos de autor, que dan lugar a una serie de reclamos que cuestionan los límites, a veces difusos, que las nuevas tecnologías generan.#[span.endMark ⬛]
+
+                    p.txt-sm 1- Decreto-Ley 12088/57: Convención Universal sobre Derecho de Autor; Ley 3192: Tratado Internacional sobre Propiedad Literaria y Artística; Ley 14186: Convención Interamericana sobre el Derecho de Autor, en Obras Literarias, Científicas y Artísticas; Ley 17251: Convenio de Berna para la Protección de las Obras Literarias y Artísticas; Ley 19963: Convención de Berna para la Protección de las Obras Literarias y Artísticas; Ley 22195: Convenio que establece la Organización Mundial de la Propiedad Intelectual; Ley 25140: Aprueba el Convenio de Berna para la Protección de las Obras Literarias y Artísticas, el Tratado de la Organización Mundial de la Propiedad Intelectual \’OMPI\’ sobre Interpretación o Ejecución y Fonogramas y el Tratado de la Organización Mundial de la Propiedad Intelectual, estos dos últimos, abiertos a la firma en Ginebra.
+                    p.txt-sm 2- Países de América Latina, Europa, Asia y África, con la excepción de aquellos mencionados en la nota al pie Nº3.
+                    p.txt-sm 3- EEUU, Inglaterra, Gales, Irlanda, Canadá, Australia, Nueva Zelanda, Hong Kong, India, Malasia, Singapur y Sudáfrica.
+                    
+                  .col-33.txt-sm.columnaBio.txt-tight.color-texto-claro
+                    .boxBio
+                      p #[strong ALBERTO GABRIEL FERNÁNDEZ] es Abogado y Profesor de Ciencias Jurídicas (UBA). Es docente de Managment Artístico IV en la carrera de Producción Musical de la Universidad de Palermo y da clases en el nivel medio. Ejerce la abogacía de manera independiente y es derbakista. Formó parte del grupo de música gitana y tradicional rusa Dovoie Sestri (2010-2016). Es integrante del equipo de trabajo de la revista Danzar Mundos. Opúsculo sobre arte, cuerpo y poéticas cotidianas desde 2012.
+      
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug

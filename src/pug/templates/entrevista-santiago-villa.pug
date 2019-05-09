@@ -1,0 +1,86 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro
+      .container.espaciadoVertical
+        .row
+          .col-20
+            include _menuLateral1.pug
+          .col-80
+            .containerContenido
+              //- Posts: NO son un widget; son un "semicomponente" entremezclado con layout (no debería evitar eso?)
+              //- tienen su hoja de estilo propia.
+              .contenido.post
+                .row.encabezadoPost
+                  h1.txt-mgb-25 “NO SE SI TENGO UN REFERENTE PUNTUAL PARA HACER OBRA”
+                  p.meta.txt-space.txt-lg Entrevista a Santiago Villa - Por Franccesca Carrodegoas
+                  +widgetSoundcloud('586512558')
+                .row.row-espaciadoVertical
+                  .col-66.
+                    <p class="meta">Septiembre 2016<p>
+
+                    <p class="txt-strong">F.C.: ¿Qué diferencia existe entre copia, plagio e interpretación?</p>
+
+                    <p>S.V.: La interpretación es una forma de rehacer una obra pero donde no se obvia al compositor o lo que sea originalmente. Lo haces como una parte, con o sin consentimiento de la persona pero no escondiendo cual es su verdadero origen. El caso del plagio es al revés, cuando vos intentás tomar una idea de otro como propia y que vos sabés que lo estás haciendo de alguna manera adrede. No obstante, pasa que a veces las ideas flotan en determinado momento de la historia y a veces personas sin contacto, sin conocimiento uno del otro, hacen una cosa o trabajan en los mismo, o uno mismo tiene ideas y después se entera que otra persona lo hizo mucho tiempo antes, pero no lo hace con mala intención. Y a veces, el plagio puede llevar a, sobre todo con artistas reconocidos que muchas veces trabajan y pueden llegar a tener mucha repercusión; que después hacen una canción y todo el mundo le dice que es un plagio, que pasó desde los Beatles a Charly García, eso que los tipos hacen una canción quizá inconscientemente o sin conocer, que se parece a otra y obviamente con la cantidad de discos que venden alguien termina descubriendo y lo acusan de plagio. No siempre es un plagio adrede, a veces sucede que simplemente pasó. Y la copia creo que es algo más propio de propio de nuestros tiempos y de la tecnología, digamoslo en este caso, al servicio del arte; pero la tecnología en sí. Por que copiar algo es tratar de replicarlo lo más fielmente posible aunque no sea la pieza original exactamente. Entonces la copia, como nosotros la entendemos, está más ligada a una cuestión tecnológica me parece.</p>
+
+                    <p class="txt-strong">F.C.: ¿Cuál es el límite entre mantener el estilo propio (la identidad del artista) y copiarse de uno mismo?</p>
+
+                    <p>S.V.: Creo que cuando uno empieza, muchas veces el éxito ligado al dinero, puede ser que uno encuentre una fórmula para trabajar que sabe que funciona en un determinado ámbito, con determinado tipo de personas; se acostumbra a eso y lo que hace es repetir un mismo mecanismo porque sabe que funciona bien. Es el caso, por ejemplo, de los cazadores de concursos que saben que hay un concurso tal, averiguan cual es el jurado, saben a partir de esos que palabras clave decir, y a partir de eso que tipo de obra generar. O el caso del circuito de las galerías, que vos sabés que tipo de obra se mueve en el mercado, que tipo de obra van a buscar, de qué manera posicionarte, y sabés que ciertas cosas venden más que otras o llaman más la atención que otras, entonces vos dejás de mirar con un leguaje propio y empezás a tomar eso como un mecanismo que funciona bien en un determinado ámbito.</p>
+
+                    <p class="txt-strong">F.C.: ¿Quiénes son tus referentes para producir obra (pueden o no ser del campo del Arte) o de quién te copiás para producir obra?</p>
+
+                    <p>S.V.: No sé si tengo un referente puntual para hacer obra. Como músico, desde la música puedo hablar de Los Beatles o la música popular, hasta Chopin o Debussy o Eric Satie; como que depende. No sé, no creo que tenga un referente puntual, yo creo que como dijo Picasso: “ladrón es que le roba a uno y genio es el que roba a muchos”.</p>
+
+                    <p class="txt-strong">F.C.: ¿Cuáles serían los estereotipos y clichés de las Artes que utilizan Tecnología?</p>
+
+                    <p>S.V.: La interactividad, para mí eso es lo que funciona a nivel popular: la interacción. Entonces creo que siempre se cae en ese cliché, porque la obra cae en una especie de juego y no en un lenguaje o algo. Que no significa que todas las obras interactivas sean malas; no digo eso, sino que es el cliché.</p>
+
+                    <p class="txt-strong">F.C.: ¿Considerás que existe un nombre para definir todos los tipos de arte que utilizan tecnología?</p>
+
+                    <p>S.V.: A mí me gusta utilizar el término de “artes y nuevas tecnologías” o “artes y nuevos medios”. Es el que más utilizó yo, porque me parece más genérico porque “arte digital” se refiere a un tipo de tecnología puramente y “nuevos medios” me refiere más a una cuestión que no necesariamente está implicada con nueva tecnología, sino con medios de información, etc. Y “arte tecnológico” también es relativo porque aunque el término tecnológico es algo que existe desde el siglo XX pero vos podés decir que el piano de alguna forma es un tipo de tecnología. Entonces yo creo que “artes y nuevas tecnololgías” se entiende como que es una tecnología pero “arte tecnológico” no sé si se utiliza para definir lo que se hacía con un Theremin en los años ’20.</p>
+
+                    <p>F.C.: ¿Qué significa hacer arte con ciencia o tecnología sin tener una formación específica en una de esas disciplinas?</p>
+
+                    <p>S.V.: Creo que obviamente te da mucha más libertad a la hora de pensar ciertos conceptos que cuando uno los estudia de una manera académica, por lo menos acá y en el sistema universitario, todo intenta volcarse a una línea y pensar de una determinada manera; y que saber algo es saber hacer algo y que tener un título significa haber aprobado una determinada cantidad de materias y que no necesariamente significa que sepas algo de algo. Ves una porción de las cosas y se supone que eso mágicamente, cuando terminás una carrera, esas 30 o 40 materias que hiciste de repente todo te hace sinapsis y te convertís en una especie de “Ingeniero en algo”. Entonces creo que entenderlo desde el punto de vista de las artes te permite tomar distintos conceptos de distintas tangentes y cruzarlos de una forma u otra y sobre todo entender que hoy que hay tanta democratización de la información uno puede aprender determinados temas para resolver determinados problemas y no necesariamente convertirse en un Ingeniero en Electrónica para poder hacer, no sé, un sintetizador. Si vos querés hacer un sintetizador podés abordarlo desde otro lado.</p>
+
+                    <p class="txt-strong">F.C.: ¿Creés que existe una disciplina propia de las artes que utilizan tecnología?</p>
+
+                    <p>S.V.: Yo creo que existen desde el punto de vista, es como los géneros y la música que existen desde el punto del estudio pero que en la práctica es parte de un todo, o sea, vos podés decir que existen géneros en la música, podés decir que existe la música clásica, la música contemporánea, pero no es que los músicos dijeron “bueno a partir de hoy empezamos a hacer música contemporánea y todo lo que se hizo antes del 24 de junio de tal era tal”. No, simplemente como objeto de estudios hay representantes que se los considera parte de ese paradigma, y después hay millones de grises. Creo que en las artes con la tecnología pasa lo mismo, hay referentes y claros ejemplos de cosas que sí son, pero después el 99% de las cosas son todos grises que se mantienen ahí.</p>
+
+                    <p class="txt-strong">F.C.: ¿De qué modo pensás que debería usar la tecnología un artista?</p>
+
+                    <p>S.V.: Eso para mí, sigo pensando siempre lo mismo: tiene que usarla del modo que quiera, siempre y cuando entienda que para el artista la tecnología es un medio. Pero después, de la forma que se le antoje. Esa es la idea de que sea una obra de arte.</p>
+
+                    <p class="txt-strong">F.C.: ¿Qué marco, como modo de entender el mundo, proponen las artes que utilizan tecnología?</p>
+
+                    <p>S.V.: Yo creo que el arte que trabaja con nuevos medios y la tecnología, comienza a entender a la tecnología ya no como parte de algo externo al ser humano, sino como una forma de pensar. Una cosa es la persona que nació en los años 70 y que a la mitad de su vida irrumpió la computadora y luego apareció Internet, que la persona que nació, no sé, el año que viene ya van a estar terminando el secundario personas que nacieron en el año 2000 y que fueron concebidos directamente en la era de Internet y la computación, y creo que más allá de la herramienta en sí y del uso, creo que modifica la manera de pensar de las personas: obviamente el flujo de información, por supuesto todo lo ligado a las interfaces y demás. Entonces, el arte que utiliza los nuevos medios lo plantea, o ese sería quizá mi deseo también, como parte de una nueva manera de pensar del nuevo hombre. No el nuevo hombre en el sentido fascista sino como el hombre del futuro.<span class="endMark">⬛</span></p>
+                    
+                  .col-33.txt-sm.columnaBio.txt-tight.color-texto-claro
+                    .boxBio
+                      p #[strong SANTIAGO VILLA] (Buenos Aires – 1983) Licenciado en Artes Electrónicas, técnico en electrónica, músico, compositor e investigador, Profesor adjunto de las cátedras de Tecnología Musical I y II y coordinador adjunto de la Licenciatura en Artes Electrónicas de la Universidad Nacional de Tres de Febrero. Ha sido becado en el Instituto de Música Electroacústica de Bourges (IMEB) por medio de la UNESCO y ha realizado varias obras premiadas en instancias nacionales e internacionales, trabajando ademas junto a videastas de renombre y desarrollándose también en diferentes disciplinas artísticas dentro del arte y las nuevas tecnologías.
+                    .boxBio
+                      img(src="img/Fran-H-1.jpg", alt="Franccesca Degoas")
+                      p #[strong FRANCCESCA DEGOAS] cursa la Licenciatura en Artes Electrónicas orientación Sonido – U.N.T.R.E.F desde el año 2011 y, previamente, estudió Diseño de Imagen y Sonido en la U.B.A. Participó en obras de teatro y comedia musical. Le interesa la música, toca la guitarra y compone canciones. Fue parte del equipo de montaje de la muestra del artista francés Christian Boltanski y en el equipo de promoción y organización del evento de “Latin Grammys” junto con la U.N.T.R.E.F. Trabajó en el Museo de Arte y Ciencia de M.U.N.T.R.E.F como guía y como diseñadora gráfica y multimedia. Actualmente, lleva a acabo un proyecto personal publicitario de realización de avisos y jingles.
+        
+      
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug

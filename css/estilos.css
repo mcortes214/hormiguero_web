@@ -128,6 +128,15 @@ strong {
   font-weight: bold;
 }
 
+em {
+  font-style: italic;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 0.7em;
+}
+
 h1 {
   font-size: 2.9375rem;
   text-transform: uppercase;
@@ -411,6 +420,10 @@ h2 {
 }
 
 .post iframe {
+  margin-bottom: 25px;
+}
+.post img {
+  width: 100%;
   margin-bottom: 25px;
 }
 .post .columnaBio {

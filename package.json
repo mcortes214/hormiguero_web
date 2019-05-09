@@ -22,7 +22,7 @@
     "watch-n-geometria": "pug -P -w src/pug/templates/poesia-y-geometria-en-busca-de-la-transdisciplinariedad.pug -o .",
     "watch-n-observar": "pug -P -w src/pug/templates/observar-experimentar-y-conocerse-a-uno-mismo.pug -o .",
     "watch-n-encuentro": "pug -P -w src/pug/templates/un-encuentro-con-gabriel-rud.pug -o .",
-    "watch-e-sorrentino": "pug -P -w src/pug/templates/entrevista.pug -o .",
+    "watch-e-sorrentino": "pug -P -w src/pug/templates/entrevista-juan-s.pug -o .",
     "watch-e-dario": "pug -P -w src/pug/templates/entrevista-dario-sacco.pug -o .",
     "watch-e-elena": "pug -P -w src/pug/templates/entrevista-elena-laplana.pug -o .",
     "watch-e-eveytania": "pug -P -w src/pug/templates/entrevista-evelyn-camacho-tania-gonzalez.pug -o .",

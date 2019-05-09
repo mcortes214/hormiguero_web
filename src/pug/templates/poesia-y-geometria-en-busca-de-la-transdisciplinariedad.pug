@@ -1,0 +1,77 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro
+      .container.espaciadoVertical
+        .row
+          .col-20
+            include _menuLateral1.pug
+          .col-80
+            .containerContenido
+              //- Posts: NO son un widget; son un "semicomponente" entremezclado con layout (no debería evitar eso?)
+              //- tienen su hoja de estilo propia.
+              .contenido.post
+                .row.encabezadoPost
+                  h1.txt-mgb-25 POESÍA Y GEOMETRÍA EN BUSCA DE LA TRANSDISCIPLINARIEDAD
+                  p.meta.txt-space.txt-lg Escrito por Patricia Susana Landau
+                .row.row-espaciadoVertical
+                  .col-66
+                    p #[strong l.] Se hace camino al andar: El tema de este artículo para la revista “Hormiguero”, colectivo de creación, es el debate del conocimiento y sus vasos comunicantes. Por lo tanto, se propone una recorrida que iniciaremos con el abordaje de algo de historia singular hasta llegar a la transdisciplinariedad de los conocimientos y sus vicisitudes. En este punto, aquí, en algunas pocas reflexiones, nos aproximaremos con algunos primeros recuerdos para la construcción de este conocimiento. En este sentido, será el objetivo que se emprenda en este camino -a partir de la pregunta “¿cómo estamos caminando por el conocimiento en este mundo?”. Dos, ¿es posible abrirnos en múltiples senderos para transitar juntos, sin prejuicios por nuestra cultura y nuestra educación?
+
+                    p Entonces, hechas estas aclaraciones, ¡manos a la obra!
+
+                    p Empecemos con otras preguntas: ¿Qué es un hormiguero? ¿Y por qué lo vamos a relacionar con el poeta Antonio Machado, allí que se musicalizó en “Caminante no hay camino, se hace camino al andar?” En el inicio de la puesta, en esta obra, se presentará a una señorita maestra que nos cuenta la primera lección, tal vez en primer grado, y nos relata cómo es la vida del hormiguero, que las hormigas trabajan y mucho para vivir en esta vida. Pero diferencian a las cigarras, las artistas que cantan. Unas, viven y se organizan y, porque trabajan pueden comer, y las otras; son artistas, poetas, tocan música y cantan, pero en el invierno se mueren de frío y hambre. Esta separación se construye en el relato de las fábulas, en un contexto y está dado con un fin.
+
+                    p En el segundo acto de esta historia, también observaremos, generalmente entre tercer y sexto grado, que la señorita maestra a la que le gusta separar hormigas de cigarras, nos separa otra vez; en dos. No solo, distingue en mujeres y varones, sino también a los buenos en lenguaje oral y escrito, y a los buenos en matemáticas y geometrías. ¡Otra vez el agua y el aceite que no se juntan! Otra vez se vuelven a establecer las diferencias, se distinguen habilidades y capacidades. O sea, que desde los tiempos remotos, en la cultura occidental, desde los griegos a nuestros días, separan la poesía y la geometría. Aprendimos y repetimos sin preguntar, reproducimos sin interpelar porque fuimos expulsadas del paraíso, ¿por qué? por preguntar y querer comer de la manzana del conocimiento y de la vida.
+
+                    p En esta introducción, en esta breve y sintética puesta en escena, en la obra, se quiere exponer en algunas pinceladas, cómo vamos y pasamos de la educación primaria a la secundaria y a la terciaria. Por supuesto, que en toda obra se suceden muchísimas otras cosas, actividades y experiencias, por supuesto que lo singular y fuera de campo superará a la amalgama masificada, pero he aquí, muy brevemente, tan solo algunos hechos puntuales, de lo que nos sucedió en el camino del conocimiento y de la vida a la gran mayoría.
+
+                    p Corolario introductorio, con más preguntas que respuestas. ¿Es así?¿Estamos asistiendo a una institución escolar que se parece a un ropero enorme, lleno de cajones, que se abren y se cierran?
+
+                    p ¿Son los contenidos como productos, cuyo fin es una nota, una evaluación, impartidos por los profesores que entran y salen por horarios? ¿Y, qué en este procedimiento se ficha al estilo de una fábrica? Pero, en estos días, y con varios educadores, teóricos y artistas que cuestionaron estas edificaciones de siglos, teorías alienadas de los contenidos fragmentados y de los aprendizajes disociados, es necesario seguir y seguir pensando. Seguir en el fascinante trabajo de construir el ojo de la época y seguir desarmando y armando los conocimientos adquiridos.
+
+                    p #[strong II.] Desarrollo del tema: Todo pasa y todo queda, lo nuestro es pasar haciendo caminos. Letras y canciones se unen para cantarnos otras verdades y para cuestionar el saber escolarizado y de compartimentos estancos. El saber escolar deja afuera los espacios y los tiempos de la vida lúdica, del aprender a aprender. Nos enseñan en función de la funcionalidad, hay que pasar por cada grado, cumplir con los contenidos mínimos. Obviamente, en este pasaje, los caminos de la vida no son lo que yo pensaba. Pasamos de un lado a otro, de un grado a otro, de un colegio a otro y no sabemos ¿qué queremos?, ¿qué nos gusta?, y otra pregunta que nos surge, ¿para qué nos apuramos? ¿y a dónde corremos como saltimbanquis de materia en materia?, y rápidamente nos olvidamos de todo, todo lo que memorizamos sin sentido, sin poesía y sin significación.
+
+                    p Otra vez, estamos frente a la disyuntiva entre los actores principales -los estudiantes que zafan- y por aquellos, para los cuales es importante el estudiar y logran transferir los saberes adquiridos, por los vasos comunicantes del conocimiento. Ahora bien, no todos pueden hacer este pasaje significativo de la transdisciplinariedad de forma automática y autónoma. No porque no lo quieran, sino porque el sistema no lo permite. El sistema tiene sus condicionantes y hay que estar por los bordes, intentando no caernos para lograr estos equilibrios. Al hacer estas distinciones del aprendizaje, a fin de cuentas también es una crítica a las dificultades que se presentan para acordar los cambios de fondo, y no de maquillajes. De acuerdo con los aprendizajes significativos, y por el camino de la construcción de un conocimiento, de los conocimientos que son huellas del pensamiento, por el conocimiento y la vida. El amor al conocimiento como una elección de la vida.
+
+                    p En este caso estamos en el grupo de aquellos estudiantes que, a pesar del sistema mismo, trascienden con sus miradas, sus preguntas y sus observaciones al mismo sistema escolar en cualquiera de sus tres niveles, y la gran inversión de años, de largos años de trayectoria poco amorosa y satisfactoria por la pasión de aprender aprendiendo.
+
+                    p #[strong lll.] Para ir cerrando esta primera presentación y transferencia de conocimientos para sensibilizarnos de la integración entre la poesía y la geometría. Algo que se fue y se perdió en otro tiempo. Algo que está en la historia y se abandonó.
+
+                    p “La vida es una moneda… Ojo que hablo de monedas y no de gruesos billetes.”
+
+                    p Sigamos avanzando por el camino del conocimiento de la integración de los conocimientos, porque se hace camino presente al andar. Las transformaciones son necesarias por el camino de la vida, del andar y en ese camino, animarse a desarmar lo dado y ponerlo en cuestión.
+
+                    p Estas son acciones y prácticas sociales. Estas son las que hacen posible llegar al momento actual de cuestionamientos a nuestros logros en el sistema educativo y, que nos permite pensar en la transdisciplinariedad para las organizaciones educativas. Las dudas se producen a partir de las pujas de interés y de los conflictos mundiales, que ya hace algunos años se vienen generando y -hoy en gran escala-, son de fuertes debates políticos, económicos, sociales, culturales y legales que ingresaron en la transparencia absoluta, de la educación como mercancía.
+
+                    p No, la educación no debe aceptar convertirse en una mercadería de cambio.
+
+                    p La educación no es una mercancía, no es el producto de una fábrica de personas. La educación es la poesía y la geometría, las matemáticas y las lenguas en todas sus expresiones creadas por los seres humanos, seres sociales, seres comunitarios. La transdisciplinariedad en la educación está más viva que nunca. Arte, ciencia, tecnología y filosofía está en nuestro foco, es el objeto de la educación un objeto multidimensional complejo para un mundo que sea capaz del amor al conocimiento y la pasión por la vida.<span class="endMark">⬛</span>
+                    
+                  .col-33.txt-sm.columnaBio.txt-tight.color-texto-claro
+                    .boxBio
+                      p #[strong PATRICIA SUSANA LANDAU] Profesora e investigadora universitaria. Docente de maestría, posgrado y grado orientada a la convergencia de los medios en la producción, circulación y recepción de las realizaciones audiovisuales a nivel nacional e internacional. Tiene un amplio recorrido en la docencia en todos los niveles educativos y sus objetivo están en los campos de la educación, la cultura y la comunicación. Viene desarrollando tareas profesionales culturales y educativas en radio, cine, teatro, televisión e internet. Sigue en continuo trabajo en fundaciones, asociaciones y organismos- ONG y OG. como UNICEF, Fundación Kine, el INCAA y la UBA, entre otras.
+                      p #[span.txt-strong Web:] #[a.txt-italic(href="http://www.convergenciamultimedial.com/", target="_blank") www.convergenciamultimedial.com]
+        
+      
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug
