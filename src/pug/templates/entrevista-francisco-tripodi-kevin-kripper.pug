@@ -1,0 +1,153 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro
+      .container.espaciadoVertical
+        .row
+          .col-20
+            include _menuLateral1.pug
+          .col-80
+            .containerContenido
+              //- Posts: NO son un widget; son un "semicomponente" entremezclado con layout (no debería evitar eso?)
+              //- tienen su hoja de estilo propia.
+              .contenido.post
+                .row.encabezadoPost
+                  h1.txt-mgb-25 “LAS ARTES ELECTRÓNICAS ESTÁN TENDIENDO A SER DISEÑO MÁS QUE ARTE”
+                  p.meta.txt-space.txt-lg Entrevista a Francisco Trípodi y Kevin Kripper - Por Guadalupe Álvarez
+                  +widgetSoundcloud('586517889')
+                .row.row-espaciadoVertical
+                  .col-66.
+                    <p class="meta">Septiembre 2016<p>
+                    <p class="txt-strong">G.A.:¿Qué diferencia existe entre copia, plagio e interpretación?</p>
+
+                    <p>F.T.A: Y… bueno, una copia es algo que…</p>
+
+                    <p>K.K.: Es más como una réplica.</p>
+
+                    <p>F.T.A: Claro, como que es igual o intenta ser igual y no le importa que se sepa que es igual, que es una copia, ¿no?</p>
+
+                    <p>K.K.: Un plagio es lo mismo pero que, si se entiende que es una copia, realmente va a estar todo mal.</p>
+
+                    <p>F.T.A: Claro, ahí pasa a ser un plagio y deja de ser un… ¿cuál era la última?</p>
+
+                    <p>G.A.: Interpretación.</p>
+
+                    <p>F.T.A: No, bueno interpretación no…</p>
+
+                    <p>K.K.:¿Interpretación?</p>
+
+                    <p>F.T.A: …pero deja de ser el supuesto original. Y la interpretación es…</p>
+
+                    <p>K.K.: No sé si tiene que ver mucho con las otras dos.</p>
+
+                    <p>F.T.A:¡Sí! Bueno, depende cómo lo mires pero puede llegar a ser como un “basado en”. Como una copia con un poco de tu idea.</p>
+
+                    <p>K.K.: Si, agregás algo tuyo a eso que ya existe. Organizás algo desde tu propia perspectiva.</p>
+
+                    <p>F.T.A: Si, basado en una referencia.</p>
+
+                    <p class="txt-strong">G.A.:¿Cuál es el límite entre mantener un estilo propio (identidad del artista) y copiarse de uno mismo?</p>
+
+                    <p>K.K.: Copiarse de uno mismo es eso, es hacer más o menos siempre lo mismo… es como cuando los escritores encuentran una fórmula y la repiten para seguir vendiendo. Y la otra, mantener un estilo propio, es más como un camino que vos vas armando. Te vas re-interpretando.</p>
+
+                    <p>F.T.A: Sí, es más como que tenés una idea o una ideología o lo que sea y vas siempre tomando diferentes puntos de vista de eso mismo; ahí no te estás pisando, estás simplemente haciendo…</p>
+
+                    <p>K.K.: No, claro. Estás haciendo un recorrido; armás un recorrido. Lo otro, copiarse de uno mismo, es: encontraste la fórmula y lo vas a copiar hasta que ya no vendas más.</p>
+
+                    <p>F.T.A: Como las películas de Hollywood.</p>
+
+                    <p>K.K.: Claro.</p>
+
+                    <p class="txt-strong">G.A.:¿Quiénes son sus referentes para producir obra? O ¿De quién/quiénes se copian para producir obra?</p>
+
+                    <p>F.T.A: A mí me gusta mucho Gieskes1 de la movida electrónica. Últimamente, estoy siguiéndolo mucho porque me parece que produce cosas muy interesantes con elementos muy básicos y sencillos de la electrónica. Es un gran referente, me interesa mucho. Después, en lo musical escucho mucho Aphex Twin, Richard D. James2 es un gran referente para mí.</p>
+
+                    <p>K.K.: Yo, si tuviese que decir [mis referentes] diría Andrew Benson3 que es también programador y trabaja mucho haciendo algoritmos que simulan errores. Otro que me interesa bastante es Kyle McDonald4 que también es programador pero trabaja más con redes neurales y cosas que yo no trabajo ni creo que vaya a trabajar, pero todas sus investigaciones siempre las sigo y las leo porque está siempre en lo último que se está haciendo en las artes con nuevos medios.</p>
+
+                    <p class="txt-strong">G.A.:¿Cuáles serían los estereotipos y clichés de las artes que utilizan tecnología?</p>
+
+                    <p>K.K.: La Kinect.</p>
+
+                    <p>F.T.A: Las obras de conciencia naturalista, que por ahí no logran reflexionar sobre el medio.</p>
+
+                    <p>K.K.: Si claro, eso, obras que usan la tecnología pero que no logran reflexionar sobre el medio. Ves instalaciones de supuestamente “arte y tecnología” y lo único que hay es una Kinect que está haciendo un mini traqueo. Ya no hay que ser un súper hacker para conseguir eso, te bajás librerías y medio que lo hace solo y el resultado final que vos ves es… no es nada estético siquiera. Pero bueno, hay una Kinect funcionando y todos se vuelven locos con eso.</p>
+
+                    <p>F.T.A: Claro, es como algo meramente visual y nada de reflexión detrás; medio vacío en algún punto.</p>
+
+                    <p>K.K.: Si, para mí es eso. Es trabajar de repente con tecnología re pesada pero finalmente no hay resultado que te habilite a vos a reflexionar sobre el medio, cómo impacta la tecnología en la sociedad actual, ese tipo de cosas.</p>
+
+                    <p>F.T.A: Y también, para mí, lo interactivo en algún punto; lo interactivo meramente por ser interactivo es siempre muy directo.</p>
+
+                    <p>K.K.: No es sutil la interactividad en ese sentido.</p>
+
+                    <p>F.T.A: Es como que vas, te das cuenta, sacás lo que está pasando, haces la inversa en tu cabeza de lo que está haciendo la obra más o menos y listo. A menos que te haga reflexionar sobre eso, sobre ese proceso, pero no he visto muchas obras así, [que sean] interactivas.</p>
+
+                    <p>K.K.: Sí, es eso, como que las artes electrónicas están medio tendiendo a ser diseño más que arte.</p>
+
+                    <p>F.T.A: Medio mercantilista.</p>
+
+                    <p>K.K.: Diseño multimedial, cosas interactivas que apuntan a la mera recreación o el mero “usamos mucha tecnología porque esto está de moda y vende” pero sin que sea necesario quizás.</p>
+
+                    <p class="txt-strong">G.A.:¿Consideran que existe un nombre para definir todos los tipo de arte que utilizan tecnología?</p>
+
+                    <p>K.K.: “Arte con Nuevos Medios” para mí. Pero es muy difícil la línea. Para mí el “Arte con Nuevos Medios” es todo aquél arte que utiliza tecnología, sea realmente nuevo medio actual o nuevo medio de otra época, pero que reflexiona sobre ese medio. Sea de la época que sea. Si vos hacés arte con tecnología de los ochenta pero estás reflexionando sobre el dispositivo de los ochenta que estás usando, para mí eso es “Arte con Nuevos Medios” aunque ya no sea un medio nuevo.</p>
+
+                    <p>F.T.A: Claro, pierde su carácter temporal la palabra, pero se entiende igual.</p>
+
+                    <p>K.K.: Claro, una rama del arte contemporáneo es los nuevos medios. Lo único que lo diferencia de las demás es que hay una reflexión sobre el dispositivo tecnológico que usás. Porque sino termina siendo arte contemporáneo que usa tecnología.</p>
+
+                    <p class="txt-strong">G.A.:¿Qué significa hacer arte con ciencia o tecnología sin tener una formación específica en una de esas disciplinas?</p>
+
+                    <p>K.K.: Yo siento que no hace falta ser un neurocientífico o un científico para hacer esto. Hay muchos artistas electrónicos, como por ejemplo Leonardo Solaas5 que estudió Filosofía. Toda su carrera como filósofo o estudiante de Filosofía lo lleva después a poder hacer una reflexión bastante profunda o medianamente profunda sobre los medios tecnológicos que después utiliza él. No es un científico pero puede hacer una reflexión, más pesada quizás que un científico, sobre cómo la tecnología influye en…</p>
+
+                    <p>F.T.A: Claro, toma la tecnología desde otro lado y no la usa solamente como una herramienta sino como un medio; como algo sobre lo que se puede reflexionar.</p>
+
+                    <p class="txt-strong">G.A.:¿Creés que existe una disciplina propia de las artes que utilizan tecnología?</p>
+
+                    <p>K.K.: Creo que la que usa tecnología [y se constituyó como disciplina] es el arte interactivo. Igualmente, es donde prima más la tecnología y no tanto el arte.</p>
+
+                    <p class="txt-strong">G.A.:¿Qué marco, como modo de entender el mundo, proponen las artes que utilizan tecnología?</p>
+
+                    <p>K.K.: Creo que la tecnología unificó el mundo.</p>
+
+                    <p>F.T.A: Es un marco bastante amplio, puede ser social, puede ser tecnológico, puede ser científico…</p>
+
+                    <p>K.K.: No sé, mis redes por ejemplo, personas con las que comparto muchas cosas relacionadas con el arte, funcionan a través de internet. Más allá de la facu (facultad) y personas con las que estudio, después existen otras personas que quizás no las puedo ver y la única manera de comunicarme con ellos es a través de la tecnología. No sé si eso contesta la pregunta.</p>
+
+                    <p>F.T.A: No, pero es un dato. Es que me parece que igual es difícil establecer un marco en cualquier disciplina pero en las tecnológicas más aún porque como es más ambiguo, ahora y a lo largo de la historia, es todavía más difícil. Cuando la tecnología sea una cosa más inherente todavía… aunque ya lo es en algún punto.</p>
+
+                    <p>K.K.: El mundo está dentro de un momento dado donde la tecnología nos atraviesa absolutamente en todo. Entonces, reflexionar acerca de eso hace que se establezca un marco [de las artes que usan tecnología]. Hay gente reflexionando sobre cómo la tecnología… Como pasó en los ’60, que salió la tele y los artistas empezaron a reflexionar acerca de cómo impactaba esta nueva tecnología en la vida cotidiana. Creo que ese es más o menos el marco que ofrecen las artes electrónicas.</p>
+
+                    <p>F.T.A: Si hay que ponerle una palabra, el marco, sería lo social, pero no se acaba ahí es más amplio que eso.<span class="endMark">⬛</span></p>
+                    
+                  .col-33.txt-sm.columnaBio.txt-tight.color-texto-claro
+                    .boxBio
+                      p #[strong KEVIN KRIPPER Y FRANCISCO TRÍPODI ARLEY] son un dúo de artistas audiovisuales formado en el año 2015 que desarrollan presentaciones en vivo en base a la fusión de ambientes sonoros generados con electrónica analógica y proyecciones de imágenes creadas a partir de computación gráfica audio-reactiva. Se presentaron como grupo en el MAMBA dentro del festival Escuchar, en el Centro Cultural San Martin dentro la muestra +CODE en el marco del Festival Noviembre Electrónico, en el Espacio Pla en el cierre de la Bienal Wrong, en el Festival Enlaces y en distintos centros culturales como Espacio Cultural Mi Casa y Casa Abasto. Ambos son estudiantes de la Licenciatura en Artes Electrónicas; con orientación en Sonido, en el caso de Francisco; y en Imagen, en el de Kevin.
+                      p Individualmente, Francisco participó junto a Esteban Sehinkman en el ciclo Aleaciones en el Centro Nacional de la Música y la Danza y desde 2014 brinda talleres de armado de módulos de sintetizadores y pedales de efectos en el Laboratorio de Artes Electrónicas junto a Santiago Villa, con quien además trabaja desarrollando instrumentos modulares en el proyecto Sistemas Modulares Núcleo. Kevin, por su parte, presentó en el año 2015 su obra “Deconstrucento” en el Festival Noviembre Electrónico y en el Palais de Glace, en el marco del Premio Itaú de Artes Visuales, donde fue galardonada con el primer premio. En 2016, fue finalista de la segunda edición del Premio UNTREF a las Artes Electrónicas con su obra “Reconstruyendo Zerseher” exhibida en el Muntref Artes Visuales.
+
+                    .boxBio
+                      img(src="img/Guada-H-1.jpg", alt="Guadalupe Álvarez")
+                      p #[strong GUADALUPE ÁLVAREZ] es estudiante de la Licenciatura en Artes Electrónicas con orientación en Imagen – U.N.T.R.E.F. Como formación complementaria realizó el curso de “Efectos visuales para cine y video”, el seminario “Producción y Montaje de exhibiciones de arte plástico” en la U.N.T.R.E.F y, el curso “Iluminación teatral” en la U.N.S.A.M. Participó en la muestra colectiva WIP’14 en el c.h.e.L.A, en el Festival Enlaces 2015 y en el Encuentro de Arte, Ciencia y Tecnología. FASE 7.
+        
+      
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug

@@ -1,0 +1,87 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro
+      .container.espaciadoVertical
+        .row
+          .col-20
+            include _menuLateral1.pug
+          .col-80
+            .containerContenido
+              //- Posts: NO son un widget; son un "semicomponente" entremezclado con layout (no debería evitar eso?)
+              //- tienen su hoja de estilo propia.
+              .contenido.post
+                .row.encabezadoPost
+                  h1.txt-mgb-25 “UNO A VECES NATURALIZA LA IDEA DE LOS ACCESOS TECNOLÓGICOS”
+                  p.meta.txt-space.txt-lg Entrevista a Juan Pablo Pérez - Por Franccesca Carrodegoas
+                  +widgetSoundcloud('586512576')
+                .row.row-espaciadoVertical
+                  .col-66.
+                    <p class="meta">Septiembre 2016<p>
+                    <p class="txt-strong">F.C.: ¿Qué diferencia existe entre copia, plagio e interpretación?</p>
+
+                    <p>J.P.P.: Bueno, obviamente es bastante subjetivo, pero la copia tiene que ver con… por lo menos yo, pienso en la copia en términos de apropiación ¿no? retomar o resignificar algunos elementos de una pieza, de una obra, de una imagen. Muy distinto a la idea de plagio, en cuanto que en general se da la idea de utilizar la misma base/estructura/forma/imagen en su totalidad como similar, como mímesis si se quiere, y que el plagio implica un cambio de autoría, asumir una autoría a partir de algo que ya ha hecho otro. Eso como un modo de pensar una posible diferencia. Y después la interpretación… bueno… me parece que la interpretación todavía tiene mayor libertad, ¿no? Porque no necesariamente tiene que remitir a un código del lenguaje, a algo visual. Digo, uno puede tomar un concepto de la interpretación de una obra o de una pieza, y llevarlo hacia otro modo de expresarlo; en mi campo, en el caso de lo que yo trabajo, desde lo visual. Y quizás no tenga nada que ver, o no nos remite inmediatamente, a esa obra de la cual pudo haber sido tomada. O esa pieza, o esa imagen, o esa forma.</p>
+
+                    <p class="txt-strong">F.C.: ¿Cuál es el límite entre mantener el estilo propio (la identidad del artista) y copiarse de uno mismo?</p>
+
+                    <p>J.P.P.: Yo creo que el estilo propio, o las marcas, las huellas, la impronta de un artista en términos de lo subjetivo, se ven también en las recurrencias de la obra, ¿no? Digo… el problema es cuando eso se piensa de manera sistemática y se piensa a priori. Me parece que eso uno lo puede ver, podríamos decir, a lo largo del tiempo y en un proceso más extenso de trabajo. Donde por más que uno utilice la copia, o utilice elementos interpretativos apropiándose de la producción de otros artistas, en el sentido que uno pueda configurar a partir de ciertas transformaciones o modificaciones o alteraciones de otras imágenes u otras experiencias, en la medida en que yo voy construyendo una nueva dinámica en proceso, a lo largo del tiempo se pueden percibir las continuidades, las recurrencias, los elementos que se van reiterando y se van repitiendo y que quizás le van imprimiendo un sentido unificador a la producción de un artista, que uno lo pueda pensar como un “estilo”, o una identificación específica, que uno ya reconoce en determinado artista.</p>
+
+                    <p class="txt-strong">F.C.: ¿Quiénes son tus referentes para producir obra (pueden o no ser del campo del arte) o de quién te copiás para producir obra?</p>
+
+                    <p>J.P.P.: En realidad, no es que tome una idea de copia… sí, me parece, la inspiración de ideas, de pensar los conceptos o las ideas de la relación entre el arte y la vida, ¿no? Digo, pensar ciertas nociones de lo ritual, en mi caso de lo popular que me interesa, tanto para pensar el arte del siglo XIX a la cual me avoco en algunos aspectos, pensando ciertas iconografías de lo popular, pensando ciertas características de lo ritual, cuando un arte es pensado, o una experiencia estética es pensada por fuera de las coordenadas del arte en la lógica del arte burgués occidental. Entonces ahí lo ritual se me viene más como esta experiencia de lo colectivo, de lo comunitario que capaz que lo puedo pensar a través del activismo artístico. Acciones que implican trabajar en la calle, trabajar interdisciplinariamente, colectivamente y desde distintas líneas y perspectivas, como puede ser las últimas experiencias que hicimos con el San Martín Cartonero, que, por ahí está en YouTube el videito de esa experiencia que fue bien interesante, para pensar una coyuntura política, un contexto determinado, y bueno, determinados personajes que interpelan la realidad con formas, con gráfica, con distintas propuestas que uno va tomando. Y bueno, ahí orígenes se puede encontrar como siempre en las vanguardias, los dadá y de ahí en adelante, experiencias también de los 60′. Como que no lo reconozco en una única unidad de sentido o un personaje o una obra en particular, sino que en algún punto son capas y capas de propuestas que se ponen en juego, pero pensando estas coordenadas, ¿no? De una acción colectiva, o de propuestas rituales por fuera de la lógica del arte.</p>
+
+                    <p class="txt-strong">F.C.: ¿Cuáles serían los estereotipos y clichés de las artes que utilizan tecnología?</p>
+
+                    <p>J.P.P.: Yo creo que el cliché es la cuestión de lo interactivo. Esta idea de pensar en los dispositivos que producen efectos interactivos que sorprenden a la hora de ver cómo un cuerpo puede ejecutar o disparar o producir determinados efectos inesperados, en una ambientación, en una instalación. Me parece que eso ya hoy es un cliché. Me parece que en ese sentido, que uno lo puede pensar como cliché, también se descansa en la argucia de la tecnología. Sería bueno trasladar, como a tiempos pasados, cuáles eran las tecnologías y cómo se pensaba la relación técnica con respecto a la construcción de sentido, porque en el fondo, digo, más allá de los usos tecnológicos, que uno lo pueda pensar para el cine, lo pueda pensar para el teatro, para la música, para las artes visuales, o para la danza, digo… me parece que tiene que haber una búsqueda de sentido más allá de esas resoluciones técnicas en los distintos tiempos que uno pueda pensar la producción artística.</p>
+
+                    <p class="txt-strong">F.C.: ¿Consideras que existe un nombre para definir todos los tipos de Arte que utilizan tecnología?</p>
+
+                    <p>J.P.P.: Si, yo creo que Arte Tecnológico sería como una generalidad, ¿no? Después uno podría pensar en algunas especificidades, como arte para determinados medios, o arte electrónico, o arte para la web. Digo, no es un medio que yo domine o maneje, pero me parece que lo tecnológico sería como una categoría o un concepto amplio que cobija varias de esas vertientes, y me parece que lo interesante también sería poder pensar desde lo tecnológico también nuevos conceptos y nuevas categorías más allá de las definiciones específicas en cuanto al soporte, o al dispositivo. Me parece que también es válido pensarlo desde ese lugar.</p>
+
+                    <p class="txt-strong">F.C.: ¿Qué significa hacer Arte con ciencia o tecnología sin tener una formación específica en una de esas disciplinas?</p>
+
+                    <p>J.P.P.: (Risas) Capaz que me repito un poco, pero me parece que no se debe descansar en la ciencia o en la técnica o en lo tecnológico, a la hora de pensar lo artístico. Me parece que es un medio, es una herramienta, es un dispositivo, pero así como podemos pensar que el cuerpo es un dispositivo, que el espacio también, que un pincel o un grafito también son dispositivos, que pueden mediar sentidos o producir efectos o generar alguna transformación. Entonces me parece que ahí uno le puede quitar también esa carga totalizadora que tiene lo tecnológico, como si con eso fuera suficiente.</p>
+
+                    <p class="txt-strong">F.C.: ¿Crees que existe una disciplina propia de las Artes que utilizan tecnología?</p>
+
+                    <p>J.P.P.: Sí porque bueno, marcan registro a partir del dispositivo tecnológico, o sea… no sé, Luis Felipe Noé llama a todo pintura, sea una instalación, sea una performance, sea una ambientación, o un dibujo, ¿no? Digo, una performance también es una pintura en su configuración. Pero me parece que sí adquiere una dimensión de lenguaje propio, en términos disciplinarios, seguro.</p>
+
+                    <p class="txt-strong">F.C.: ¿De qué modo pensás que debería usar la tecnología un artista?</p>
+
+                    <p>J.P.P.: No se si pensarlo como un modo, en cuanto al procedimiento. Me parece que está bueno que en lo procedimental se pueda trabajar y ejecutar, hasta que algo se defina. Podríamos ir objetualmente a una obra a partir de lo tecnológico. Me parece que siempre se tiene que ir un poquito más allá, intentando como generar un sentido, más allá de la mediación tecnológica que a veces cae en estos clichés que planteábamos al principio, que pueda ser un poco redundante. Y me parece que es válido el ejercicio de pensar la tecnología en el pasado. Digo, qué herramientas tenía un artista en el siglo XVI, o en el siglo XVIII, o en el siglo XIX, para pensarlo también como dispositivo tecnológico, y si simplemente el óleo era justificativo de una obra de arte, porque era una pintura al óleo, ¿no? Qué pasaba con la imagen más allá que fuese un óleo. Entonces, a veces esas analogías están buenas como para intentar pensar el uso de lo tecnológico para producir obra.</p>
+
+                    <p class="txt-strong">F.C.: ¿Qué marco, como modo de entender el mundo, proponen las Artes que utilizan tecnología?</p>
+
+                    <p>J.P.P.: Bueno ahí hay un marco… ahí uno podría salirle fuertemente al cruce a los marcos teóricos que no ponen en discusión el lugar de dominio, de asimetrías, de relaciones de poder que constituyen el despliegue de lo tecnológico. Esto lo planteaba Julio Le Parc en los años 60′, él decía: “Bueno, yo hago un arte tercermundista porque mi tecnología responde a los mecanismos, a los motores, a los elementos cinéticos”, con los que yo puedo dar cuenta que ha sido una estética de la pobreza, podríamos decir, frente a países desarrollados que puedan utilizar tecnología de punta. Entonces me parece que ahí sí uno encuentra asimetrías que implican las propias lógicas de desarrollo del sistema del arte y sus disputas de poder. Entonces no es menor repensar el lenguaje o los dispositivos tecnológicos a la hora de construir sentidos y conformar identidades, o por lo menos no ser inocentes, sino tomar conciencia de desde dónde provienen esos dispositivos tecnológicos para intentar por lo menos pensar un giro, una transformación, una modificación a conciencia de con qué elementos estoy manipulando la realidad. Si no, entramos en esa máxima de que todos somos democráticos, todos participamos de este mundo de manera equilibrada, de manera simétrica, y todos somos ciudadanos del mundo y utilizamos la tecnología por igual, un alemán, un japonés, un asiático, un africano o un latinoamericano… y me parece que no es así, entonces está bueno como poder pensar la perspectiva ideológica con la que se instrumentan estos elementos, básicamente porque los modelos hegemónicos actuales de la producción transnacional de comunicación a partir de la tecnología esgrimen posiciones de poder, entonces ahí uno está atravesado por su potencial tecnológico en término de comunicación transnacional y bueno, uno me parece que no puede ser inocente frente a eso. Cómo manipulo esa tecnología para pensar un arte y construir identidades, es una discusión válida. Uno a veces naturaliza la idea de los accesos tecnológicos.<span class="endMark">⬛</span></p>
+                    
+                  .col-33.txt-sm.columnaBio.txt-tight.color-texto-claro
+                    .boxBio
+                      p #[strong JUAN PABLO PÉREZ] Licenciado en Artes con orientación en Artes Plásticas (Facultad de Filosofía y Letras-UBA) y Profesor Nacional de Escultura (Escuela Nacional de Bellas Artes Prilidiano Pueyrredón-IUNA). Actualmente, se desempeña como docente de Arte e Historia del Arte en distintas universidades e instituciones: UBA, UNTREF, UNA, IES Nº1-2, PEP Nº2.
+                      p Fue becario de investigación en Artes Plásticas por el Fondo Nacional de las Artes (2007 y 2015). Desde el año 2010 es Coordinador y Curador del Departamento de Ideas Visuales del Centro Cultural de la Cooperación Floreal Gorini.
+                      p Durante el año 2012, desarrolló una serie de trabajos experimentales con tipografías junto a Mercedes Fidanza y María Inés Afonso Esteves. En el año 2014 realizó una intervención en la calle, con afiches tipográficos: “Sarmiento y/o San Martín” pensar la historia (del arte). Recientemente participó de la Acción urbana performática “El peso de la Memoria” en Homenaje a los artistas conceptuales de la Plaza Roberto Arlt (1972-2015).
+                    .boxBio
+                      img(src="img/Fran-H-1.jpg", alt="Franccesca Degoas")
+                      p #[strong FRANCCESCA DEGOAS] cursa la Licenciatura en Artes Electrónicas orientación Sonido – U.N.T.R.E.F desde el año 2011 y, previamente, estudió Diseño de Imagen y Sonido en la U.B.A. Participó en obras de teatro y comedia musical. Le interesa la música, toca la guitarra y compone canciones. Fue parte del equipo de montaje de la muestra del artista francés Christian Boltanski y en el equipo de promoción y organización del evento de “Latin Grammys” junto con la U.N.T.R.E.F. Trabajó en el Museo de Arte y Ciencia de M.U.N.T.R.E.F como guía y como diseñadora gráfica y multimedia. Actualmente, lleva a acabo un proyecto personal publicitario de realización de avisos y jingles.
+        
+      
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug

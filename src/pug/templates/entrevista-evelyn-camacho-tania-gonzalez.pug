@@ -1,0 +1,139 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro
+      .container.espaciadoVertical
+        .row
+          .col-20
+            include _menuLateral1.pug
+          .col-80
+            .containerContenido
+              //- Posts: NO son un widget; son un "semicomponente" entremezclado con layout (no debería evitar eso?)
+              //- tienen su hoja de estilo propia.
+              .contenido.post
+                .row.encabezadoPost
+                  h1.txt-mgb-25 “EL ESTEREOTIPO DE ARTISTA VAGO YA FUE. HOY EN DÍA, EL ARTISTA TIENE QUE SER UN NERD”
+                  p.meta.txt-space.txt-lg Entrevista a Evelyn Camacho y Tania González - Por Guadalupe Álvarez
+                .row.row-espaciadoVertical
+                  .col-66.
+                    <p class="meta">Septiembre 2016<p>
+                    
+                    <p class="txt-strong">G.A.: ¿Qué diferencia existe entre copia, plagio e interpretación?</p>
+
+                    <p>E.C.: Para mí, copia y plagio van muy ligados.</p>
+
+                    <p>T.G.: La diferencia, creo yo, entre copia y plagio -por más que suenan muy parecidas- es que la copia no tiene la intención de copiarlo completamente como la puede tener el plagio. Yo creo que en el plagio sí. Vos estás tomando una obra completa de otra persona, quizás le ponés su mismo nombre (el nombre de la obra), pero la firmás con tu nombre de artista. Eso, me parece, es lo que lo diferencia de la copia. Porque vos podés copiar una obra, pero quizás no te estás apropiando conceptualmente de esa obra, como sí lo hacés en el plagio. El plagio es algo mucho más específico. Y la interpretación me parece que, de estas tres definiciones, es la más blanda. Vos podés interpretar la obra de cierto artista demostrando otra cosa, pero siempre hablando y tomando de referente a ese artista. Pero bueno, eso también es una decisión de cómo uno encara su obra y si decidís o te interesa a vos trabajar con una interpretación o robarte la obra completa, como lo podés hacer con el plagio.</p>
+
+                    <p>E.C.: Si, ahora robarte una obra completa es bastante fácil.</p>
+
+                    <p>T.G.: Si, es algo que pasa...</p>
+
+                    <p>E.C.: Pero también la interpretación… la diferencia también… en algún momento debe de estar cruzado con la copia y el plagio. Depende mucho de la persona cómo lo tome. Plagio suena mucho a robar.</p>
+
+                    <p>T.G.: Para mí plagio suena a eso, como que te apropiás de una idea, de una estética…como que te apropiás de la idea de otra persona.</p>
+
+                    <p class="txt-strong">G.A.: ¿Cuál es el límite entre mantener el estilo propio (la identidad del artista) y copiarse de uno mismo?</p>
+
+                    <p>T.G.: Y, eso pasa mucho por la honestidad que cada uno tiene con uno mismo porque uno siendo artista sabe cuál es su límite y sabe el potencial que tiene. Pero ahí entra en juego la honestidad porque uno siempre es crítico de uno mismo. Entonces, si vos ya sabés que podés lograr una obra que a cierto público le atraiga y, realmente, esa estrategia no te gustó pero funcionó con el público y vos lo seguís haciendo y lo repetís, lo repetís, creo que ahí te estás traicionando a vos mismo porque como artista no te sentís completo con tu obra. En ese sentido creo que uno como artista tiene que ser honesto con uno mismo y sentirse pleno siempre, con todo lo que haga. Uno siempre es crítico, es su propia crítica todo el tiempo. Y existe esa dualidad: uno es público y artista a la vez. Y nosotros somos nuestro primer público, entonces es extraño eso de copiarse a uno mismo.</p>
+
+                    <p>E.C.: Si, tiene que ver con quedarse en la zona de confort. De ir siempre repitiendo una misma estrategia de estructura, de montaje, los mismo recursos… También vimos varios artistas que utilizan siempre los mismos recursos, siempre con la misma modalidad. [A Tania] No entiendo mucho eso de la honestidad que decís.</p>
+
+                    <p>T.G.: Yo lo hablo más que nada desde un punto… Con mis dibujos, por ejemplo, me doy cuenta cuando un dibujo me completa a mí y me gusta, pero capaz viene mi vieja y me dice “¡Ay qué lindo!”. Y no, no es lindo. Pero porque yo siento que a mí no me termina de completar. A eso es a lo que voy. Y quizás a mi mamá le re gustó y ella lo encuadraría y lo pondría ahí exhibiéndolo en la sala de mi casa y yo entraría a mi casa y me daría vergüenza que eso esté exhibido ahí, pero porque yo siento que eso no me representa a mí, que no me completó. El artista tiene que ser honesto consigo mismo todo el tiempo. Y eso es algo de lo que habla Kandinsky en “Sobre lo espiritual en el arte”. La ley de necesidad interior es eso. La obra del artista siento que se completa, cuando él se siente identificado con esa obra. Sino no tendría sentido la obra en sí. Pero esa es la relación que yo encuentro entre obra de arte y artista. Uno siente después, en el encuentro con una obra, el amor que el artista transmitió al hacerla. Eso se siente. A eso me refiero con este tema de la honestidad.</p>
+
+                    <p class="txt-strong">G.A.: ¿Quiénes son sus referentes para producir obra (pueden o no ser del campo del arte) o de quién se copian para producir obra?</p>
+
+                    <p>T.G.: Mi gran referente va a ser siempre Velázquez, porque puedo estar siete horas mirando una obra suya. No sé, mirando “Las meninas” (1656) puedo estar muchísimo tiempo porque siempre redescubro cosas nuevas ahí. Él fue mi referente durante toda mi adolescencia. Lo que pasa es que tengo muchos referentes que son de artes visuales pero de artes electrónicas no tengo tanto. Me gusta mucho la producción de un artista argentino que se llama Ricardo Celma [<a href="http://ricardocelma.blogspot.com.ar/">http://ricardocelma.blogspot.com.ar/</a>]. Es pintor y trata de fusionar, todo el tiempo, lo cotidiano con cosas contemporáneas que no tienen nada que ver en una situación de obra terminada de pintura. Por ejemplo, retrató a una mina hermosa, super realista, muy detallista, muy delicada y de repente pone un muñequito de Puka. Esos son como detalles que me parecen súper ricos porque a uno lo descolocan dentro de esa estética tan hermosa. ¿Qué hace una Puka ahí tan bien dibujada y tan perfecta? ¿Qué relación tiene? Y eso me parece que está buenísimo porque uno ya se pregunta algo con eso. Y eso tranquilamente lo podemos llevar a cualquier obra electrónica. El salirse de lo tradicional y buscar un quiebre, mismo en este soporte tan clásico como lo es la pintura, que hoy en día muy pocas personas… bueno todavía hay personas que se interesan por eso, pero es como lo más básico dentro de las artes. Entonces, buscar el quiebre me parece que está bueno.</p>
+
+                    <p>E.C.: Yo, como referentes, a veces uso la literatura. Específicamente de la literatura de terror, de ficción… Después descubrí en la carrera algunos de animación como [Norman] McLaren, o artistas abstractos que utilizan esa modalidad. A mí me gustaron mucho.</p>
+
+                    <p>G.A.: Y de literatura ¿quiénes?, si tuvieras que nombrar a algunos.</p>
+
+                    <p>E.C.: Maupassant, Boudelaire, Edgar Allan Poe… Y del ámbito local: Cortázar, Benedetti… más Benedetti ¡Me encanta!</p>
+
+                    <p class="txt-strong">G.A.: ¿Cuáles serían los estereotipos y clichés de las artes que utilizan tecnología?</p>
+
+                    <p>T.G.: Estereotipo clásico es usar un proyector, hacer un video… editar un video, proyector, pared.</p>
+
+                    <p>E.C.: Pared. Sí, totalmente. La video-instalación.</p>
+
+                    <p>T.G.: Y eso fue mi video-instalación ayer [En la presentación de un trabajo en una de las materias]. Eso me parece que es un cliché; es muy fácil caer ahí.</p>
+
+                    <p>E.C.: Sí, se repite mucho eso. Es como la salida más práctica agarrar un proyector y disparar imágenes a la pared.</p>
+
+                    <p>T.G.: Sí, también me parece que algo muy típico de las artes electrónicas es quedarse con algo que fascine a nivel imagen, o no, al revés. Te fascina el lado conceptual y quizás vos ves la obra y no tiene nada que ver con lo que te dice o con lo que te vendió el título. Y eso me parece que es una falla en la que también es fácil caer. Siempre buscar la salida fácil. Eso es un gran cliché.</p>
+
+                    <p class="txt-strong">G.A.: ¿Consideran que existe un nombre para definir todos los tipos de arte que utilizan tecnología?</p>
+
+                    <p>T.G.: Yo lo englobo dentro de las Artes en general. Me gusta hablar sobre “las artes” en vez de hablar de “el arte” porque todo está ligado a una historia que viene a través de los años y fuimos evolucionando a esto, que está buenísimo, y que sigue conviviendo con las demás artes. Es algo quizás muy nuevo, no debe tener más de 100 años lo que hacemos.</p>
+
+                    <p>E.C.: Sí, es verdad.</p>
+
+                    <p>T.G.: Menos. Y en vez de tratar de buscar su propia definición, tiene que seguir evolucionando y fusionarse con las demás artes hasta generar la misma huella que provocaron las primeras.</p>
+
+                    <p>E.C.: Pero igual, en esa misma evolución se fueron desplazando algunas cosas y vinieron cosas nuevas. Las nuevas tecnologías, la digital [por ejemplo] ya fue acaparando todo lo analógico. Si bien se desprendió y está también incluido, al evolucionar, también se desplazaron. Hay ahora menos obras que usan televisores, toda la parte analógica, todo lo que vimos que existió: los proyectores, la cinta de video, se fueron desplazando.</p>
+
+                    <p class="txt-strong">G.A.: ¿Qué significa hacer arte con ciencia o tecnología sin tener una formación específica en una de esas disciplinas?</p>
+
+                    <p>T.G.: Es un desafío. Para mí es todo un desafío todo el tiempo. Yo vengo de trabajar mucho con materiales con los que ya me siento cómoda trabajando porque los entiendo y sé cómo moldearlos, por ejemplo el dibujo o hacer cosas más relacionadas con la plástica en general. Entonces, cada vez que me enfrento con obras acá, en los talleres de la facultad, es siempre un desafío. Tengo muchos límites técnicos, muchos límites de conocimiento en ciertas ciencias, en el hardware, en electrónica. Me vuelvo loca cada vez que tengo que tocar algo de ahí. Pero bueno, son cosas que lo llevan a uno a estudiar otros campos. Eso me parece que está bueno, esa multiplicidad. Ciertos diálogos que existen entre diferentes campos que uno trata de fusionar para llegar a materializar su idea. Para mí es eso: Es un desafío y siempre va a ser un desafío. Pero por esta limitación técnica y de conocimiento. Uno tampoco puede ser técnico electrónico, saber de programación y…</p>
+
+                    <p>E.C.: Sí, uno también se limita porque tiene la idea en la mente y por ahí es bastante volada.</p>
+
+                    <p>T.G.: Sí, vos podés terminar de concretar una buena idea pero después empezás a chocarte con la realidad de que…</p>
+
+                    <p>E.C.: De que necesitás cierto conocimiento para aplicarla y volverla física.</p>
+
+                    <p>T.G.: Sí, entonces te pasa eso: chocás con cosas técnicas que vos no preveías quizás -como que necesitás un soporte de proyector para el techo para hacer tu obra y a qué distancia debería estar para que la imagen sea la que quiero- Es ahí en donde uno se pone en el lugar del técnico y tiene que sacar medidas, averiguar cómo hacer esto o aquello. Es un desafío.</p>
+
+                    <p>E.C.: Sí, a mí me toco una situación similar cuando monté en un taller. Tenía que saber cuestiones de óptica porque yo sabía cuál quería que sea el resultado de lo que ya estaba en movimiento. Entonces tuve que leer un libro de todas las obras que se hicieron de Arte Óptico o Cinético para poder entender primero, el concepto de lo que yo quería hacer y, recién después, traerlo a la idea y a la obra que yo quería hacer.</p>
+
+                    <p>T.G.: Sí, aparte pasa eso también. Hay tanta obra hecha en este campo que es tan nuevo, que es muy difícil llegar a hacer una obra sin caer en un error conceptual o de historia. Hoy en día, el artista tiene que saber, estudiar y conocer todos sus antecedentes dentro de la historia del arte, porque sino caemos en un error fatal. Y esa es una de las falencias de las artes hoy en día. Ese rol de artista vago, ya fue. Hoy en día, el artista tiene que ser un nerd, me parece. Ya sea en dibujo, en escultura… tiene que ser un nerd en todo lo que hace. Tiene que sentir pasión por seguir descubriendo cosas nuevas y redescubrirse él mismo en lo viejo. Es un desafío, de nuevo, el rol del artista. Y es un cliché también, esa imagen del artista bohemio al que “le caen ideas”.</p>
+
+                    <p class="txt-strong">G.A.: ¿Creen que existe una disciplina propia de las artes que utilizan tecnología?</p>
+
+                    <p>T.G.: No, yo creo que no.</p>
+
+                    <p>E.C.: Tampoco.</p>
+
+                    <p>T.G.: No porque excede.</p>
+
+                    <p class="txt-strong">G.A.: ¿De qué modo piensan que debería usar la tecnología un artista?</p>
+
+                    <p>E.C.: Para mí, depende de cada uno y de lo que quiera trabajar. Hoy en día, hay artistas que, por ejemplo, siguen usando tecnología analógica y escapan a la comodidad de lo digital.</p>
+
+                    <p>T.G.: Yo creo que la tiene que explotar porque, si bien hoy en día estamos invadidos de tecnología, estamos tan contaminados de cosas digitales y publicidades, que yo creo que es ahí en donde el artista debe buscar el modo de tomarlo como propio y explotarlo. Ahí, daríamos un giro al consumo de obras de arte. Un consumo que no sea exclusivo de la exhibición en museos, sino que pueda ser algo cotidiano. Que un artista tome como propia la tecnología, estaría bueno en ese sentido. De esta forma, el público, puede sentir que la tecnología también puede ser arte.</p>
+
+                    <p class="txt-strong">G.A.:¿Qué marco, como modo de entender el mundo, proponen las artes que utilizan tecnología?</p>
+
+                    <p>T.G.: Yo creo que el marco que proponen es salirse de la rutina diaria y de toda la contaminación visual que tenemos constantemente. Yo creo que las artes proponen salirse de esa cotidianidad, de la utilización de tecnología cotidiana y buscar algo diferente, un encuentro más humano con esa tecnología y no tan mecánico como lo tenemos ahora.</p>
+
+                    <p>E.C.: No, yo no creo que tenga un marco definido.<span class="endMark">⬛</span></p>                    
+    
+                  .col-33.txt-sm.columnaBio.txt-tight.color-texto-claro
+                    .boxBio
+                      p #[strong EVELYN CAMACHO Y TANIA GONZÁLEZ] son estudiantes de la Licenciatura en Artes Electrónicas con orientación en imagen de la U.N.T.R.E.F. desde el año 2013. Ambas, presentan un interés por la producción audiovisual -principalmente ligada al dibujo, a la animación digital y tradicional, y al video-, pero sin ser ésta una definición estática de sus trabajos. Tania asistió a la Escuela de Bellas Artes “Rogelio Yrurtia”, en donde, además de sus primeras experiencias en su formación artística, participó en exhibiciones organizadas por la misma institución. Evelyn participó en la edición 2015 del Festival Enlaces junto a la cátedra de Animación Digital, mostrando un trabajo colaborativo desarrollado por toda la cátedra. En relación a su formación profesional, trabajaron juntas como guías de sala en el MUNTREF Arte y Ciencia que se encuentra en el predio de Tecnópolis y en el MUNTREF Centro de Arte Contemporáneo Sede Hotel de Inmigrantes.
+                    .boxBio
+                      img(src="img/Guada-H-1.jpg", alt="Guadalupe Álvarez")
+                      p #[strong GUADALUPE ÁLVAREZ] es estudiante de la Licenciatura en Artes Electrónicas con orientación en Imagen – U.N.T.R.E.F. Como formación complementaria realizó el curso de “Efectos visuales para cine y video”, el seminario “Producción y Montaje de exhibiciones de arte plástico” en la U.N.T.R.E.F y, el curso “Iluminación teatral” en la U.N.S.A.M. Participó en la muestra colectiva WIP’14 en el c.h.e.L.A, en el Festival Enlaces 2015 y en el Encuentro de Arte, Ciencia y Tecnología. FASE 7.
+        
+      
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug

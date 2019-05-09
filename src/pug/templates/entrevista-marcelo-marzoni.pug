@@ -1,0 +1,128 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro
+      .container.espaciadoVertical
+        .row
+          .col-20
+            include _menuLateral1.pug
+          .col-80
+            .containerContenido
+              //- Posts: NO son un widget; son un "semicomponente" entremezclado con layout (no debería evitar eso?)
+              //- tienen su hoja de estilo propia.
+              .contenido.post
+                .row.encabezadoPost
+                  h1.txt-mgb-25 “LA TECNOLOGÍA TENDRÍA QUE SER UN MEDIO DE EXPRESIÓN, NO UN FIN EN SÍ MISMO”
+                  p.meta.txt-space.txt-lg Entrevista a Marcelo Marzoni- Por Franccesca Carrodegoas y Maximiliano Cortés
+                  +widgetSoundcloud('586512573')
+                .row.row-espaciadoVertical
+                  .col-66.
+                    <p class="meta">Septiembre 2016<p>
+                    <p class="txt-strong">F.C.: ¿Qué diferencia existe entre copia, plagio e interpretación?</p>
+
+                    <p>M.M.: En realidad, en el mundo del arte, esos términos se confunden mucho, digo ¿no?,  porque hay gente que se inspira en una obra y eso no es plagio digamos sino es una inspiración. Plagio sería copiar una obra tal cual como es; pero, hoy en el arte existe como la copia o la inspiración digo, yo… me acuerdo una obra de Lozano-Hemmer que está inspirada en una obra de Olafur Eliasson que es el sol. Una es una proyección que se hizo en la TATE y la otra es un volumen y en el resultado tienen similitudes pero son inspiraciones. Es más, Lozano-Hemmer la pone como inspiración la obra de Olafur. Digo, no se, son términos medio…</p>
+
+                    <p>F.C.: ¿Como lo mismo?</p>
+
+                    <p>M.M.: No, como que en realidad no son como antes uno pensaba el plagio o la copia, hoy puede ser un valor artístico.</p>
+
+                    <p class="txt-strong">F.C.: ¿Cuál es el límite entre mantener el estilo propio (la identidad del artista) y copiarse de uno mismo?</p>
+
+                    <p>M.M.: Y… es un punto difícil para los artistas resolverlo porque también hay muchos artistas que descubren un formato muy interesante de hacer obras que después lo lleva a un lugar que es muy difícil cambiar. Me parece como que eso rápidamente uno lo ve, digo porque ves cómo en varios años transcurridos de un mismo artista ves como esa obra evoluciona y digo no es… uno se da cuenta… El tema es cuando a veces los artistas toman decisiones drásticas y cambian rotundamente digo como… a veces está bueno el artista que decide cambiar lo que era su estilo. Porque también digo eso tiene que ver, no solamente en las artes electrónicas, en el arte en general tiene que ver con el comercio. Entonces el comercio es como que la gente, o los coleccionistas, compran obras de ciertos artistas porque les gusta ese estilo entonces a los artistas les cuesta cambiar ese estilo porque saben que es, que les puede producir una venta. Para mi no hay que atarse a eso fundamentalmente.</p>
+
+                    <p class="txt-strong">F.C.: ¿Quiénes son tus referentes para producir obra (pueden o no ser del campo del Arte) o de quién te copiás para producir obra?</p>
+
+                    <p>M.M.: Bueno, yo no produzco obras pero, en realidad, me gusta ver museos y me gusta ver muestras que estén bien montadas. En el sistema de lo que sería mi trabajo que es desde el montaje hasta el diseño de una muestra. Como referentes es difícil porque son cosas mucho más genéricas no es que uno se… digo, me acordaría de alguna última muestra que vi una de Thomas Demand por ejemplo que es un artista y curador y, nada, me sorprendió como iba utilizando el montaje y el montaje era una narración de lo que el quería contar. No se, había distintos tipos de iluminación, durlock a la vista sin terminar o sea, colores, toda una serie de cosas prácticas que el usaba para poder contar una historia digo no, que era su curaduría.</p>
+
+                    <p class="txt-strong">F.C.: ¿Cuáles serían los estereotipos y clichés de las artes que utilizan tecnología?</p>
+
+                    <p>M.M.: Y, creo que hay mucho ¿no? O sea, pensar que toda obra tenga que que tener interactividad, digo no. Es una decisión difícil porque en general acá estamos en un… digo, es difícil pensar que uno… para mi la tecnología tendría que ser un medio de expresión, no un fin en sí mismo. Uno a veces, yo muchas veces dando alguna charla o algunas veces que hemos dado montajes abiertos y mostrando cómo es el proceso de un trabajo tecnológico, mucha gente piensa como al revés: “uy, me gustaría saber Arduino y qué puedo hacer con Arduino”, y me parece que el concepto es al revés, decir bueno, generar ideas y de esas ideas ver si uno necesita recurrir a un sistema tecnológico o electrónico o como quieras llamarle pero a veces no es necesario. O sea, uno en estas clases o en esta universidad (U.N.T.R.E.F) tiende a ese lugar porque bueno, es la carrera en si misma digamos pero me parece que eso es en si mismo un cliché: pensar que a partir de la tecnología uno hace obra, uno hace obra y después ve qué tecnología es necesaria para esa obra. Ese sería para mi el trabajo más… digo como… y creo que la interactividad es un estereotipo hoy en día porque en general uno quiere pensar que una obra… tanto para el que realiza como para el público no? O sea, un público va a ver una muestra y qué dice: “ah, obra electrónica, tiene que ser interactiva, yo tengo que interactuar según si muevo una mano o si mueve una cosa” y digo, no necesariamente.</p>
+
+                    <p class="txt-strong">F.C.: ¿Considerás que existe un nombre para definir todos los tipos de arte que utilizan tecnología?</p>
+
+                    <p>M.M.: No, no, creo que arte tecnológico está bien. Pasa que hoy hay mucha variedad de esos sistemas de artistas porque artistas tecnológicos no hay muchos. pero sí artistas que utilizan tecnología. Digo, que se yo, Jim Campbell, Lozano-Hemmer, Canogar, o sea, esos son artistas tecnológicos; pero después hay muchos otros que utilizan la tecnología para hacer una obra, dos obras, tres obras pero después no se, pintan por ejemplo. O sea entendés ¿no? no necesariamente trabajan… qué se yo, hay un artista que es profesor de acá (U.N.T.R.E.F) que es Nico Bacal, digo que uno lo ve y hace grabado pero también hace algunas obras que tienen que ver con la tecnología. Y en esa ida y vuelta me parece que…digo, que artistas tecnológicos obviamente creo que hay pocos.</p>
+
+                    <p class="txt-strong">F.C.: ¿Qué significa hacer arte con ciencia o tecnología sin tener una formación específica en una de esas disciplinas?</p>
+
+                    <p>M.M.: Ehh, ¿sin tener experiencia en qué? ¿En arte? ¿En ciencia?</p>
+
+                    <p>F.C.: En ciencia o tecnología.</p>
+
+                    <p>M.M.: Y no, algo tenés que saber, digo, sino no podés hacer nada. Digo, o sea, para mí lo que te brinda el arte es que uno no necesita saber de otras cosas porque en realidad es arte, no es ciencia ni es tecnología. Por eso uno puede ficcionar hasta cierto punto ciertos parámetros que en otro, en la tecnología o en la ciencia quizás más necesitaríamos situaciones más concretas. Para mi los vínculos se dan cuando… y especialmente en ciencia, en tecnología cuando puede existir multifacéticos interactuantes de esa situación. Digo, no solamente un artista sino varias personas que trabajan desde la ciencia, la tecnología; cuando se mezclan criterios y formatos de trabajo. En general creo que esos son los mejores resultados para obras que tengan arte, ciencia y tecnología.</p>
+
+                    <p class="txt-strong">F.C.: ¿Creés que existe una disciplina propia de las artes que utilizan tecnología?</p>
+
+                    <p>M.M.: Eh sí, sí, obvio. Me parece que… no sé si alguna vez va a ser autónoma como es el cine hoy en día, cuando apareció era otra cosa pero sí, sí obvio que existe.</p>
+
+                    <p class="txt-strong">F.C.: ¿De qué modo pensás que debería usar la tecnología un artista?</p>
+
+                    <p>M.M.: Ehhh, como un medio, digo, me parece que es eso, analizar primero de qué forma, qué es lo que necesita y si realmente es tecnología. Tomando la tecnología, porque en general uno habla de tecnología y todo es tecnología, el tema de esculpir una piedra, necesitás una tecnología.</p>
+
+                    <p>F.C.: el pincel.</p>
+
+                    <p>M.M.: el pincel, el óleo. Todo lo que está relacionado con las artes visuales tiene una tecnología. La fotografía tiene una tecnología.</p>
+
+                    <p>F.C.: claro, es como una herramienta para…</p>
+
+                    <p>M.M.: sí, sí, es una herramienta más que también puede producir algunos cambios o sistemas más allá del registro. Digo, ¿no? como en ese intercambio de cosas puede ser que un artista descubra cosas que en general no van en la línea de un investigador que quiere demostrar ciertas cosas. El arte es un poco más libre en eso.</p>
+
+                    <p class="txt-strong">F.C.: ¿Qué marco, como modo de entender el mundo, proponen las artes que utilizan tecnología? Cuál es la ideología o cuál es la idea…</p>
+
+                    <p>M.M.: Chan, chan, chan. ¿Quién hizo esa pregunta?</p>
+
+                    <p>(risas de todos)</p>
+
+                    <p>F.C.: O puede ser que no tengan ideología en general, o un marco…</p>
+
+                    <p>M.C.: O sea, suponiendo que el hecho de usar ciertas tecnologías trasmite de alguna manera una ideología digamos de una cosmovisión sobre… o sea, todos los elementos que nosotros usamos condicionan de alguna manera la forma en que nosotros nos relacionamos con el mundo.</p>
+
+                    <p>M.M.: No, si, un poco lo entiendo. Me parece que las nuevas tecnologías lo que tienen que usar es digamos los nuevos formatos de relacionamiento que tiene la gente con la tecnología en sí, más allá del arte y la tecnología digo sino la relación que existe de la tecnología con el ser humano que eso cada vez es más… más vinculante porque uno no piensa en algo que no sea un celular. El celular está cada vez más arraigado en uno, es más, cada vez uno utiliza más el celular, por eso también antes en algún momento se hablaba de que muchas obras de tecnología iban a ser superadas por la tecnología. Entonces hay que pensar que obras de arte y tecnología tengan un peso propio muy fuerte, porque sino la tecnología los supera. No sé, ponele, cuando antes se investigaba sobre el tema de los sensores con cámara, digo cuando apareció la Kinect, chau: todos esos sistemas se claudicaron y hoy si usas una Kinect ya está, no necesitas poner dos cámaras, tres cosas… y eso lo superó la tecnología. Obras que quedaron a medio camino de investigación sobre ciertas pautas, chau, murió.</p>
+
+                    <p>F.C.: es verdad.</p>
+
+                    <p>M.M.: Y, además, digo cómo es la sensibilidad que cada vez tiene más el usuario de la tecnología. Hoy estamos todo el tiempo inmersos y necesitados de la tecnología. O sea, cualquiera de nosotros pierde el celular dos días o ya sea para el trabajo o para la amistad o para las relaciones humanas. Eso como la computadora, como si muere Internet. También es eso fuerte ¿no?, del marco que uno utiliza para… uno dice arte y tecnología, hoy es fuerte en el sentido ese, la gran cantidad de gente que está relacionado con eso, como… Una vez escuché a una gente que lo más preciado de alguien, digo hoy en día del mundo, del universo es tener un celular.</p>
+
+                    <p>F.C.: y, si, es todo.</p>
+
+                    <p>M.M.: Digo, pero como gente más aislada del mundo, la visión es tener un celular. Es casi imposible hoy no tener un celular.</p>
+
+                    <p>F.C.: claro…</p>
+
+                    <p>M.M.: Digo que es todo porque es más allá de la comunicación. Digo, el sentirse que estás informado, el sentir que es tu distracción, el sentir que es toda una cantidad de cosas sin las cuales uno no podría vivir. No se si contesté a la pregunta…</p>
+
+                    <p>F.C.: sí sí. ¡Gracias! <span class="endMark">⬛</span></p>
+                    
+                  .col-33.txt-sm.columnaBio.txt-tight.color-texto-claro
+                    .boxBio
+                      p #[strong MARCELO MARZONI] es egresado del Magisterio en Artes Visuales y de la Tecnicatura en Diseño Gráfico de la Escuela Superior de Artes Visuales de Bahía Blanca. En esta ciudad trabajó como docente de plásticas y en 1989 ingresó en el Museo de Bellas Artes. En 1994 participó de la apertura del Museo de Arte Contemporáneo (MAC), donde desarrolló diversas actividades -visitas guiadas, producción y montaje de exposiciones y programación de extensión cultural- hasta el año 2003. Durante ese periodo se desempeñó también como productor y actor de teatro.
+                      p En 2003 participó de la apertura del Espacio Fundación Telefónica, dedicándose desde entonces a la producción, diseño y montaje de muestras de arte y tecnología. Trabajó con artistas como Jim Campbell, Rafael Lozano Hemmer, Daniel Canogar, Antoni Muntadas, Eduardo Kac, Mariano Sardón y Francisco Ruiz de Infante y con curadores como Luis Camnitzer, Christine Van Assche y Arlindo Machado, entre muchos otros. Dirigió la restauración de la obra Minuphone de Marta Minujin y organizó muestras de arte y tecnología en Bahía Blanca y Rosario.
+                      p Desde 2014 forma parte del equipo curatorial de Fase, encuentro de arte y tecnología que se lleva a cabo anualmente en el Centro Cultural Recoleta.
+                      p Paralelamente, realiza trabajos de diseño y montaje de exposiciones de manera independiente.
+                    .boxBio
+                      img(src="img/Fran-H-1.jpg", alt="Franccesca Degoas")
+                      p #[strong FRANCCESCA DEGOAS] cursa la Licenciatura en Artes Electrónicas orientación Sonido – U.N.T.R.E.F desde el año 2011 y, previamente, estudió Diseño de Imagen y Sonido en la U.B.A. Participó en obras de teatro y comedia musical. Le interesa la música, toca la guitarra y compone canciones. Fue parte del equipo de montaje de la muestra del artista francés Christian Boltanski (http://boltanskibsas.com.ar) y en el equipo de promoción y organización del evento de “Latin Grammys” junto con la U.N.T.R.E.F. Trabajó en el Museo de Arte y Ciencia de M.U.N.T.R.E.F como guía y como diseñadora gráfica y multimedia. Actualmente, lleva a acabo un proyecto personal publicitario de realización de avisos y jingles.
+                    .boxBio
+                      img(src="img/Maxi-H-1.jpg", alt="Maximiliano Cortés")
+                      p #[strong MAXIMILIANO CORTÉS] es estudiante de la Licenciatura en Artes Electrónicas con orientación en Sonido - UNTREF desde el año 2011. Tiene interés en la música, la programación y la producción audiovisual. Participó en el festival Enlaces (https://www.facebook.com/enlaces) en las ediciones 2014 y 2015 en tareas de producción y montaje y, en la edición 2015, presentando obra junto a un equipo de compañeros. Actualmente, trabaja en el área de producción técnica del Museo de la Inmigración - UNTREF.
+      
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug

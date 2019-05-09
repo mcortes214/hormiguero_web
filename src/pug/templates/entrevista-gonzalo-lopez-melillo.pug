@@ -1,0 +1,91 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro
+      .container.espaciadoVertical
+        .row
+          .col-20
+            include _menuLateral1.pug
+          .col-80
+            .containerContenido
+              //- Posts: NO son un widget; son un "semicomponente" entremezclado con layout (no debería evitar eso?)
+              //- tienen su hoja de estilo propia.
+              .contenido.post
+                .row.encabezadoPost
+                  h1.txt-mgb-25 “HAY UN CLICHÉ EN SER MUY MINIMALISTA, EN SER AUSTERO”
+                  p.meta.txt-space.txt-lg Entrevista a Gonzalo López Melillo - Por Micaela Paz
+                  +widgetSoundcloud('586517883')
+                .row.row-espaciadoVertical
+                  .col-66.
+                    <p class="meta">Septiembre 2016<p>
+                    <p class="txt-strong">M.P.: ¿Qué diferencia existe entre copia, plagio e interpretación?</p>
+
+                    <p>G.L.M.: ¿Vos querés que yo responda eso en 5 minutos? Copia y plagio pueden ser lo mismo, al mismo tiempo, depende justamente de cómo se interpreta. No, no es tan simple, depende tal vez de cuál es el fin de la persona que hace la copia. Vos podés copiar algo con el fin de reproducirlo, el tema es quién es el autor que se identifica con eso, ¿no? Porque vos podés decir “no, esto lo hizo tal persona”, que es el autor original, entonces no es un plagio. Ahora si yo copio algo y digo que es mío, eso sería plagio. Igual depende un cacho de qué tipo de soporte artístico estamos hablando o si estamos hablando de arte también, ahí ya cambia o se expanden todas las salvedades. La interpretación supone algo nuevo, no es lo mismo; es algo que parte de lo anterior, que parte de una cosa pero se transforma y se convierte en otra cosa y además supone de antemano un autor distinto, o sea ya queda claro que no es el mismo autor del objeto anterior. Todo eso desde un punto de vista de defensa de los derechos de autor. Capaz, desde una óptica mucho más libre te dicen no existe ni el plagio, ni la copia ni nada sino que todo es libre, somos todos dueños de todo, pero bueno, quería hacer esa aclaración.</p>
+
+                    <p class="txt-strong">M.P.: ¿Cuál es el límite entre mantener el estilo propio (identidad del artista) y copiarse de uno mismo?</p>
+
+                    <p>G.L.M.: El estilo propio vendría a ser cuando uno es fiel a lo que quiere, a lo que lo interpela, a lo que le gusta, a lo que no le gusta. Voy a expandir donde ponemos el foco: me estoy refiriendo al arte como todo lo demás, el estilo que uno puede tener para vivir en general, para hacer las cosas en cualquier campo de la vida. Entonces eso sería el estilo propio, en realidad esas son las premisas que después te van a definir cuál es tu estilo propio me parece. Entonces tienen que ver con fidelidad y compromiso con uno mismo; nadie lo hace, pero no importa. Ahora copiarse de uno mismo tal vez vendría a ser cuando uno encontró una fórmula identitaria, podríamos decir, que funciona, que da resultado; entonces uno deja de improvisar, deja de lado la creatividad y apuesta a lo seguro, a lo que dio resultados anteriormente. Eso podría ser copiarse de uno mismo, ahí cuando uno ya deja de ser fiel a su estilo propio y se empieza a copiar de algún estilo que alguna vez apareció.</p>
+
+                    <p class="txt-strong">M.P.: ¿Quiénes son tus referentes para producir obra (pueden o no ser del campo del arte) o de quién te copias para producir obra?</p>
+
+                    <p>G.L.M.: Voy a interpretar hacer obra como hacer, obviamente hacer no sería sacar la basura, o poner la mesa, o lavar los platos, o ir al baño; aunque desde un punto de vista muy extremo sí sería, porque ahí también está puesta en juego la creatividad.</p>
+
+                    <p>Mis referentes teóricos están relacionados con la filosofía porque siempre estuve estudiando eso y, en realidad, siempre tuve un mambo que iba por ese lado. Mis referentes artísticos no me acuerdo muy bien cuales fueron, puedo pensarlos ahora, pero en algún punto tenían que ver con ideas relacionadas a cómo vivir. Ese para mí es un tema central para el pensamiento humano, responder a preguntas relacionadas al cómo vivir; el resto me parece medio superfluo. Con cómo vivir me refiero a qué está bien, qué está mal, cómo hacer, cómo llevar adelante la vida, cómo soportar cosas, como atravesar angustias, alegrías y cómo relacionarse con los demás y con ser auténtico también, con sentirse completo uno con lo que quiere.</p>
+
+                    <p>Ahora, cuáles son mis referentes; yo en el arte tenía los surrealistas me gustaban mucho, me gustaba mucho Duchamp, me gustaba Magritte –pero Magritte era por una cuestión estética, no tenía esto que te decía recién-; después había chabones de Fluxus o Tristán Tzara del dadaísmo, pero había chabones de Fluxus que tenían algo de esto que te decía recién sobre el tema de responder preguntas sobre cómo vivir.</p>
+
+                    <p>Pero yendo más al punto de lo teórico, sobre el hacer en este momento, o tal vez siempre pero no me había dado cuenta, mis referentes son –no quiere decir que sean mis biblias, viste, sino tal vez los que me indican que algo es correcto o que lo que estoy haciendo me gusta a mí: son Nietzsche, ideas de Cortázar en Rayuela, ideas de Deleuze en algún librito y también en parte Sartre, que es un filósofo que a mí me gusta mucho que con lo que dice te lleva siempre a hacerte cargo de lo que te pasa. Y para mí la idea de hacerte cargo de que todo el tiempo tenés que tomar una decisión para hacer cosas en general, sobre las cuales no hay ninguna regla preestablecida, enfrentarte a la realidad de que tenés que crear constantemente; esa idea es referente para mí. Y estas personas que nombré, de alguna forma delinearon esta idea.</p>
+
+                    <p class="txt-strong">M.P.: ¿Cuáles serían los estereotipos y clichés de las artes que utilizan tecnología?</p>
+
+                    <p>G.L.M.: Iba a decir ser ostentoso, pero ahora que lo pienso me parece que también hay un cliché en lo contrario, en ser muy minimalista, en ser austero. No sé, ya está medio dentro del arte: el no decir nada, decir lo menos posible. En realidad si pienso en videoarte que es lo que más vi y lo que más me interesó está el estereotipo de ser súper complejo, oscuro, críptico, experimental, de mezclar imágenes, ruidos, colores, mshshmsh. Eso es un re cliché por lo menos del video arte que yo vi. Un ejemplo: el video “Las miradas frágiles” de Gustavo Galuppo, el video del bicentenario, ese es un cliché dentro del video arte; habría que ver si es el videoarte argentino, el videoarte mundial, andá a saber. Esto de molestar, de joder al otro, de pinchar al espectador; es un cliché que está instalado. Pero bueno, es la problemática dentro del arte, que buscás problematizar al espectador y tenés recursos que usan todos los demás ¿cómo hacés para hacer algo nuevo que a la vez moleste al espectador y que lo interpele, y que se genere un diálogo? No sé, viste, eso es problema de los artistas, no mío.</p>
+
+                    <p class="txt-strong">M.P.: ¿Considerás que existe un nombre para definir todos los tipos de arte que utilizan tecnología? ¿Cuál? (Arte electrónico, Arte Tecnológico, Nuevos Medios, Arte Digital, etc)</p>
+
+                    <p>G.L.M.: Está buena le pregunta, habría que saber un poco más para responderla con más precisión. Yo supongo que el “arte digital” deja cosas afuera, no estoy bien seguro de cuáles. Me parece que hay arte analógico que puede ser electrónico, es una burrada lo que estoy diciendo pero bueno, son dudas que tengo porque soy ignorante en la materia. No, yo creo que “Arte Tecnológico” es medio boludo, pero “Arte Electrónico” hincha las pelotas, es como “electrónico, qué es eso?”, tecnológico es más amigable porque es más para la persona que está en la casa y no entiende nada y dice “ah, arte con tecnología, claro”. La electrónica era “cables”, o yo en mi cabeza digo “cables”, pero no. ¿Nuevos medios? ¡Si son los mismos medios que antes! En realidad, ponele que la página web como medio es nuevo, pero el medio es de los 90. Yo prefiero “arte tecnológico”, me parece que engloba todo, es muy amigable pero podemos permitírselo.</p>
+
+                    <p class="txt-strong">M.P.: ¿Qué significa hacer arte con ciencia o tecnología sin tener una formación específica en una de esas disciplinas?</p>
+
+                    <p>G.L.M.: Yo, en este momento, no puedo hacer una lectura muy profunda, puedo pensar qué es gente buscando medios de expresión ajenos que no por eso los tienen prohibidos. Los pueden usar porque ahí pueden expresar lo que buscan o lograr ese contenido que estaban buscando. No sé si puedo decir algo más crítico. Se podría hacer un análisis sociológico de cómo evolucionó la sociedad y de cómo los medios se metieron en la vida de todos, y el arte, pero no sé si en este momento lo puedo hacer. A mí por lo menos no me molesta, no me hace ruido, no me parece mal que gente de un palo se meta en un terreno que no es propio. También se podría discutir si eso habría que solucionarlo, si es algo que hay que cambiar para que esos artistas tengan la formación; habría que ver si quieren tener la formación o no y si quieren después que se hace.</p>
+
+                    <p class="txt-strong">M.P.: ¿Creés que existe una disciplina propia de las artes que utilizan tecnología?</p>
+
+                    <p>G.L.M.: Si me preguntás algo que es propio, primero pensaría en lo que es originario, lo que estuvo primero, esa sería una forma de verlo. Después, se podría pensar la disciplina que más características tenga con ese soporte: quizá una intervención que tenga una proyección, que tenga una computadora con un programa hecho por el artista o por otra persona pero que eso modifique las luces y que también haya sonido; tal vez si tiene todas las cosas se puede decir que es propio. Pero en realidad a mi me parece que es relativo. Entonces, volviendo al otro punto de vista que me parece que va mejor, creo que lo primero era agarrar televisores y hacer cosas con televisores y cintas de video, creo que iba por ahí el mambo. El video medio que aparecería pero, en realidad, yo no diría que hay una disciplina propia desde mi humilde punto de vista. Ya pretender que haya una disciplina propia es medio goma, ¿por qué tendría que haber algo que es más propio que lo otro en una actividad tan vasta como el arte electrónico y como el arte en general? No hay límites aunque se pueden fijar pero no está bueno porque dicen “hasta acá es esto y de acá para allá no es más” y no es así el arte, no funciona así.</p>
+
+                    <p class="txt-strong">M.P.: ¿De qué modo pensás que debería usar la tecnología un artista? (Ayuda: herramienta, en sí, etc)</p>
+
+                    <p>G.L.M.: Primero, como quiera, como le guste mientras no joda a otras personas, como drones que le corten la cabeza a la gente. Después, se podrían decir otras cosas como uso consciente, con compromiso, comprometido con la idea, con la teoría y con lo que está haciendo. Ese tipo de cosas son medio un mambo en el que no me hallo, ese tipo de respuestas, no son mucho de lo que yo diría. Yo pensaría más en que la debería usar… Sí pensaría en la responsabilidad ecológica de la tecnología, eso sí me preocupa, pero tampoco le echaría la culpa a los artistas electrónicos que pobres, seguramente, la mayoría no tienen un mango. Si tiene que haber un compromiso con la idea pero que la use como quiera, como le guste, que mezcle las cosas como quiera; me parece que no hay un límite estético. Sí está lo que dije de la responsabilidad ecológica.</p>
+
+                    <p class="txt-strong">M.P.: ¿Qué marco, como modo de entender el mundo, proponen las artes que utilizan tecnología?</p>
+
+                    <p>G.L.M.: Estoy limitado porque conozco muy poco de las artes que usan tecnología, el tema es que no creo que todas propongan el mismo marco. Seguro algunas harán un tipo de apología de la electrónica ¡qué sé yo! Si lo pensás algo debe haber, pero conozco tan poco, hay tanto que no vi de arte electrónico… no los tenía tan conceptual, no me imaginaba que presentaban un marco para entender la vida, para comprender el mundo. La verdad que no tengo idea, sería inventar, responder. Yo creo que la mayoría son críticos, es un arte post-contemporáneo y es hijo de todo el arte crítico contemporáneo y se puso de moda en la segunda mitad del siglo XX que el arte sea crítico, aunque hubo un montón de excepciones, obvio. Pero creo que el arte electrónico es hijo del arte contemporáneo y como tal tiene una esencia crítica, problematizadora y disruptiva… podría ser un marco pero podría ser…<span class="endMark">⬛</span></p>
+                    
+                  .col-33.txt-sm.columnaBio.txt-tight.color-texto-claro
+                    .boxBio
+                      p #[strong GONZALO LÓPEZ MELILLO] fue alumno de la Licenciatura en Artes Electrónicas con orientación en Imagen – U.N.T.R.E.F entre los años 2010 y 2013. Actualmente estudia el Profesorado de Filosofía en el Instituto “Dr. Joaquín V. González” y es un aficionado del diseño automotriz. Formó parte del colectivo Proyecto AREA realizando intervenciones y performances en el festival Enlaces. Integra el programa radial Exactamente Casi junto con alumnos y egresados de la Licenciatura en Artes Electrónicas – U.N.T.R.E.F y es baterista en la banda, de tono burlesco, Conogol.
+                    .boxBio
+                      img(src="img/Mica-H-1.jpg", alt="Micaela Paz")
+                      p #[strong MICAELA FLAVIA PAZ] es estudiante avanzada de la Licenciatura en Artes Electrónicas con orientación en Imagen – U.N.T.R.E.F y, desde el año 2015 se desempeña como Tutora Adjunta de la carrera. Previamente, se formó como Técnica en Producción y Creatividad Radiofónica en ETER y en danza con Vanesa Menalli. Forma parte del grupo de experimentación Hebras Danza y desde el año 2012 integra el proyecto cultural Danzar Mundos, Opúsculo sobre arte, cuerpo y poéticas cotidianas. Se interesa por la investigación y el desarrollo de proyectos relacionados al cuerpo, la danza y los dispositivos de imagen vinculados a las nuevas tecnologías. Su experiencia laboral está centrada en las áreas de comunicación y diseño.
+        
+      
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug
