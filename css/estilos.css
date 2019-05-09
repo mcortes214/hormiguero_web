@@ -246,6 +246,10 @@ h2 {
   margin-right: 40px;
 }
 
+.headerSitio_item-activo {
+  border-bottom: 1px solid white;
+}
+
 .footerSitio {
   width: 100%;
   height: 100%;

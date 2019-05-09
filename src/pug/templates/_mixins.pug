@@ -1,5 +1,63 @@
 //generales
 
+mixin widgetHeader(activo)
+  .headerSitio.txt-codepro
+    a(href="/")
+      .headerSitio_logo.textoLogo Hormiguero
+    nav.headerSitio_navegacion.txt-sm
+      -var itemActivo=activo
+      case itemActivo
+        when 0
+          ul
+            a(href="/equipo.html")
+              li#menuItem_equipo Equipo
+            a(href="http://arteyciencia.untref.edu.ar/projects")
+              li#menuItem_proyecto Proyecto
+            a(href="#")
+              li#menuItem_revista1 1. Sobre nuestra práctica
+            a(href="/editorial-2.html")
+              li#menuItem_revista2 2. Futuro Antiguo
+        when 1
+          ul
+            a(href="/equipo.html")
+              li#menuItem_equipo.headerSitio_item-activo Equipo
+            a(href="http://arteyciencia.untref.edu.ar/projects")
+              li#menuItem_proyecto Proyecto
+            a(href="#")
+              li#menuItem_revista1 1. Sobre nuestra práctica
+            a(href="/editorial-2.html")
+              li#menuItem_revista2 2. Futuro Antiguo
+        when 2
+          ul
+            a(href="/equipo.html")
+              li#menuItem_equipo Equipo
+            a(href="http://arteyciencia.untref.edu.ar/projects")
+              li#menuItem_proyecto.headerSitio_item-activo Proyecto
+            a(href="#")
+              li#menuItem_revista1 1. Sobre nuestra práctica
+            a(href="/editorial-2.html")
+              li#menuItem_revista2 2. Futuro Antiguo
+        when 3
+          ul
+            a(href="/equipo.html")
+              li#menuItem_equipo Equipo
+            a(href="http://arteyciencia.untref.edu.ar/projects")
+              li#menuItem_proyecto Proyecto
+            a(href="#")
+              li#menuItem_revista1.headerSitio_item-activo 1. Sobre nuestra práctica
+            a(href="/editorial-2.html")
+              li#menuItem_revista2 2. Futuro Antiguo
+        when 4
+          ul
+            a(href="/equipo.html")
+              li#menuItem_equipo Equipo
+            a(href="http://arteyciencia.untref.edu.ar/projects")
+              li#menuItem_proyecto Proyecto
+            a(href="#")
+              li#menuItem_revista1 1. Sobre nuestra práctica
+            a(href="/editorial-2.html")
+              li#menuItem_revista2.headerSitio_item-activo 2. Futuro Antiguo          
+
 mixin revista (nombre, meta, año, link)
   a(href=link).boxRevista.color-bg-gris.color-texto-inv
     h2=nombre
