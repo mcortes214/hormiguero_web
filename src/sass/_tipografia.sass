@@ -22,7 +22,7 @@ a
   color: inherit
 
 p
-  display: inline-block
+  display: block
   font-size: 1.15em
   line-height: 1.8em
   margin-bottom: 1.5em
@@ -30,11 +30,19 @@ p
 strong
   font-weight: bold
 
+h1
+  font-size: 2.9375rem
+  text-transform: uppercase
+  margin-bottom: 75px
+  font-weight: bold
+  line-height: 1em
+
 h2
   font-size: 1.8rem
   text-transform: uppercase
   margin-bottom: 25px
   font-weight: bold
+  line-height: 1.3em
 
 //Tipografías por sección
 
@@ -57,6 +65,11 @@ h2
 
   //alineación
 
+  //(auxiliar para alineación de párrafos)
+.txt-inline-block
+  display: inline-block
+
+
 .txt-left
   text-align: left
 
@@ -71,13 +84,17 @@ h2
 .txt-space
   letter-spacing: 1px
 
-.txt-lg
-  font-size: 1.2em
-
   //mayúsculas
 
 .txt-uppercase
   text-transform: uppercase
+
+  //Estilos
+.txt-italic
+  font-style: italic
+
+.txt-strong
+  font-weight: bold
 
   //tipografía
 
@@ -87,3 +104,15 @@ h2
   //tamaño
 .txt-sm
   font-size: 0.85em
+
+.txt-lg
+  font-size: 1.2em
+
+//Margen
+.txt-mgb-25
+  margin-bottom: 25px
+
+//line-height
+.txt-tight
+  p
+    line-height: 1.4em

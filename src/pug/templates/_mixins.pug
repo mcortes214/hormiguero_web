@@ -1,15 +1,17 @@
 //generales
 
-mixin revista (nombre, año, link)
+mixin revista (nombre, meta, año, link)
   a(href=link).boxRevista.color-bg-gris.color-texto-inv
     h2=nombre
+    p.color-texto-claro.txt-italic=meta
     p=año
     
 mixin widgetNota(titulo, meta, urlImg, link)
-  .widgetRevista
-    a(href=link)
-      h2=titulo
-    p.meta=meta
+  .widgetNota
+    .encabezado
+      a(href=link)
+        h2=titulo
+      p.meta=meta
     img(src=urlImg, alt=titulo)
 
 mixin widgetEquipo(titulo, rol, urlImg)
@@ -17,5 +19,17 @@ mixin widgetEquipo(titulo, rol, urlImg)
     h2=titulo
     p.meta.txt-space.txt-lg=rol
     img(src=urlImg)
+      
+mixin widgetEntrevista1(titulo, meta, link)
+  .widgetEntrevista1
+    h2
+      a(href=link)
+        =titulo
+    p.meta.txt-space=meta
 
-//header
+      
+mixin widgetSoundcloud(track)
+  - var urlInicio = 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/';
+  - var urlFinal = '&color=%23ba007c&auto_play=false&hide_related=true&show_comments=false&show_user=false&show_reposts=false&show_teaser=false';
+  .widgetSoundcloud
+    iframe(width='100%', height='166', scrolling='no', frameborder='no', allow='autoplay', src=urlInicio+track+urlFinal)

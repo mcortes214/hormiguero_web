@@ -1,0 +1,54 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro
+      .container.espaciadoVertical
+        .row
+          .col-20
+            include _menuLateral1.pug
+          .col-80
+            .containerContenido
+              .contenido
+                h1 Entrevistas
+                .row
+                  .col-50
+                    +widgetEntrevista1('La tecnología en el arte no debería ser solo una herramienta', 'Entrevista a Darío Sacco - Por Franccesca Carrodegoas', '/entrevista-dario-sacco.html')
+                    +widgetEntrevista1('Todo lo que es mecánico y más o menos electrónico, pasó a ser robótico', 'Entrevista a Miguel Grassi - Por Micaela Paz', '/entrevista-miguel-grassi.html')
+                    +widgetEntrevista1('La ideología siempre está presente en el arte', 'Entrevista a Lucas Pérez Scigliano - Por Maximiliano Cortés', '/entrevista-lucas-perez-scigliano.html')
+                    +widgetEntrevista1('No creo que las artes sean un modo de entender el mundo', 'Entrevista por Micaela Paz y Guadalupe Álvarez', '/entrevista.html')
+                    +widgetEntrevista1('Las analogías cuerpo-máquina cuando son muy simples me aburren. Ya hay cyborgs, somos re cyborgs', 'Entrevista a Jael Caiero - Por Micaela Paz', '/entrevista-jael-caiero.html')
+                    +widgetEntrevista1('Las artes electrónicas están tendiendo a ser diseño más que arte', 'Entrevista a Francisco Trípodi y Kevin Kripper - Por Guadalupe Álvarez', '/entrevista-francisco-tripodi-kevin-kripper.html')
+                    +widgetEntrevista1('Creo que no me copio de nadie. Si me copio, me copio de todo el mundo', 'Entrevista a Elena Laplana - Por Guadalupe Álvarez', '/entrevista-elena-laplana.html')
+                    +widgetEntrevista1('Uno a veces naturaliza la idea de los accesos tecnológicos', 'Entrevista a Juan Pablo Pérez - Por Franccesca Carrodegoas', '/entrevista-juan-pablo-perez.html')
+                    +widgetEntrevista1('Es cliché usar la tecnología para darle espectacularidad a algo que capaz no la tiene', 'Entrevista a Nahuel Galván - Por Franccesca Carrodegoas', '/entrevista-nahuel-galvan.html')
+                  .col-50
+                    +widgetEntrevista1('El artista tiene que buscar la tecnología que más lo represente', 'Entrevista a Rocío Pérez Belarra - Por Franccesca Carrodegoas y Maximiliano Cortés', '/entrevista-rocio-perez-belarra.html')
+                    +widgetEntrevista1('La tecnología tendría que ser un medio de expresión, no un fin en sí mismo', 'Entrevista a Marcelo Marzoni - Por Franccesca Carrodegoas', '/entrevista-marcelo-marzoni.html')
+                    +widgetEntrevista1('Si una obra no tiene problemas, está en el horno', 'Entrevista a Leonello Zambón - Por Guadalupe Álvarez', '/entrevista-leonello-zambon.html')
+                    +widgetEntrevista1('Si vamos a alimentar la erotización de la tecnología, nuestro laburo artístico queda anulado', 'Entrevista a Jorge Crowe - Por Franccesca Carrodegoas', '/entrevista-jorge-crowe.html')
+                    +widgetEntrevista1('Hay un cliché en ser muy minimalista, en ser austero', 'Entrevista a Gonzalo López Melillo - Por Micaela Paz', '/entrevista-gonzalo-lopez-melillo.html')
+                    +widgetEntrevista1('El estereotipo de artista vago ya fue. Hoy en día, el artista tiene que ser un nerd', 'Entrevista a Evelyn Camacho y Tania González - Por Guadalupe Álvarez', '/entrevista-evelyn-camacho-tania-gonzalez')
+                    +widgetEntrevista1('Estamos entrando en una etapa de arte post-electrónico', 'Entrevista a Mene Savasta Alsina - Por Franccesca Carrodegoas', '/entrevista-mene-savasta-alsina.html')
+                    +widgetEntrevista1('No sé si tengo un referente puntual para hacer obra', 'Entrevista a Santiago Villa - Por Franccesca Carrodegoas', '/entrevista-santiago-villa.html')
+      
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug

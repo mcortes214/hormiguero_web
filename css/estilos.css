@@ -1,10 +1,11 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 body {
   margin-top: 65px;
 }
 
 .espaciadoVertical {
-  padding: 100px 0;
+  padding: 75px 0;
 }
 
 .container {
@@ -56,6 +57,16 @@ body {
   float: left;
 }
 
+.col-33 {
+  width: 33%;
+  float: left;
+}
+
+.col-66 {
+  width: 66%;
+  float: left;
+}
+
 .fixedNav {
   position: fixed;
   top: 0;
@@ -84,6 +95,10 @@ body {
   color: #ffffff;
 }
 
+.color-texto-claro {
+  color: #808080;
+}
+
 @font-face {
   font-family: "Code_Pro_Demo";
   src: url("../fonts/Code_Pro_Demo-webfont.woff2") format("woff2");
@@ -103,7 +118,7 @@ a {
 }
 
 p {
-  display: inline-block;
+  display: block;
   font-size: 1.15em;
   line-height: 1.8em;
   margin-bottom: 1.5em;
@@ -113,11 +128,20 @@ strong {
   font-weight: bold;
 }
 
+h1 {
+  font-size: 2.9375rem;
+  text-transform: uppercase;
+  margin-bottom: 75px;
+  font-weight: bold;
+  line-height: 1em;
+}
+
 h2 {
   font-size: 1.8rem;
   text-transform: uppercase;
   margin-bottom: 25px;
   font-weight: bold;
+  line-height: 1.3em;
 }
 
 .textoLogo {
@@ -132,6 +156,10 @@ h2 {
   font-size: 1em;
   line-height: 1.5em;
   color: #808080;
+}
+
+.txt-inline-block {
+  display: inline-block;
 }
 
 .txt-left {
@@ -150,12 +178,16 @@ h2 {
   letter-spacing: 1px;
 }
 
-.txt-lg {
-  font-size: 1.2em;
-}
-
 .txt-uppercase {
   text-transform: uppercase;
+}
+
+.txt-italic {
+  font-style: italic;
+}
+
+.txt-strong {
+  font-weight: bold;
 }
 
 .txt-codepro {
@@ -164,6 +196,18 @@ h2 {
 
 .txt-sm {
   font-size: 0.85em;
+}
+
+.txt-lg {
+  font-size: 1.2em;
+}
+
+.txt-mgb-25 {
+  margin-bottom: 25px;
+}
+
+.txt-tight p {
+  line-height: 1.4em;
 }
 
 .headerSitio_logo {
@@ -293,9 +337,9 @@ h2 {
 }
 .menuLateral img {
   margin: auto;
-  width: 200px;
-  height: 200px;
-  margin-bottom: 50px;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 1000px) {
   .menuLateral img {
@@ -308,9 +352,14 @@ h2 {
   font-weight: bold;
   font-size: 1.2em;
   margin-bottom: 20px;
+  margin-top: 30px;
 }
 .menuLateral li:not(:last-of-type) {
   margin-bottom: 10px;
+}
+.menuLateral .meta {
+  width: 70%;
+  margin: 0;
 }
 
 .boxRevista {
@@ -324,7 +373,14 @@ h2 {
   transition: 0.4s;
 }
 
-.widgetRevista img {
+.widgetNota {
+  margin-bottom: 100px;
+}
+.widgetNota .encabezado {
+  border-bottom: 1px solid #808080;
+  margin-bottom: 25px;
+}
+.widgetNota img {
   width: 100%;
 }
 
@@ -337,6 +393,42 @@ h2 {
 .widgetEquipo img {
   width: 100%;
   margin-bottom: 50px;
+}
+
+.widgetEntrevista1 h2::after {
+  content: "”";
+}
+.widgetEntrevista1 h2::before {
+  content: "“";
+}
+.widgetEntrevista1::after {
+  content: "";
+  display: block;
+  width: 60%;
+  margin-bottom: 75px;
+  height: 1px;
+  background-color: #323232;
+}
+
+.post iframe {
+  margin-bottom: 25px;
+}
+.post .columnaBio {
+  padding-left: 40px;
+}
+.post .columnaBio img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.post .boxBio {
+  border-top: 1px solid #323232;
+  padding: 20px 0;
+}
+.post .endMark {
+  width: 10px;
+  height: 10px;
+  color: #BA007C;
+  margin-left: 15px;
 }
 
 /*# sourceMappingURL=estilos.css.map */
