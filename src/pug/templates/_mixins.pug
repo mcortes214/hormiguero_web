@@ -11,5 +11,11 @@ mixin widgetNota(titulo, meta, urlImg, link)
       h2=titulo
     p.meta=meta
     img(src=urlImg, alt=titulo)
-      
+
+mixin widgetEquipo(titulo, rol, urlImg)
+  .widgetEquipo
+    h2=titulo
+    p.meta.txt-space.txt-lg=rol
+    img(src=urlImg)
+
 //header

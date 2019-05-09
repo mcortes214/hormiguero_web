@@ -23,6 +23,11 @@ body {
   margin: auto;
 }
 
+.containerCentral {
+  width: 80%;
+  margin: auto;
+}
+
 .row::after {
   content: "";
   display: table;
@@ -104,6 +109,10 @@ p {
   margin-bottom: 1.5em;
 }
 
+strong {
+  font-weight: bold;
+}
+
 h2 {
   font-size: 1.8rem;
   text-transform: uppercase;
@@ -135,6 +144,14 @@ h2 {
 
 .txt-right {
   text-align: right;
+}
+
+.txt-space {
+  letter-spacing: 1px;
+}
+
+.txt-lg {
+  font-size: 1.2em;
 }
 
 .txt-uppercase {
@@ -309,6 +326,17 @@ h2 {
 
 .widgetRevista img {
   width: 100%;
+}
+
+.boxEquipo {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 75px;
+}
+
+.widgetEquipo img {
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=estilos.css.map */

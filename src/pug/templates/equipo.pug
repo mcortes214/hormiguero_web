@@ -1,0 +1,94 @@
+doctype html
+html(lang="es-AR")
+  head
+    meta(charset="utf-8")
+    title Revista Hormiguero
+    meta(name="description" content="")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(name="author" content="")
+    meta(name="keywords" value="Artes Electrónicas")
+    //- link(rel="canonical" href="")
+    link(rel="stylesheet" href="css/reset.css")
+    link(rel="stylesheet" href="css/estilos.css")
+    //- script(src="js/scripts.js")
+
+  body.color-bg-oscuro
+    include _mixins.pug
+    //- Estructura de layout y componentes separados; no intercalados sino anidados
+    header.color-bg-gris-tr.color-texto-inv.txt-uppercase.fixedNav
+      .container
+        include _headerSitio.pug
+    
+    .principal.color-bg-claro.espaciadoVertical
+      .containerCentral
+          .row
+            .col-50
+              .boxEquipo
+                +widgetEquipo('Lucía Kuschnir', 'Coordinación General', '/img/lucia_300px.jpg')
+                p #[strong LUCÍA KUSCHNIR] es artista e investigadora. Estudió la Carrera de Bellas Artes en la #[strong Escuela de Bellas Artes Rogelio Yrurtia], la Licenciatura en Artes Electrónicas en la #[strong Universidad Nacional de Tres de Febrero] (UNTREF) y es magister en Artes Electrónicas, recibida con honores UNTREF. Sus obras han sido exhibidas en numerosas oportunidades en instituciones privadas y Museos y fue invitada a dictar conferencias y a participar de congresos sobre temáticas que abordan el Arte Contemporáneo y las Nuevas Tecnologías. En el año 2016 fue invitada por la #[strong Escuela Europea Superior de la Imagen] (Poitiers-Angoulême, Francia) para presentar su cuerpo de obra y su investigación teórica sobre traducción y Arte Electrónico que luego fue publicado en: “Cahiers du post-diplome Document et art contemporain” Volumen 5.
+                p Recibió Becas y subsidios para el desarrollo de su trabajo destacándose: admisión y beca completa para estudiar la maestría: #[strong “Interdisciplinary Art, Media & Design”] otorgada OCAD University, Toronto-Canada; beca para desarrollo de tesis de posgrado otorgada por la UNTREF; financiamiento para dirigir el proyecto de investigación: #[strong “Electromecánica para objetos parlantes”] otorgada por UNTREF; dos becas a proyecto colectivos y una a proyecto individual otorgada por el Fondo Nacional de las Artes (FNA) y beca de estudio en el programa #[strong “Escuela de artistas”] en Isidro Miranda Galería de Arte.
+                p Actualmente, Lucía es profesora adjunta en tres asignaturas de la carrera de Artes Electrónicas: Seminario de Tesis y Artes Electrónicas II y II; es Coordinadora Institucional del MUNTREF Arte & Ciencia; dirige el proyecto #[strong “HORMIGUERO”], una plataforma de estudio sobre Arte y Tecnología; coordina #[strong “SIERVA”], un grupo interdisciplinario con biólogos, médicos y artistas visuales y es directora y productora de #[strong “MdR”] una red independiente de artistas visuales. Vive y trabaja en Buenos Aires, Argentina.
+              .boxEquipo
+                +widgetEquipo('Maximiliano Cortés', 'Diseño y Programación Web', '/img/maxi_300px.jpg')
+                p #[strong MAXIMILIANO CORTÉS] es egresado de la #[strong Licenciatura en Artes Electrónicas] (UNTREF). Formó parte desde 2014 del área de Producción Técnica del #[strong MUNTREF] – Museo de la Inmigración/Centro de Arte Contemporáneo, donde se desempeñó en tareas de producción técnica, realización y montaje de exhibiciones. Colaboró en el montaje de muestras en las sedes Artes Visuales y Arte y Naturaleza del MUNTREF, y en 2017 brindó asistencia técnica en #[strong BienalSur], durante la etapa de montaje. Participó en el #[strong festival Enlaces] en las ediciones 2014, 2015 y 2017 en tareas de producción y montaje, y en la edición 2015 presentando obra junto a un equipo de compañeros. Expuso obra en Casa Nacional del Bicentenario, en el marco del festival #[strong FASE 8].
+
+                p Actualmente forma parte de #[strong Experiencia OK], un emprendimiento tecnológico originado en 2017, del cual es miembro fundador. Sus principales campos de interés son la música, la programación y la producción audiovisual.
+                
+              .boxEquipo
+                +widgetEquipo('Dana Sosa', 'Producción de Contenidos', '/img/dana_300px.jpg')
+                p #[strong DANA SOSA] está estudiando Licenciatura en Artes Electrónicas con orientación en Imagen-UNTREF. En simultáneo realizó cursos de fotografía y edición de video.
+
+                p Presentó en 2011 “Vida diaria de unos anteojos” en el Concurso de George Melies. En 2012 participó del montaje de la Muestra #[strong Migrantes] de Cristian Boltanski, en los espacios del museo de la UNTREF, la ex Biblioteca Nacional y Hotel de Inmigrantes en Retiro. Desde 2010 hace trabajos de fotografía y video para eventos sociales. En 2013 se presentó en el #[strong festival Enlaces] un video llamado “Pasaje”.
+
+                p Trabaja como Content Manager en La Discografica Leader Music donde se encarga de distribución y manejo de contenido a las plataformas digitales. Se recibió de Técnica en imagen y esta en proceso de finalización de la tesis de grado.
+                
+              .boxEquipo
+                +widgetEquipo('Eliana Rosales', 'Producción y Difusión', '/img/eli_300px.jpg')
+                p #[strong ELIANA ROSALES] es chelista y realizadora audiovisual. Presentó su obra Memoria de un Espacio en el ciclo #[strong Conciertos Imaginarios] del Centro Cultural Recoleta. Formó un dúo de música electroacústica con Ernesto Romeo, con el cual se presentó en Festival Búsquedas Sonoras (Universidad Nacional de General Sarmiento); Esculturas Sonoras de León Ferrari, Tecnópolis, entre otros.
+
+                p Formó parte del #[strong Trío de Música Electroacústica Rosales-Lennie-Romeo] con el cual se presentó en Medialab Prado (Madrid, España); CMMR Festival en Wilton´s Music Hall (Londres, Reino Unido); Ciclo Escuchar en Museo de Arte Moderno de Buenos Aires- Alianza Francesa; Festival Enlaces (UNTreF). Dirigió los videos musicales para la instalación Tecnópolis Sonora/Casa de Sonidos en la exposición Tecnópolis 2011. Compuso la banda sonora y realizó parte de la producción ejecutiva del ciclo televisivo de biografías #[strong Microbio], emitido en Canal Encuentro (Díscolo producciones). Integró el #[strong Ensamble Kurtha] de la Universidad Nacional de Tres de Febrero, a cargo de Sebastián Bauer. Fue becaria de investigación en MUNTREF, Laboratorio de Arte y Ciencia en Tecnópolis, en el proyecto #[strong Aromatorio] de Bruno Mesz. Presentó su proyecto colectivo #[strong Biotis] en el Centro Cultural de la Ciencia en el marco de FASE 9, Encuentro de Arte, Ciencia y Tecnología. Compuso la música de la obra de teatro Biolenta, dirigida por Mariano Stolkiner.
+
+                p Realiza tareas de producción y posproducción en la plataforma Hormiguero. Forma parte del equipo de producción de la Bienal de la Imagen en Movimiento, organizada por Continente. Es docente y estudia la Licenciatura en Artes Electrónicas en la Universidad Nacional de Tres de Febrero.
+                
+            .col-50
+              .boxEquipo
+                +widgetEquipo('Guadalupe Alvarez', 'Edición de Contenido y Gestión de Proyectos', '/img/guada_300px.jpg')
+                p #[strong GUADALUPE ALVAREZ] (Buenos Aires, 1994). Licenciada en Artes Electrónicas (UNTREF). Fue becaria del #[strong CIN] (Consejo Interuniversitario Nacional) por el proyecto de investigación que desarrolló como Trabajo Final de Grado (2017-8). Realizó en 2017 una práctica pre-profesional como integrante del equipo de producción de #[strong #[a(href="http://continentevideo.com.ar/", target="_blank") Continente]] (Centro de investigación y desarrollo de proyectos vinculados a las Artes Audiovisuales). Integra los proyectos de investigación “Semiótica de la performatividad: lente epistemológico, acontecimiento y efecto performático” (Director Claudio Guerri) y #[strong #[a(href="http://basevideoarte.com.ar/", target="_blank") “Base Video Arte. El audiovisual en América Latina”]] (Directora: Gabriela Golder).
+
+                p Participó en diferentes muestras colectivas, entre ellas el #[strongFestival Enlaces 2015, FASE 7 y 8] (Encuentro de Arte, Ciencia y Tecnología), el ciclo “Sobre lo Artificial” (Curado por Lucía Kuschnir) en el Museo de Arte Popular José Hernández y el pabellón virtual “Desplazamientos” (Curado por Ignacio Guerra) dentro de The wrong Biennale 2017-2018.
+
+                p Desde el año 2016 forma parte de #[strong HORMIGUERO], plataforma de reflexión sobre las artes electrónicas, desempeñándose en el área Producción de Contenido y Gestión de Proyectos.
+
+                p Actualmente integra el equipo de la #[strong Bienal de la Imagen en Movimiento] (BIM) coordinando el área Contenidos Editoriales; es JTP de las materias Animación digital, Imagen Electrónica y Laboratorio I de la Licenciatura en Artes Electrónicas; y trabaja de manera independiente en proyectos relacionados a la animación digital y el diseño y desarrollo web.
+                
+              .boxEquipo
+                +widgetEquipo('Micaela Flavia Paz', 'Producción y Edición de Notas', '/img/mica_300px.jpg')
+                p #[strong MICAELA FLAVIA PAZ] (Buenos Aires, 1987). Es #[strong Licenciada en Artes Electrónicas (UNTREF)] y #[strong Técnica en Producción y Creatividad Radiofónica (ETER)]. Es Tutora de la carrera y Ayudante en las materias Taller de Imagen III y IV (Gabriela Golder) y Laboratorio I. Su experiencia laboral se desarrolla principalmente en las áreas de comunicación y diseño. Actualmente colabora en la sección de Arte de la revista #[strong El Gran Otro]. En 2018 integró el equipo de Programación del #[strong Festival Internacional de CineMigrante] y participó de la realización de entrevistas a artistas en la #[strong Bienal de Imagen en Movimiento] (BIM). Es integrante de #[strong Hebras Danza] y cofundadora del espacio cultural #[strong Danzar Mundos. Transdisciplina y Experimentación Artística]. En #[strong Hormiguero] realiza la producción y edición de notas y entrevistas y, desde 2018, colabora con el diseño web de la plataforma y la administración de las redes sociales.
+              
+              .boxEquipo
+                +widgetEquipo('Franccesca Carrodegoas', 'Producción y Difusión', '/img/fran_300px.jpg')
+                p #[strong FRANCCESCA DEGOAS] Nacida en Estados Unidos, creció en Mar del Plata y actualmente reside en la ciudad de Buenos Aires. Es Licenciada en Artes Electrónicas y Técnica en Producción Audiovisual con orientación en Sonido y Música, (UNTREF). También cursó la carrera de Diseño de Imagen y Sonido en la FADU, UBA.
+
+                p Interesada en la hibridación de diferentes disciplinas, tanto artísticas como técnicas, musicales, sonoras y audiovisuales. Expuso sus obras en diferentes espacios: La Casa Nacional del Bicentenario en el festival #[strong FASE 2016] donde montó su obra “Levítica” y durante el mismo año en el #[strong Centro Cultural Matienzo] junto con el colectivo de artistas electrónicas femeninas, #[strong Un Cuarto Propio], expuso su obra interactiva “Corazón”. Su última instalación expuesta fue en el festival internacional de diseño Trimarchi 2017 donde montó una pila de televisores que reproducían en loop las publicidades de su padre publicista, Norbert Degoas.
+
+                p Como música se encuentra desarrollando un proyecto de canciones acústicas, de composición propia y covers. Las cuales fueron presentadas en el 2017 durante la Noche de los Museos en el MUNTREF y en la inauguración de la muestra “Punto de Fuga” UNTREF sede Lynch, y junto al colectivo artístico #[strong ANSIEDAD] en el Club de la música.
+
+                p Formó parte de grupos de trabajo muy diversos tanto en Argentina (MUNTREF Inmigrantes, Tecnópolis Arte y Ciencia, y Latin Grammys para las escuelas), como en Estados Unidos (Electric Daisy Carnival Las Vegas, y Los Ángeles).
+
+                p Actualmente es parte del staff técnico de Sonido y Grabación en el #[strong Centro Cultural Kirchner] (CCK). Desde la auto-gestión es co-fundadora, productora y difusora de la plataforma “Hormiguero”.
+              
+              .boxEquipo
+                +widgetEquipo('Cecilia Cisneros', 'Producción audiovisual y Lecturas', '/img/ceci_300px.jpg')
+                p #[strong CECILIA CISNEROS] es fotógrafa, investigadora y realizadora audiovisual. Estudió Antropología en la UBA. Actualmente estudia la #[strong Licenciatura en Artes Electrónicas] con orientación en Imagen en UNTREF. Tomó seminarios de cámara, edición, ensayo visual, guión y dramaturgia. Editó y publicó 2 libros de poesía. Es becaria de investigación en el proyecto #[strong Retratos Verbales] de MUNTREF, que aborda problemáticas de inmigración y juicio social desde la perspectiva de las Artes Electrónicas, con la dirección de Mariano Sardón y Mariano Sigman.
+
+                p Lleva adelante el proyecto #[strong “Verdever”], con el cual produce telas y productos a base de desechos plasticos industriales, mediante la técnica de termofusión. Este proyecto personal ha recibido un incentivo a la producción y un subsidio para equipamiento por medio del Programa de Emprendimiento Independiente del Ministerio de Trabajo y Desarrollo Social durante 2017.
+
+                p En marzo de 2018 estrena su primer largometraje documental #[strong “Escuela Monte”] dirigido junto a Mariano Raffo y producido por La Granja Cine. Han recibido subsidios en desarrollo y producción por medio del INCAA y apoyo del MarDocLab del Festival de Cine de Mar del Plata y del FIDBA.
+
+                p En Hormiguero realiza tareas de producción, realización audiovisual, y contenido en el área de lecturas.
+              
+          
+      
+    footer.color-bg-gris.color-texto-inv
+      .container
+        include _footerSitio.pug
