@@ -279,12 +279,6 @@ h2 {
   display: inline-block;
   margin-right: 40px;
 }
-.headerSitio_navegacion li::after {
-  content: "";
-  height: 1px;
-  width: 100px;
-  background-color: white;
-}
 
 .headerSitio_item-activo {
   border-bottom: 1px solid white;
