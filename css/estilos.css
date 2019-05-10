@@ -264,6 +264,7 @@ h2 {
   height: 60px;
   background: none;
   border: none;
+  cursor: pointer;
 }
 .headerSitio_toggle .toggleLine {
   height: 3px;
@@ -297,6 +298,7 @@ h2 {
 @media screen and (max-width: 1000px) {
   .headerSitio_navegacion {
     width: 100%;
+    overflow: hidden;
   }
 }
 .headerSitio_navegacion::after {
