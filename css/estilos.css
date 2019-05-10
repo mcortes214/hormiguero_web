@@ -271,12 +271,23 @@ h2 {
   width: 60%;
   margin: 5px auto 5px auto;
   background-color: white;
+  transition: 0.2s;
 }
 @media screen and (max-width: 1000px) {
   .headerSitio_toggle {
     display: block;
     float: right;
   }
+}
+
+.headerSitio_toggle.toggleOn .tl1 {
+  transform: translate(0, 8px) rotate(45deg);
+}
+.headerSitio_toggle.toggleOn .tl2 {
+  transform: rotate(45deg);
+}
+.headerSitio_toggle.toggleOn .tl3 {
+  transform: translate(0, -8px) rotate(-45deg);
 }
 
 .headerSitio_encabezado {

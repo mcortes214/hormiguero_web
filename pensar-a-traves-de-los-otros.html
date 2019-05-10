@@ -18,15 +18,15 @@
               <div class="headerSitio_encabezado"><a href="/">
                   <div class="headerSitio_logo textoLogo">Hormiguero</div></a>
                 <button class="headerSitio_toggle" id="menuToggle">
-                  <div class="toggleLine"></div>
-                  <div class="toggleLine"></div>
-                  <div class="toggleLine"></div>
+                  <div class="toggleLine tl1"></div>
+                  <div class="toggleLine tl2"></div>
+                  <div class="toggleLine tl3"></div>
                 </button>
               </div>
               <nav class="headerSitio_navegacion txt-sm menuNavHidden" id="menuNav">
                 <ul><a href="/equipo.html">
                     <li id="menuItem_equipo">Equipo</li></a><a href="http://arteyciencia.untref.edu.ar/projects">
-                    <li id="menuItem_proyecto">Proyecto</li></a><a href="#">
+                    <li id="menuItem_proyecto">Proyecto</li></a><a href="/entrevistas-1.html">
                     <li id="menuItem_revista1">1. Sobre nuestra práctica</li></a><a href="/editorial-2.html">
                     <li class="headerSitio_item-activo" id="menuItem_revista2">2. Futuro Antiguo   </li></a></ul>
               </nav>
@@ -37,6 +37,7 @@
               console.log(boton);
               boton.addEventListener("click", function(){
                 nav.classList.toggle('menuNavHidden');
+                this.classList.toggle('toggleOn');
               });
                           
             </script>

@@ -7,9 +7,9 @@ mixin widgetHeader(activo)
       a(href="/")
         .headerSitio_logo.textoLogo Hormiguero
       button.headerSitio_toggle#menuToggle
-        .toggleLine
-        .toggleLine
-        .toggleLine
+        .toggleLine.tl1
+        .toggleLine.tl2
+        .toggleLine.tl3
     nav.headerSitio_navegacion.txt-sm.menuNavHidden#menuNav
       -var itemActivo=activo
       case itemActivo
@@ -59,7 +59,7 @@ mixin widgetHeader(activo)
               li#menuItem_equipo Equipo
             a(href="http://arteyciencia.untref.edu.ar/projects")
               li#menuItem_proyecto Proyecto
-            a(href="#")
+            a(href="/entrevistas-1.html")
               li#menuItem_revista1 1. Sobre nuestra práctica
             a(href="/editorial-2.html")
               li#menuItem_revista2.headerSitio_item-activo 2. Futuro Antiguo   
@@ -71,6 +71,7 @@ mixin widgetHeader(activo)
     console.log(boton);
     boton.addEventListener("click", function(){
       nav.classList.toggle('menuNavHidden');
+      this.classList.toggle('toggleOn');
     });
                 
 mixin revista (nombre, meta, año, link)
