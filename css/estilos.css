@@ -258,10 +258,46 @@ h2 {
   display: inline-block;
 }
 
+.headerSitio_toggle {
+  display: none;
+  width: 60px;
+  height: 60px;
+  background: none;
+  border: none;
+}
+.headerSitio_toggle .toggleLine {
+  height: 3px;
+  width: 60%;
+  margin: 5px auto 5px auto;
+  background-color: white;
+}
+@media screen and (max-width: 1000px) {
+  .headerSitio_toggle {
+    display: block;
+    float: right;
+  }
+}
+
+.headerSitio_encabezado {
+  display: inline;
+}
+@media screen and (max-width: 1000px) {
+  .headerSitio_encabezado {
+    width: 100%;
+  }
+}
+
 .headerSitio_navegacion {
+  transition: 0.4s;
+  height: auto;
   width: 50%;
   float: right;
   padding: 20px 0;
+}
+@media screen and (max-width: 1000px) {
+  .headerSitio_navegacion {
+    width: 100%;
+  }
 }
 .headerSitio_navegacion::after {
   content: "";
@@ -275,13 +311,37 @@ h2 {
   display: block;
   float: right;
 }
+@media screen and (max-width: 1000px) {
+  .headerSitio_navegacion ul {
+    width: 100%;
+  }
+}
 .headerSitio_navegacion a {
   display: inline-block;
   margin-right: 40px;
 }
+@media screen and (max-width: 1000px) {
+  .headerSitio_navegacion a {
+    width: 100%;
+    text-align: center;
+    height: 50px;
+  }
+}
 
 .headerSitio_item-activo {
   border-bottom: 1px solid white;
+}
+@media screen and (max-width: 1000px) {
+  .headerSitio_item-activo {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .menuNavHidden {
+    height: 0;
+    padding: 0;
+  }
 }
 
 .footerSitio {

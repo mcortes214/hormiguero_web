@@ -2,10 +2,34 @@
   padding: 20px 0
   display: inline-block
 
+.headerSitio_toggle
+  display: none
+  width: 60px
+  height: 60px
+  background: none
+  border: none
+  .toggleLine
+    height: 3px
+    width: 60%
+    margin: 5px auto 5px auto
+    background-color: $color-claro
+  @media screen and (max-width: $bp-mobile)
+    display: block
+    float: right
+
+.headerSitio_encabezado
+  display: inline
+  @media screen and (max-width: $bp-mobile)
+    width: 100%
+
 .headerSitio_navegacion
+  transition: 0.4s
+  height: auto
   width: 50%
   float: right
   padding: 20px 0
+  @media screen and (max-width: $bp-mobile)
+    width: 100%
   &::after
     content: ''
     display: table
@@ -15,10 +39,23 @@
   ul
     display: block
     float: right
+    @media screen and (max-width: $bp-mobile)
+      width: 100%
   a
     display: inline-block
     margin-right: 40px
+    @media screen and (max-width: $bp-mobile)
+      width: 100%
+      text-align: center
+      height: 50px
 
 
 .headerSitio_item-activo
   border-bottom: 1px solid $color-claro
+  @media screen and (max-width: $bp-mobile)
+    border: none
+
+.menuNavHidden
+  @media screen and (max-width: $bp-mobile)
+    height: 0
+    padding: 0

@@ -1,10 +1,16 @@
 //generales
 
 mixin widgetHeader(activo)
+    
   .headerSitio.txt-codepro
-    a(href="/")
-      .headerSitio_logo.textoLogo Hormiguero
-    nav.headerSitio_navegacion.txt-sm
+    .headerSitio_encabezado
+      a(href="/")
+        .headerSitio_logo.textoLogo Hormiguero
+      button.headerSitio_toggle#menuToggle
+        .toggleLine
+        .toggleLine
+        .toggleLine
+    nav.headerSitio_navegacion.txt-sm.menuNavHidden#menuNav
       -var itemActivo=activo
       case itemActivo
         when 0
@@ -56,8 +62,17 @@ mixin widgetHeader(activo)
             a(href="#")
               li#menuItem_revista1 1. Sobre nuestra práctica
             a(href="/editorial-2.html")
-              li#menuItem_revista2.headerSitio_item-activo 2. Futuro Antiguo          
-
+              li#menuItem_revista2.headerSitio_item-activo 2. Futuro Antiguo   
+                     
+  //-Funcionalidad del menú
+  script.
+    var boton = document.getElementById('menuToggle');
+    var nav = document.getElementById('menuNav');
+    console.log(boton);
+    boton.addEventListener("click", function(){
+      nav.classList.toggle('menuNavHidden');
+    });
+                
 mixin revista (nombre, meta, año, link)
   a(href=link).boxRevista.color-bg-gris.color-texto-inv
     h2=nombre
