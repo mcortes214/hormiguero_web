@@ -5,7 +5,7 @@ body {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .espaciadoVertical {
@@ -185,6 +185,14 @@ h2 {
   margin-bottom: 25px;
   font-weight: bold;
   line-height: 1.3em;
+}
+
+.post a, .editorial2 a {
+  color: #808080;
+  transition: color, 0.2s;
+}
+.post a:hover, .editorial2 a:hover {
+  color: #BA007C;
 }
 
 .textoLogo {
